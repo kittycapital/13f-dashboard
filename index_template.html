@@ -1070,6 +1070,14 @@ function renderOverlap() {
 // ═══════════════════════════════════════
 if (window !== window.top || new URLSearchParams(window.location.search).has('embed')) {
   document.body.classList.add('iframe-embed');
+  function reportHeight() {
+    var h = document.documentElement.scrollHeight;
+    window.parent.postMessage({ type: '13f-height', height: h }, '*');
+  }
+  reportHeight();
+  window.addEventListener('resize', reportHeight);
+  new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+  setInterval(reportHeight, 500);
 }
 
 // ═══════════════════════════════════════
