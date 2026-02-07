@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-02-07T09:43:31.325057+00:00",
+  "generated_at": "2026-02-07T09:52:04.098285+00:00",
   "num_funds": 13,
   "funds": [
     {
       "cik": "1647251",
       "name": "TCI Fund Management",
-      "manager": "Chris Hohn",
+      "manager": "크리스 혼 (Chris Hohn)",
       "group": "A",
       "tag": "2025 #1 Dollar Gains",
       "emoji": "🏆",
@@ -198,13 +198,13 @@
           "weight": 2.11
         }
       ],
-      "fetched_at": "2026-02-07T09:43:15.294559+00:00",
+      "fetched_at": "2026-02-07T09:51:45.842910+00:00",
       "error": null
     },
     {
       "cik": "1535392",
       "name": "Soroban Capital Partners",
-      "manager": "Eric Mandelblatt",
+      "manager": "에릭 만델블랫 (Eric Mandelblatt)",
       "group": "A",
       "tag": "2025 +25%",
       "emoji": "📈",
@@ -917,13 +917,13 @@
           "weight": 0.33
         }
       ],
-      "fetched_at": "2026-02-07T09:43:16.561601+00:00",
+      "fetched_at": "2026-02-07T09:51:47.351733+00:00",
       "error": null
     },
     {
       "cik": "1336528",
       "name": "Pershing Square Capital",
-      "manager": "Bill Ackman",
+      "manager": "빌 애크먼 (Bill Ackman)",
       "group": "A",
       "tag": "Concentrated",
       "emoji": "🎯",
@@ -1156,13 +1156,13 @@
           "weight": 0.71
         }
       ],
-      "fetched_at": "2026-02-07T09:43:17.726460+00:00",
+      "fetched_at": "2026-02-07T09:51:48.702287+00:00",
       "error": null
     },
     {
       "cik": "1656456",
       "name": "Appaloosa Management",
-      "manager": "David Tepper",
+      "manager": "데이비드 테퍼 (David Tepper)",
       "group": "A",
       "tag": "Contrarian",
       "emoji": "🔄",
@@ -1825,13 +1825,13 @@
           "weight": 0.22
         }
       ],
-      "fetched_at": "2026-02-07T09:43:18.862201+00:00",
+      "fetched_at": "2026-02-07T09:51:50.009183+00:00",
       "error": null
     },
     {
       "cik": "1067983",
       "name": "Berkshire Hathaway",
-      "manager": "Warren Buffett",
+      "manager": "워런 버핏 (Warren Buffett)",
       "group": "B",
       "tag": "Legend",
       "emoji": "👑",
@@ -2544,13 +2544,13 @@
           "weight": 0.2
         }
       ],
-      "fetched_at": "2026-02-07T09:43:20.080585+00:00",
+      "fetched_at": "2026-02-07T09:51:51.359333+00:00",
       "error": null
     },
     {
       "cik": "1649339",
       "name": "Scion Asset Management",
-      "manager": "Michael Burry",
+      "manager": "마이클 버리 (Michael Burry)",
       "group": "B",
       "tag": "Big Short",
       "emoji": "🎬",
@@ -2723,13 +2723,13 @@
           "weight": 0.95
         }
       ],
-      "fetched_at": "2026-02-07T09:43:21.276075+00:00",
+      "fetched_at": "2026-02-07T09:51:52.695348+00:00",
       "error": null
     },
     {
       "cik": "1029160",
       "name": "Soros Fund Management",
-      "manager": "George Soros",
+      "manager": "조지 소로스 (George Soros)",
       "group": "B",
       "tag": "Macro Legend",
       "emoji": "🌍",
@@ -3442,13 +3442,13 @@
           "weight": 0.55
         }
       ],
-      "fetched_at": "2026-02-07T09:43:22.482093+00:00",
+      "fetched_at": "2026-02-07T09:51:54.046242+00:00",
       "error": null
     },
     {
       "cik": "1536411",
       "name": "Duquesne Family Office",
-      "manager": "Stanley Druckenmiller",
+      "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
       "group": "B",
       "tag": "GOAT Trader",
       "emoji": "🐐",
@@ -4161,13 +4161,13 @@
           "weight": 0.48
         }
       ],
-      "fetched_at": "2026-02-07T09:43:23.652777+00:00",
+      "fetched_at": "2026-02-07T09:51:55.300294+00:00",
       "error": null
     },
     {
       "cik": "1603466",
       "name": "ARK Investment Management",
-      "manager": "Cathie Wood",
+      "manager": "캐시 우드 (Cathie Wood)",
       "group": "B",
       "tag": "Innovation",
       "emoji": "🚀",
@@ -4880,13 +4880,13 @@
           "weight": 0.29
         }
       ],
-      "fetched_at": "2026-02-07T09:43:24.812418+00:00",
+      "fetched_at": "2026-02-07T09:51:56.673668+00:00",
       "error": null
     },
     {
       "cik": "1350694",
       "name": "Bridgewater Associates",
-      "manager": "Ray Dalio (founded)",
+      "manager": "레이 달리오 (Ray Dalio, 설립)",
       "group": "C",
       "tag": "2025 +34%",
       "emoji": "🌊",
@@ -5499,13 +5499,13 @@
           "weight": 0.36
         }
       ],
-      "fetched_at": "2026-02-07T09:43:26.079082+00:00",
+      "fetched_at": "2026-02-07T09:51:58.067855+00:00",
       "error": null
     },
     {
       "cik": "1009207",
       "name": "D.E. Shaw & Co.",
-      "manager": "David Shaw",
+      "manager": "데이비드 쇼 (David Shaw)",
       "group": "C",
       "tag": "2025 +28%",
       "emoji": "🤖",
@@ -6118,13 +6118,13 @@
           "weight": 0.27
         }
       ],
-      "fetched_at": "2026-02-07T09:43:27.268028+00:00",
+      "fetched_at": "2026-02-07T09:51:59.399017+00:00",
       "error": null
     },
     {
       "cik": "1037389",
       "name": "Renaissance Technologies",
-      "manager": "Jim Simons (founded)",
+      "manager": "짐 사이먼스 (Jim Simons, 설립)",
       "group": "C",
       "tag": "Quant King",
       "emoji": "🧮",
@@ -6737,13 +6737,13 @@
           "weight": 0.31
         }
       ],
-      "fetched_at": "2026-02-07T09:43:28.546519+00:00",
+      "fetched_at": "2026-02-07T09:52:00.901851+00:00",
       "error": null
     },
     {
       "cik": "1423053",
       "name": "Citadel Advisors",
-      "manager": "Ken Griffin",
+      "manager": "켄 그리핀 (Ken Griffin)",
       "group": "C",
       "tag": "2025 +10.2%",
       "emoji": "🏰",
@@ -7356,7 +7356,7 @@
           "weight": 0.26
         }
       ],
-      "fetched_at": "2026-02-07T09:43:29.769338+00:00",
+      "fetched_at": "2026-02-07T09:52:02.308651+00:00",
       "error": null
     }
   ],
@@ -7367,98 +7367,98 @@
       "funds": [
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 23161087763000,
           "shares": 90959776,
           "weight": 8.66
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 15670691034000,
           "shares": 61542988,
           "weight": 5.86
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 8841772120000,
           "shares": 34724000,
           "weight": 3.31
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 3954913160000,
           "shares": 15532000,
           "weight": 1.48
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 3685005360000,
           "shares": 14472000,
           "weight": 1.38
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 1834354520000,
           "shares": 7204000,
           "weight": 0.69
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 977779200000,
           "shares": 3840000,
           "weight": 0.37
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 961482880000,
           "shares": 3776000,
           "weight": 0.36
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 693612120000,
           "shares": 2724000,
           "weight": 0.26
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 690556560000,
           "shares": 2712000,
           "weight": 0.26
         },
         {
           "fund": "Soros Fund Management",
-          "manager": "George Soros",
+          "manager": "조지 소로스 (George Soros)",
           "value": 89053278000,
           "shares": 349736,
           "weight": 1.27
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1264976632000,
           "shares": 4967901,
           "weight": 0.71
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 8432963655000,
           "shares": 33118500,
           "weight": 1.28
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 6026277284000,
           "shares": 23666800,
           "weight": 0.92
@@ -7489,91 +7489,91 @@
       "funds": [
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 354502000000,
           "shares": 1900000,
           "weight": 4.8
         },
         {
           "fund": "Scion Asset Management",
-          "manager": "Michael Burry",
+          "manager": "마이클 버리 (Michael Burry)",
           "value": 186580000000,
           "shares": 1000000,
           "weight": 13.51
         },
         {
           "fund": "Soros Fund Management",
-          "manager": "George Soros",
+          "manager": "조지 소로스 (George Soros)",
           "value": 102190426000,
           "shares": 547703,
           "weight": 1.46
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 1351256873000,
           "shares": 7242239,
           "weight": 2.26
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 468269342000,
           "shares": 2509751,
           "weight": 1.83
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 2297815728000,
           "shares": 12315445,
           "weight": 1.3
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1867412424000,
           "shares": 10008642,
           "weight": 1.05
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 984750582000,
           "shares": 5277900,
           "weight": 0.56
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 598860415000,
           "shares": 3209671,
           "weight": 0.34
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 580002588000,
           "shares": 3108600,
           "weight": 0.33
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 1050193666000,
           "shares": 5628605,
           "weight": 1.39
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 14486686914000,
           "shares": 77643300,
           "weight": 2.2
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 12160892582000,
           "shares": 65177900,
           "weight": 1.85
@@ -7603,77 +7603,77 @@
       "funds": [
         {
           "fund": "TCI Fund Management",
-          "manager": "Chris Hohn",
+          "manager": "크리스 혼 (Chris Hohn)",
           "value": 8593932062000,
           "shares": 16592204,
           "weight": 16.31
         },
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 239551875000,
           "shares": 462500,
           "weight": 3.24
         },
         {
           "fund": "Soros Fund Management",
-          "manager": "George Soros",
+          "manager": "조지 소로스 (George Soros)",
           "value": 52697787000,
           "shares": 101743,
           "weight": 0.75
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 1340482942000,
           "shares": 2588054,
           "weight": 2.24
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 568278684000,
           "shares": 1097169,
           "weight": 2.23
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1957691471000,
           "shares": 3779692,
           "weight": 1.11
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1475272841000,
           "shares": 2848292,
           "weight": 0.83
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 683126166000,
           "shares": 1318907,
           "weight": 0.9
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 6944777190000,
           "shares": 13408200,
           "weight": 1.06
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3919742010000,
           "shares": 7567800,
           "weight": 0.6
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 1851773804000,
           "shares": 3575198,
           "weight": 0.28
@@ -7701,70 +7701,70 @@
       "funds": [
         {
           "fund": "Pershing Square Capital",
-          "manager": "Bill Ackman",
+          "manager": "빌 애크먼 (Bill Ackman)",
           "value": 1278625494000,
           "shares": 5823316,
           "weight": 8.73
         },
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 548925000000,
           "shares": 2500000,
           "weight": 7.43
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 1695958680000,
           "shares": 7724000,
           "weight": 0.63
         },
         {
           "fund": "Soros Fund Management",
-          "manager": "George Soros",
+          "manager": "조지 소로스 (George Soros)",
           "value": 488803880000,
           "shares": 2226187,
           "weight": 6.96
         },
         {
           "fund": "Duquesne Family Office",
-          "manager": "Stanley Druckenmiller",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 95967000,
           "shares": 437070,
           "weight": 2.36
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 685853220000,
           "shares": 3123619,
           "weight": 1.15
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 247011200000,
           "shares": 1124977,
           "weight": 0.97
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 581710753000,
           "shares": 2649318,
           "weight": 0.33
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 5476910166000,
           "shares": 24943800,
           "weight": 0.83
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3877408587000,
           "shares": 17659100,
           "weight": 0.59
@@ -7791,63 +7791,63 @@
       "funds": [
         {
           "fund": "Soros Fund Management",
-          "manager": "George Soros",
+          "manager": "조지 소로스 (George Soros)",
           "value": 125908020000,
           "shares": 189000,
           "weight": 1.79
         },
         {
           "fund": "Soros Fund Management",
-          "manager": "George Soros",
+          "manager": "조지 소로스 (George Soros)",
           "value": 65137748000,
           "shares": 97778,
           "weight": 0.93
         },
         {
           "fund": "Duquesne Family Office",
-          "manager": "Stanley Druckenmiller",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 59956000,
           "shares": 90000,
           "weight": 1.48
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 3518895996000,
           "shares": 5282200,
           "weight": 5.89
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 1591770492000,
           "shares": 2389400,
           "weight": 2.66
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 1708810324000,
           "shares": 2565088,
           "weight": 6.69
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1866102750000,
           "shares": 2801199,
           "weight": 1.05
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 27200196018000,
           "shares": 40830100,
           "weight": 4.14
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 18413681526000,
           "shares": 27640700,
           "weight": 2.8
@@ -7873,63 +7873,63 @@
       "funds": [
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 271720600000,
           "shares": 370000,
           "weight": 3.68
         },
         {
           "fund": "Duquesne Family Office",
-          "manager": "Stanley Druckenmiller",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 55886000,
           "shares": 76100,
           "weight": 1.38
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 601696624000,
           "shares": 819325,
           "weight": 1.01
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 306176975000,
           "shares": 416919,
           "weight": 1.2
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 737914571000,
           "shares": 1004813,
           "weight": 0.42
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 504596170000,
           "shares": 687105,
           "weight": 0.28
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 354337935000,
           "shares": 482499,
           "weight": 0.47
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 8623236836000,
           "shares": 11742200,
           "weight": 1.31
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 5736462494000,
           "shares": 7811300,
           "weight": 0.87
@@ -7955,63 +7955,63 @@
       "funds": [
         {
           "fund": "Pershing Square Capital",
-          "manager": "Bill Ackman",
+          "manager": "빌 애크먼 (Bill Ackman)",
           "value": 1177569836000,
           "shares": 4843973,
           "weight": 8.04
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 4332177164000,
           "shares": 17820556,
           "weight": 1.62
         },
         {
           "fund": "Soros Fund Management",
-          "manager": "George Soros",
+          "manager": "조지 소로스 (George Soros)",
           "value": 160049018000,
           "shares": 658367,
           "weight": 2.28
         },
         {
           "fund": "Duquesne Family Office",
-          "manager": "Stanley Druckenmiller",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 24845000,
           "shares": 102200,
           "weight": 0.61
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 645162118000,
           "shares": 2653896,
           "weight": 2.53
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 493400622000,
           "shares": 2029620,
           "weight": 0.28
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 633701383000,
           "shares": 2606747,
           "weight": 0.84
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 4208741680000,
           "shares": 17312800,
           "weight": 0.64
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3037680360000,
           "shares": 12495600,
           "weight": 0.46
@@ -8037,49 +8037,49 @@
       "funds": [
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 16034172000000,
           "shares": 310800000,
           "weight": 6.0
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 6485894800000,
           "shares": 125720000,
           "weight": 2.43
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 4265693974000,
           "shares": 82684512,
           "weight": 1.6
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 1083390000000,
           "shares": 21000000,
           "weight": 0.41
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 613921000000,
           "shares": 11900000,
           "weight": 0.23
         },
         {
           "fund": "Duquesne Family Office",
-          "manager": "Stanley Druckenmiller",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 51035000,
           "shares": 989250,
           "weight": 1.26
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 735208574000,
           "shares": 14250990,
           "weight": 0.41
@@ -8103,49 +8103,49 @@
       "funds": [
         {
           "fund": "Scion Asset Management",
-          "manager": "Michael Burry",
+          "manager": "마이클 버리 (Michael Burry)",
           "value": 912100000000,
           "shares": 5000000,
           "weight": 66.04
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1388133746000,
           "shares": 7609548,
           "weight": 0.78
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 599103764000,
           "shares": 3284200,
           "weight": 0.34
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 574258160000,
           "shares": 3148000,
           "weight": 0.32
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 1562587167000,
           "shares": 8565875,
           "weight": 2.06
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 4428281984000,
           "shares": 24275200,
           "weight": 0.67
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2689491028000,
           "shares": 14743400,
           "weight": 0.41
@@ -8169,42 +8169,42 @@
       "funds": [
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 70268550000,
           "shares": 203500,
           "weight": 0.95
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 1065134479000,
           "shares": 3084664,
           "weight": 0.4
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 675026970000,
           "shares": 1954900,
           "weight": 0.25
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 260296118000,
           "shares": 753826,
           "weight": 0.34
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3790530750000,
           "shares": 10977500,
           "weight": 0.58
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3321198990000,
           "shares": 9618300,
           "weight": 0.51
@@ -8227,42 +8227,42 @@
       "funds": [
         {
           "fund": "TCI Fund Management",
-          "manager": "Chris Hohn",
+          "manager": "크리스 혼 (Chris Hohn)",
           "value": 1850205267000,
           "shares": 7596819,
           "weight": 3.51
         },
         {
           "fund": "Pershing Square Capital",
-          "manager": "Bill Ackman",
+          "manager": "빌 애크먼 (Bill Ackman)",
           "value": 1540217750000,
           "shares": 6324031,
           "weight": 10.52
         },
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 337925625000,
           "shares": 1387500,
           "weight": 4.58
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 418906551000,
           "shares": 1720002,
           "weight": 0.55
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2513971810000,
           "shares": 10322200,
           "weight": 0.38
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2412533235000,
           "shares": 9905700,
           "weight": 0.37
@@ -8285,42 +8285,42 @@
       "funds": [
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 523633053000,
           "shares": 1587200,
           "weight": 0.88
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 278902945000,
           "shares": 845391,
           "weight": 1.09
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1221107430000,
           "shares": 3701335,
           "weight": 0.69
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 544091201000,
           "shares": 1649211,
           "weight": 0.31
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3303223875000,
           "shares": 10012500,
           "weight": 0.5
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2598338169000,
           "shares": 7875900,
           "weight": 0.4
@@ -8343,35 +8343,35 @@
       "funds": [
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 18750171387000,
           "shares": 282722729,
           "weight": 7.01
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 5324381824000,
           "shares": 80283200,
           "weight": 1.99
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 994163328000,
           "shares": 14990400,
           "weight": 0.37
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 955750784000,
           "shares": 14411200,
           "weight": 0.36
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 256893173000,
           "shares": 3873501,
           "weight": 0.34
@@ -8393,35 +8393,35 @@
       "funds": [
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 153700500000,
           "shares": 950000,
           "weight": 2.08
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 282160613000,
           "shares": 1743993,
           "weight": 0.47
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 290380854000,
           "shares": 1794801,
           "weight": 1.14
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3022835823000,
           "shares": 18683700,
           "weight": 0.46
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2455535367000,
           "shares": 15177300,
           "weight": 0.37
@@ -8443,35 +8443,35 @@
       "funds": [
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 115619855000,
           "shares": 807514,
           "weight": 0.45
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 539641841000,
           "shares": 3768975,
           "weight": 0.3
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 286682155000,
           "shares": 2002250,
           "weight": 0.38
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2471816566000,
           "shares": 17263700,
           "weight": 0.38
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 1875343004000,
           "shares": 13097800,
           "weight": 0.29
@@ -8493,28 +8493,28 @@
       "funds": [
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 969537513000,
           "shares": 1614900,
           "weight": 1.62
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 3602220000000,
           "shares": 6000000,
           "weight": 2.03
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 26578139752000,
           "shares": 44269600,
           "weight": 4.04
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 16327662520000,
           "shares": 27196000,
           "weight": 2.48
@@ -8535,28 +8535,28 @@
       "funds": [
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1296180912000,
           "shares": 2914600,
           "weight": 0.73
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 557056272000,
           "shares": 1252600,
           "weight": 0.31
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 16309083144000,
           "shares": 36672700,
           "weight": 2.48
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 14920000224000,
           "shares": 33549200,
           "weight": 2.27
@@ -8577,28 +8577,28 @@
       "funds": [
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 9562684437000,
           "shares": 61579525,
           "weight": 3.58
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 5049597230000,
           "shares": 32517208,
           "weight": 1.89
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 2727513715000,
           "shares": 17564001,
           "weight": 1.02
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 536411725000,
           "shares": 3454258,
           "weight": 0.2
@@ -8619,28 +8619,28 @@
       "funds": [
         {
           "fund": "Duquesne Family Office",
-          "manager": "Stanley Druckenmiller",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 54683000,
           "shares": 226000,
           "weight": 1.35
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 191632320000,
           "shares": 792000,
           "weight": 0.32
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 6734666248000,
           "shares": 27833800,
           "weight": 1.02
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 4485793224000,
           "shares": 18539400,
           "weight": 0.68
@@ -8661,28 +8661,28 @@
       "funds": [
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 780847005000,
           "shares": 651292,
           "weight": 0.44
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 325422732000,
           "shares": 271429,
           "weight": 0.43
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3435385368000,
           "shares": 2865400,
           "weight": 0.52
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 3142968780000,
           "shares": 2621500,
           "weight": 0.48
@@ -8703,28 +8703,28 @@
       "funds": [
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 296047400000,
           "shares": 1060000,
           "weight": 4.01
         },
         {
           "fund": "Duquesne Family Office",
-          "manager": "Stanley Druckenmiller",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 213681000,
           "shares": 765085,
           "weight": 5.26
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 506702441000,
           "shares": 1814252,
           "weight": 0.85
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 375064127000,
           "shares": 1342920,
           "weight": 0.5
@@ -8745,21 +8745,21 @@
       "funds": [
         {
           "fund": "TCI Fund Management",
-          "manager": "Chris Hohn",
+          "manager": "크리스 혼 (Chris Hohn)",
           "value": 6341224074000,
           "shares": 13308479,
           "weight": 12.03
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 6014964400000,
           "shares": 12623750,
           "weight": 2.25
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 5705337213000,
           "shares": 11973928,
           "weight": 2.13
@@ -8779,21 +8779,21 @@
       "funds": [
         {
           "fund": "TCI Fund Management",
-          "manager": "Chris Hohn",
+          "manager": "크리스 혼 (Chris Hohn)",
           "value": 9578218484000,
           "shares": 28057351,
           "weight": 18.18
         },
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 2832586895000,
           "shares": 8297460,
           "weight": 1.06
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 230757177000,
           "shares": 675954,
           "weight": 0.9
@@ -8813,21 +8813,21 @@
       "funds": [
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 114261906000,
           "shares": 406279,
           "weight": 0.45
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2442822516000,
           "shares": 8685900,
           "weight": 0.37
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2038596264000,
           "shares": 7248600,
           "weight": 0.31
@@ -8847,21 +8847,21 @@
       "funds": [
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 478324700000,
           "shares": 626900,
           "weight": 0.27
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 1769625900000,
           "shares": 2319300,
           "weight": 0.27
         },
         {
           "fund": "Citadel Advisors",
-          "manager": "Ken Griffin",
+          "manager": "켄 그리핀 (Ken Griffin)",
           "value": 1695843800000,
           "shares": 2222600,
           "weight": 0.26
@@ -8881,21 +8881,21 @@
       "funds": [
         {
           "fund": "Pershing Square Capital",
-          "manager": "Bill Ackman",
+          "manager": "빌 애크먼 (Bill Ackman)",
           "value": 2965602648000,
           "shares": 30270518,
           "weight": 20.25
         },
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 235812125000,
           "shares": 2406983,
           "weight": 3.19
         },
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 353098869000,
           "shares": 3604153,
           "weight": 1.38
@@ -8915,21 +8915,21 @@
       "funds": [
         {
           "fund": "Berkshire Hathaway",
-          "manager": "Warren Buffett",
+          "manager": "워런 버핏 (Warren Buffett)",
           "value": 2241293959000,
           "shares": 8016933,
           "weight": 0.84
         },
         {
           "fund": "ARK Investment Management",
-          "manager": "Cathie Wood",
+          "manager": "캐시 우드 (Cathie Wood)",
           "value": 281746637000,
           "shares": 1007786,
           "weight": 0.47
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 886312663000,
           "shares": 3170271,
           "weight": 1.17
@@ -8949,21 +8949,21 @@
       "funds": [
         {
           "fund": "Appaloosa Management",
-          "manager": "David Tepper",
+          "manager": "데이비드 테퍼 (David Tepper)",
           "value": 83660000000,
           "shares": 500000,
           "weight": 1.13
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 1277781847000,
           "shares": 7636755,
           "weight": 0.72
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 835579348000,
           "shares": 4993900,
           "weight": 0.47
@@ -8983,21 +8983,21 @@
       "funds": [
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 419690656000,
           "shares": 77731,
           "weight": 1.64
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 654240344000,
           "shares": 121172,
           "weight": 0.37
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 496192913000,
           "shares": 91900,
           "weight": 0.28
@@ -9017,21 +9017,21 @@
       "funds": [
         {
           "fund": "Bridgewater Associates",
-          "manager": "Ray Dalio (founded)",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
           "value": 445416014000,
           "shares": 1262696,
           "weight": 1.74
         },
         {
           "fund": "D.E. Shaw & Co.",
-          "manager": "David Shaw",
+          "manager": "데이비드 쇼 (David Shaw)",
           "value": 732357327000,
           "shares": 2076137,
           "weight": 0.41
         },
         {
           "fund": "Renaissance Technologies",
-          "manager": "Jim Simons (founded)",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
           "value": 337464861000,
           "shares": 956669,
           "weight": 0.45
