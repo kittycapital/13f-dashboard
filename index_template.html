@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>월가 슈퍼투자자 13F 대시보드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: #111118;
+  --bg-card-hover: #16161f;
+  --bg-elevated: #1a1a25;
+  --border: #1e1e2e;
+  --border-bright: #2a2a3e;
+  --text-primary: #e8e8f0;
+  --text-secondary: #8888a0;
+  --text-muted: #555570;
+  --accent-gold: #f0b90b;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06d6a0;
+  --accent-purple: #a78bfa;
+  --accent-red: #ef4444;
+  --accent-green: #22c55e;
+  --accent-orange: #f97316;
+  --group-a: #f0b90b;
+  --group-b: #3b82f6;
+  --group-c: #a78bfa;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ═══ HERO ═══ */
+.hero {
+  position: relative;
+  padding: 48px 24px 32px;
+  text-align: center;
+  background: linear-gradient(180deg, #0d0d18 0%, #0a0a0f 100%);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -120px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 400px;
+  background: radial-gradient(ellipse, rgba(240,185,11,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(240,185,11,0.1);
+  border: 1px solid rgba(240,185,11,0.2);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  color: var(--accent-gold);
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+.hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  background: linear-gradient(135deg, #fff 0%, #f0b90b 50%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.hero-sub {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+.hero-stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ═══ TABS ═══ */
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px 24px 0;
+  background: var(--bg-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+}
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 18px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab-btn:hover { color: var(--text-secondary); }
+.tab-btn.active {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+}
+
+/* ═══ CONTAINER ═══ */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ═══ SECTION HEADERS ═══ */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.section-header .badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.badge-gold { background: rgba(240,185,11,0.15); color: var(--accent-gold); }
+.badge-blue { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+.badge-purple { background: rgba(167,139,250,0.15); color: var(--accent-purple); }
+
+/* ═══ GROUP LABELS ═══ */
+.group-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 28px 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.group-label.group-a { color: var(--group-a); }
+.group-label.group-b { color: var(--group-b); }
+.group-label.group-c { color: var(--group-c); }
+.group-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.2;
+}
+
+/* ═══ FUND CARDS ═══ */
+.fund-grid {
+  display: grid;
+  gap: 10px;
+}
+.fund-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 14px;
+}
+.fund-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-bright);
+  transform: translateY(-1px);
+}
+.fund-info {
+  min-width: 0;
+}
+.fund-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fund-manager {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.fund-tag {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+}
+.fund-tag.group-a { background: rgba(240,185,11,0.12); color: var(--group-a); }
+.fund-tag.group-b { background: rgba(59,130,246,0.12); color: var(--group-b); }
+.fund-tag.group-c { background: rgba(167,139,250,0.12); color: var(--group-c); }
+
+.fund-meta {
+  text-align: right;
+  min-width: 90px;
+}
+.fund-aum {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.fund-return {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+}
+.fund-return.positive { color: var(--accent-green); }
+.fund-return.neutral { color: var(--text-muted); }
+.fund-holdings-count {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ═══ DETAIL MODAL ═══ */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+  padding: 24px 16px;
+}
+.modal-overlay.active { display: flex; justify-content: center; align-items: flex-start; }
+
+.modal {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-bright);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.modal-fund-info h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.modal-fund-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.modal-close {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.modal-close:hover { background: var(--border-bright); color: var(--text-primary); }
+
+.modal-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.modal-stat {
+  background: var(--bg-card);
+  padding: 14px 18px;
+  text-align: center;
+}
+.modal-stat-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+.modal-stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.modal-body { padding: 20px 24px 24px; }
+
+/* ═══ HOLDINGS TABLE ═══ */
+.holdings-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.holdings-table thead {
+  background: var(--bg-elevated);
+  position: sticky;
+  top: 0;
+}
+.holdings-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.holdings-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.holdings-table tr:last-child td { border-bottom: none; }
+.holdings-table tr:hover td { background: var(--bg-card-hover); }
+
+.holdings-table .rank {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--text-muted);
+  width: 30px;
+}
+.holdings-table .stock-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.holdings-table .mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+}
+.weight-bar-cell {
+  min-width: 120px;
+}
+.weight-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.weight-bar-track {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 50px;
+}
+.weight-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-orange));
+  transition: width 0.5s ease;
+}
+.weight-bar-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  min-width: 42px;
+  text-align: right;
+}
+
+/* ═══ CROSS-FUND OVERLAP ═══ */
+.overlap-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+.overlap-card:hover {
+  border-color: var(--border-bright);
+  background: var(--bg-card-hover);
+}
+.overlap-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.overlap-stock-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+.overlap-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(6,214,160,0.1);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.overlap-funds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.overlap-fund-pill {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+
+/* ═══ 2025 PERFORMANCE TABLE ═══ */
+.perf-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.perf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.perf-table thead { background: var(--bg-elevated); }
+.perf-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.perf-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.perf-table tr:last-child td { border-bottom: none; }
+.perf-table tr:hover td { background: var(--bg-card-hover); }
+.perf-rank {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 16px;
+}
+.perf-rank.gold { color: var(--accent-gold); }
+.perf-rank.silver { color: #c0c0c0; }
+.perf-rank.bronze { color: #cd7f32; }
+.perf-return {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+.perf-return.positive { color: var(--accent-green); }
+.perf-bar {
+  height: 8px;
+  background: var(--bg-elevated);
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 100px;
+}
+.perf-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+}
+
+/* ═══ DATA SOURCE NOTE ═══ */
+.data-note {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-muted);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+}
+.data-note a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 640px) {
+  .hero { padding: 32px 16px 24px; }
+  .hero-stats { gap: 20px; }
+  .fund-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .fund-meta {
+    text-align: left;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+    min-width: unset;
+  }
+  .modal { margin-top: 0; border-radius: 12px; }
+  .modal-header { padding: 16px; }
+  .modal-body { padding: 16px; }
+  .holdings-table th, .holdings-table td { padding: 8px 10px; }
+  .tab-btn { padding: 8px 12px; font-size: 12px; }
+}
+
+/* ═══ SCROLLBAR ═══ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ═══ STRATEGY INFO ═══ */
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.strategy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+}
+.strategy-card h4 {
+  font-size: 14px;
+  color: var(--accent-gold);
+  margin-bottom: 6px;
+}
+.strategy-card p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-badge">SEC EDGAR 13F 데이터 기반</div>
+  <h1>월가 슈퍼투자자 포트폴리오</h1>
+  <p class="hero-sub">버핏 · 소로스 · 버리 · 드러켄밀러 · 캐시우드 등 13개 전설의 펀드 실시간 추적</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-value" id="stat-funds">13</div>
+      <div class="hero-stat-label">추적 펀드</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value" id="stat-period">Q3 2025</div>
+      <div class="hero-stat-label">기준 분기</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value" id="stat-overlap">13</div>
+      <div class="hero-stat-label">크로스 종목</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TAB NAV ═══ -->
+<div class="tab-nav">
+  <button class="tab-btn active" data-tab="rankings">2025 수익률</button>
+  <button class="tab-btn" data-tab="funds">펀드별 상세</button>
+  <button class="tab-btn" data-tab="overlap">크로스분석</button>
+  <button class="tab-btn" data-tab="info">가이드</button>
+</div>
+
+<!-- ═══ TAB: 2025 RANKINGS ═══ -->
+<div class="container">
+<div class="tab-content active" id="tab-rankings">
+  <div class="section-header">
+    <h2>2025 헤지펀드 수익률 랭킹</h2>
+    <span class="badge badge-gold">Bloomberg / Reuters 기준</span>
+  </div>
+
+  <div class="perf-table-wrap">
+    <table class="perf-table">
+      <thead>
+        <tr>
+          <th style="width:40px">#</th>
+          <th>펀드</th>
+          <th>매니저</th>
+          <th>전략</th>
+          <th style="text-align:right">2025 수익률</th>
+          <th style="min-width:120px">그래프</th>
+          <th style="text-align:right">AUM</th>
+        </tr>
+      </thead>
+      <tbody id="perf-tbody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- ═══ TAB: FUNDS ═══ -->
+<div class="tab-content" id="tab-funds">
+  <div class="section-header">
+    <h2>펀드별 포트폴리오 상세</h2>
+    <span class="badge badge-blue">클릭하여 보유 종목 확인</span>
+  </div>
+
+  <div class="group-label group-a">GROUP A — 2025 성과 우수 + 분석 가치 높은 펀드</div>
+  <div class="fund-grid" id="funds-group-a"></div>
+
+  <div class="group-label group-b">GROUP B — 한국 투자자에게 인기 있는 레전드</div>
+  <div class="fund-grid" id="funds-group-b"></div>
+
+  <div class="group-label group-c">GROUP C — 2025 최고 퀀트/멀티전략 (Top 10만 표시)</div>
+  <div class="fund-grid" id="funds-group-c"></div>
+</div>
+
+<!-- ═══ TAB: OVERLAP ═══ -->
+<div class="tab-content" id="tab-overlap">
+  <div class="section-header">
+    <h2>크로스펀드 분석</h2>
+    <span class="badge badge-gold">2개 이상 펀드가 동시 보유한 종목</span>
+  </div>
+  <p style="color:var(--text-secondary);font-size:13px;margin-bottom:20px;">
+    여러 슈퍼투자자가 동시에 보유한 종목은 강한 확신을 의미할 수 있습니다.
+  </p>
+  <div id="overlap-list"></div>
+</div>
+
+<!-- ═══ TAB: INFO ═══ -->
+<div class="tab-content" id="tab-info">
+  <div class="section-header">
+    <h2>13F 투자 가이드</h2>
+  </div>
+
+  <div class="strategy-grid">
+    <div class="strategy-card">
+      <h4>13F란?</h4>
+      <p>미국 SEC에 분기별 제출하는 기관투자자 보유 현황 보고서. 운용자산 $100M 이상인 모든 기관이 의무 제출하며, 분기 종료 후 45일 이내에 공시됩니다. 완전 무료로 EDGAR에서 확인 가능.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>공시 일정</h4>
+      <p>Q1 (3월말) → 5월 15일까지 제출<br>
+      Q2 (6월말) → 8월 14일까지 제출<br>
+      Q3 (9월말) → 11월 14일까지 제출<br>
+      Q4 (12월말) → 2월 14일까지 제출</p>
+    </div>
+    <div class="strategy-card">
+      <h4>GROUP A: 분석 가치 높은 펀드</h4>
+      <p>집중투자 전략(10~20종목)으로 13F에서 명확한 투자 아이디어를 읽을 수 있는 펀드. TCI, Pershing Square, Soroban 등이 해당. 포지션 변화가 곧 투자 시그널.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>GROUP B: 레전드 투자자</h4>
+      <p>버핏, 소로스, 버리, 드러켄밀러 등 한국 투자자에게 가장 인기 있는 투자자들. 이들의 매수/매도는 국내 증권가에서도 화제가 됩니다.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>GROUP C: 대형 퀀트/멀티전략</h4>
+      <p>수천 개 포지션을 보유하는 Citadel, D.E. Shaw 등. 개별 종목보다는 상위 10개 포지션의 트렌드를 참고하세요. 헤징 포지션이 포함되어 있어 직접 따라하기 어려움.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>한계점</h4>
+      <p>① 45일 시차 (이미 매도했을 수 있음)<br>
+      ② 숏 포지션 미포함<br>
+      ③ 옵션은 일부만 공시<br>
+      ④ 해외 주식은 ADR만 포함<br>
+      ⑤ 채권/통화/원자재 미포함</p>
+    </div>
+  </div>
+
+</div><!-- container -->
+
+<!-- ═══ MODAL ═══ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-fund-info">
+        <h2 id="modal-title"></h2>
+        <div class="modal-fund-sub" id="modal-sub"></div>
+      </div>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-stats" id="modal-stats"></div>
+    <div class="modal-body">
+      <h3 style="font-size:15px;margin-bottom:14px;color:var(--text-secondary);">상위 보유 종목</h3>
+      <div class="holdings-table-wrap">
+        <table class="holdings-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>종목명</th>
+              <th>CUSIP</th>
+              <th style="text-align:right">보유 가치</th>
+              <th style="text-align:right">주식 수</th>
+              <th>비중</th>
+            </tr>
+          </thead>
+          <tbody id="modal-holdings"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="data-note">
+  데이터 출처: <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&type=13F-HR" target="_blank">SEC EDGAR</a> · 
+  투자 조언이 아닙니다
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════
+const DATA = HOLDINGS_DATA_PLACEHOLDER;
+
+// 2025 Performance rankings (from Bloomberg/Reuters reports)
+const PERF_2025 = [
+  { name: "Melqart Opportunities", manager: "Michel Massoud", strategy: "이벤트 드리븐", ret: 45.0, aum: "$1.4B" },
+  { name: "Bridgewater Asia", manager: "Bridgewater", strategy: "글로벌 매크로", ret: 37.0, aum: "$92B" },
+  { name: "Bridgewater Pure Alpha II", manager: "Bridgewater", strategy: "글로벌 매크로", ret: 34.0, aum: "$92B" },
+  { name: "D.E. Shaw Oculus", manager: "David Shaw", strategy: "멀티 전략", ret: 28.2, aum: "$85B" },
+  { name: "Soroban Capital", manager: "Eric Mandelblatt", strategy: "롱/숏 에쿼티", ret: 25.0, aum: "$7.2B" },
+  { name: "Bridgewater All Weather", manager: "Bridgewater", strategy: "리스크 패리티", ret: 20.0, aum: "$92B" },
+  { name: "AQR Apex", manager: "Cliff Asness", strategy: "멀티전략 퀀트", ret: 19.6, aum: "$6.8B" },
+  { name: "AQR Helix", manager: "Cliff Asness", strategy: "트렌드 팔로잉", ret: 18.6, aum: "$6.8B" },
+  { name: "D.E. Shaw Composite", manager: "David Shaw", strategy: "멀티 전략", ret: 18.5, aum: "$85B" },
+  { name: "Dymon Asia", manager: "Danny Yong", strategy: "멀티 전략", ret: 18.1, aum: "$8B" },
+  { name: "ExodusPoint", manager: "Michael Gelband", strategy: "멀티 전략", ret: 18.0, aum: "$12B" },
+  { name: "Balyasny", manager: "Dmitry Balyasny", strategy: "멀티 전략", ret: 16.7, aum: "$31B" },
+  { name: "Walleye Capital", manager: "Will England", strategy: "멀티 전략", ret: 15.5, aum: "$7B" },
+  { name: "Bridgewater AIA Macro (AI)", manager: "Bridgewater", strategy: "AI 매크로", ret: 11.9, aum: "$5B" },
+  { name: "Pinpoint Multi-Strategy", manager: "Pinpoint", strategy: "멀티 전략", ret: 11.6, aum: "$4B" },
+  { name: "Millennium", manager: "Izzy Englander", strategy: "멀티 전략", ret: 10.5, aum: "$83.5B" },
+  { name: "Citadel Wellington", manager: "Ken Griffin", strategy: "멀티 전략", ret: 10.2, aum: "$72B" },
+  { name: "New Holland Tactical", manager: "New Holland", strategy: "전술적 알파", ret: 9.8, aum: "$2.5B" },
+];
+
+// ═══════════════════════════════════════
+// FORMAT HELPERS
+// ═══════════════════════════════════════
+function formatValue(v) {
+  if (v >= 1e12) return '$' + (v / 1e12).toFixed(1) + 'T';
+  if (v >= 1e9) return '$' + (v / 1e9).toFixed(1) + 'B';
+  if (v >= 1e6) return '$' + (v / 1e6).toFixed(1) + 'M';
+  if (v >= 1e3) return '$' + (v / 1e3).toFixed(0) + 'K';
+  return '$' + v;
+}
+function formatShares(s) {
+  if (s >= 1e9) return (s / 1e9).toFixed(2) + 'B';
+  if (s >= 1e6) return (s / 1e6).toFixed(1) + 'M';
+  if (s >= 1e3) return (s / 1e3).toFixed(0) + 'K';
+  return s.toLocaleString();
+}
+
+// ═══════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ═══════════════════════════════════════
+// RENDER 2025 PERFORMANCE TABLE
+// ═══════════════════════════════════════
+function renderPerfTable() {
+  const tbody = document.getElementById('perf-tbody');
+  const maxRet = Math.max(...PERF_2025.map(p => p.ret));
+
+  tbody.innerHTML = PERF_2025.map((p, i) => {
+    const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
+    const barWidth = (p.ret / maxRet * 100).toFixed(0);
+    return `<tr>
+      <td><span class="perf-rank ${rankClass}">${i + 1}</span></td>
+      <td style="font-weight:600;color:var(--text-primary)">${p.name}</td>
+      <td style="color:var(--text-secondary);font-size:12px">${p.manager}</td>
+      <td><span class="fund-tag group-c" style="font-size:10px">${p.strategy}</span></td>
+      <td style="text-align:right"><span class="perf-return positive">+${p.ret}%</span></td>
+      <td><div class="perf-bar"><div class="perf-bar-fill" style="width:${barWidth}%"></div></div></td>
+      <td style="text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-secondary)">${p.aum}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════
+// RENDER FUND CARDS
+// ═══════════════════════════════════════
+function renderFundCards() {
+  const groups = { A: [], B: [], C: [] };
+
+  DATA.funds.forEach(fund => {
+    groups[fund.group] = groups[fund.group] || [];
+    groups[fund.group].push(fund);
+  });
+
+  ['A', 'B', 'C'].forEach(g => {
+    const container = document.getElementById('funds-group-' + g.toLowerCase());
+    if (!container) return;
+
+    container.innerHTML = groups[g].map(fund => {
+      const retHtml = fund.return_2025
+        ? `<div class="fund-return positive">+${fund.return_2025}%</div>`
+        : `<div class="fund-return neutral">—</div>`;
+
+      return `<div class="fund-card" data-cik="${fund.cik}">
+        <div class="fund-info">
+          <div class="fund-name">${fund.name}</div>
+          <div class="fund-manager">
+            ${fund.manager}
+            <span class="fund-tag group-${fund.group.toLowerCase()}">${fund.tag}</span>
+          </div>
+        </div>
+        <div class="fund-meta">
+          <div class="fund-aum">${formatValue(fund.total_value)}</div>
+          ${retHtml}
+          <div class="fund-holdings-count">${fund.num_holdings}종목</div>
+        </div>
+      </div>`;
+    }).join('');
+
+    // Click handlers
+    container.querySelectorAll('.fund-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const cik = card.dataset.cik;
+        const fund = DATA.funds.find(f => f.cik === cik);
+        if (fund) openModal(fund);
+      });
+    });
+  });
+}
+
+// ═══════════════════════════════════════
+// MODAL
+// ═══════════════════════════════════════
+function openModal(fund) {
+  const overlay = document.getElementById('modal-overlay');
+  document.getElementById('modal-title').textContent = `${fund.name}`;
+  document.getElementById('modal-sub').textContent = `${fund.manager} · ${fund.strategy} · 기준: ${fund.period}`;
+
+  // Stats
+  document.getElementById('modal-stats').innerHTML = `
+    <div class="modal-stat">
+      <div class="modal-stat-value">${formatValue(fund.total_value)}</div>
+      <div class="modal-stat-label">운용자산 (AUM)</div>
+    </div>
+    <div class="modal-stat">
+      <div class="modal-stat-value">${fund.num_holdings}</div>
+      <div class="modal-stat-label">보유 종목 수</div>
+    </div>
+    <div class="modal-stat">
+      <div class="modal-stat-value">${fund.return_2025 ? '+' + fund.return_2025 + '%' : '—'}</div>
+      <div class="modal-stat-label">2025 수익률</div>
+    </div>
+    <div class="modal-stat">
+      <div class="modal-stat-value">${fund.top_holdings.length > 0 ? fund.top_holdings[0].weight + '%' : '—'}</div>
+      <div class="modal-stat-label">#1 비중</div>
+    </div>
+  `;
+
+  // Holdings
+  const maxWeight = Math.max(...fund.top_holdings.map(h => h.weight));
+  document.getElementById('modal-holdings').innerHTML = fund.top_holdings.map((h, i) => {
+    const barPct = (h.weight / maxWeight * 100).toFixed(0);
+    return `<tr>
+      <td class="rank">${i + 1}</td>
+      <td class="stock-name">${h.name}</td>
+      <td class="mono" style="color:var(--text-muted)">${h.cusip}</td>
+      <td class="mono" style="text-align:right">${formatValue(h.value)}</td>
+      <td class="mono" style="text-align:right">${formatShares(h.shares)}</td>
+      <td class="weight-bar-cell">
+        <div class="weight-bar">
+          <div class="weight-bar-track"><div class="weight-bar-fill" style="width:${barPct}%"></div></div>
+          <span class="weight-bar-value">${h.weight}%</span>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('modal-overlay').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) closeModal();
+});
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// ═══════════════════════════════════════
+// RENDER OVERLAP
+// ═══════════════════════════════════════
+function renderOverlap() {
+  const container = document.getElementById('overlap-list');
+  container.innerHTML = DATA.cross_fund_overlap.map(item => {
+    return `<div class="overlap-card">
+      <div class="overlap-top">
+        <span class="overlap-stock-name">${item.name}</span>
+        <span class="overlap-count">${item.fund_count}개 펀드 보유</span>
+      </div>
+      <div class="overlap-funds">
+        ${item.funds.map(f => `<span class="overlap-fund-pill">${f}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+renderPerfTable();
+renderFundCards();
+renderOverlap();
+</script>
+</body>
+</html>

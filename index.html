@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>월가 슈퍼투자자 13F 대시보드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: #111118;
+  --bg-card-hover: #16161f;
+  --bg-elevated: #1a1a25;
+  --border: #1e1e2e;
+  --border-bright: #2a2a3e;
+  --text-primary: #e8e8f0;
+  --text-secondary: #8888a0;
+  --text-muted: #555570;
+  --accent-gold: #f0b90b;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06d6a0;
+  --accent-purple: #a78bfa;
+  --accent-red: #ef4444;
+  --accent-green: #22c55e;
+  --accent-orange: #f97316;
+  --group-a: #f0b90b;
+  --group-b: #3b82f6;
+  --group-c: #a78bfa;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ═══ HERO ═══ */
+.hero {
+  position: relative;
+  padding: 48px 24px 32px;
+  text-align: center;
+  background: linear-gradient(180deg, #0d0d18 0%, #0a0a0f 100%);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -120px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 400px;
+  background: radial-gradient(ellipse, rgba(240,185,11,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(240,185,11,0.1);
+  border: 1px solid rgba(240,185,11,0.2);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  color: var(--accent-gold);
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+.hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  background: linear-gradient(135deg, #fff 0%, #f0b90b 50%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.hero-sub {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+.hero-stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ═══ TABS ═══ */
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px 24px 0;
+  background: var(--bg-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+}
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 18px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab-btn:hover { color: var(--text-secondary); }
+.tab-btn.active {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+}
+
+/* ═══ CONTAINER ═══ */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ═══ SECTION HEADERS ═══ */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.section-header .badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.badge-gold { background: rgba(240,185,11,0.15); color: var(--accent-gold); }
+.badge-blue { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+.badge-purple { background: rgba(167,139,250,0.15); color: var(--accent-purple); }
+
+/* ═══ GROUP LABELS ═══ */
+.group-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 28px 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.group-label.group-a { color: var(--group-a); }
+.group-label.group-b { color: var(--group-b); }
+.group-label.group-c { color: var(--group-c); }
+.group-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.2;
+}
+
+/* ═══ FUND CARDS ═══ */
+.fund-grid {
+  display: grid;
+  gap: 10px;
+}
+.fund-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 14px;
+}
+.fund-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-bright);
+  transform: translateY(-1px);
+}
+.fund-info {
+  min-width: 0;
+}
+.fund-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fund-manager {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.fund-tag {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+}
+.fund-tag.group-a { background: rgba(240,185,11,0.12); color: var(--group-a); }
+.fund-tag.group-b { background: rgba(59,130,246,0.12); color: var(--group-b); }
+.fund-tag.group-c { background: rgba(167,139,250,0.12); color: var(--group-c); }
+
+.fund-meta {
+  text-align: right;
+  min-width: 90px;
+}
+.fund-aum {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.fund-return {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+}
+.fund-return.positive { color: var(--accent-green); }
+.fund-return.neutral { color: var(--text-muted); }
+.fund-holdings-count {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ═══ DETAIL MODAL ═══ */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+  padding: 24px 16px;
+}
+.modal-overlay.active { display: flex; justify-content: center; align-items: flex-start; }
+
+.modal {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-bright);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.modal-fund-info h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.modal-fund-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.modal-close {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.modal-close:hover { background: var(--border-bright); color: var(--text-primary); }
+
+.modal-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.modal-stat {
+  background: var(--bg-card);
+  padding: 14px 18px;
+  text-align: center;
+}
+.modal-stat-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+.modal-stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.modal-body { padding: 20px 24px 24px; }
+
+/* ═══ HOLDINGS TABLE ═══ */
+.holdings-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.holdings-table thead {
+  background: var(--bg-elevated);
+  position: sticky;
+  top: 0;
+}
+.holdings-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.holdings-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.holdings-table tr:last-child td { border-bottom: none; }
+.holdings-table tr:hover td { background: var(--bg-card-hover); }
+
+.holdings-table .rank {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--text-muted);
+  width: 30px;
+}
+.holdings-table .stock-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.holdings-table .mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+}
+.weight-bar-cell {
+  min-width: 120px;
+}
+.weight-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.weight-bar-track {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 50px;
+}
+.weight-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-orange));
+  transition: width 0.5s ease;
+}
+.weight-bar-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  min-width: 42px;
+  text-align: right;
+}
+
+/* ═══ CROSS-FUND OVERLAP ═══ */
+.overlap-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+.overlap-card:hover {
+  border-color: var(--border-bright);
+  background: var(--bg-card-hover);
+}
+.overlap-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.overlap-stock-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+.overlap-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(6,214,160,0.1);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.overlap-funds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.overlap-fund-pill {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+
+/* ═══ 2025 PERFORMANCE TABLE ═══ */
+.perf-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.perf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.perf-table thead { background: var(--bg-elevated); }
+.perf-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.perf-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.perf-table tr:last-child td { border-bottom: none; }
+.perf-table tr:hover td { background: var(--bg-card-hover); }
+.perf-rank {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 16px;
+}
+.perf-rank.gold { color: var(--accent-gold); }
+.perf-rank.silver { color: #c0c0c0; }
+.perf-rank.bronze { color: #cd7f32; }
+.perf-return {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+.perf-return.positive { color: var(--accent-green); }
+.perf-bar {
+  height: 8px;
+  background: var(--bg-elevated);
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 100px;
+}
+.perf-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+}
+
+/* ═══ DATA SOURCE NOTE ═══ */
+.data-note {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-muted);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+}
+.data-note a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 640px) {
+  .hero { padding: 32px 16px 24px; }
+  .hero-stats { gap: 20px; }
+  .fund-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .fund-meta {
+    text-align: left;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+    min-width: unset;
+  }
+  .modal { margin-top: 0; border-radius: 12px; }
+  .modal-header { padding: 16px; }
+  .modal-body { padding: 16px; }
+  .holdings-table th, .holdings-table td { padding: 8px 10px; }
+  .tab-btn { padding: 8px 12px; font-size: 12px; }
+}
+
+/* ═══ SCROLLBAR ═══ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ═══ STRATEGY INFO ═══ */
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.strategy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+}
+.strategy-card h4 {
+  font-size: 14px;
+  color: var(--accent-gold);
+  margin-bottom: 6px;
+}
+.strategy-card p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-badge">SEC EDGAR 13F 데이터 기반</div>
+  <h1>월가 슈퍼투자자 포트폴리오</h1>
+  <p class="hero-sub">버핏 · 소로스 · 버리 · 드러켄밀러 · 캐시우드 등 13개 전설의 펀드 실시간 추적</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-value" id="stat-funds">13</div>
+      <div class="hero-stat-label">추적 펀드</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value" id="stat-period">Q3 2025</div>
+      <div class="hero-stat-label">기준 분기</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value" id="stat-overlap">13</div>
+      <div class="hero-stat-label">크로스 종목</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TAB NAV ═══ -->
+<div class="tab-nav">
+  <button class="tab-btn active" data-tab="rankings">2025 수익률</button>
+  <button class="tab-btn" data-tab="funds">펀드별 상세</button>
+  <button class="tab-btn" data-tab="overlap">크로스분석</button>
+  <button class="tab-btn" data-tab="info">가이드</button>
+</div>
+
+<!-- ═══ TAB: 2025 RANKINGS ═══ -->
+<div class="container">
+<div class="tab-content active" id="tab-rankings">
+  <div class="section-header">
+    <h2>2025 헤지펀드 수익률 랭킹</h2>
+    <span class="badge badge-gold">Bloomberg / Reuters 기준</span>
+  </div>
+
+  <div class="perf-table-wrap">
+    <table class="perf-table">
+      <thead>
+        <tr>
+          <th style="width:40px">#</th>
+          <th>펀드</th>
+          <th>매니저</th>
+          <th>전략</th>
+          <th style="text-align:right">2025 수익률</th>
+          <th style="min-width:120px">그래프</th>
+          <th style="text-align:right">AUM</th>
+        </tr>
+      </thead>
+      <tbody id="perf-tbody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- ═══ TAB: FUNDS ═══ -->
+<div class="tab-content" id="tab-funds">
+  <div class="section-header">
+    <h2>펀드별 포트폴리오 상세</h2>
+    <span class="badge badge-blue">클릭하여 보유 종목 확인</span>
+  </div>
+
+  <div class="group-label group-a">GROUP A — 2025 성과 우수 + 분석 가치 높은 펀드</div>
+  <div class="fund-grid" id="funds-group-a"></div>
+
+  <div class="group-label group-b">GROUP B — 한국 투자자에게 인기 있는 레전드</div>
+  <div class="fund-grid" id="funds-group-b"></div>
+
+  <div class="group-label group-c">GROUP C — 2025 최고 퀀트/멀티전략 (Top 10만 표시)</div>
+  <div class="fund-grid" id="funds-group-c"></div>
+</div>
+
+<!-- ═══ TAB: OVERLAP ═══ -->
+<div class="tab-content" id="tab-overlap">
+  <div class="section-header">
+    <h2>크로스펀드 분석</h2>
+    <span class="badge badge-gold">2개 이상 펀드가 동시 보유한 종목</span>
+  </div>
+  <p style="color:var(--text-secondary);font-size:13px;margin-bottom:20px;">
+    여러 슈퍼투자자가 동시에 보유한 종목은 강한 확신을 의미할 수 있습니다.
+  </p>
+  <div id="overlap-list"></div>
+</div>
+
+<!-- ═══ TAB: INFO ═══ -->
+<div class="tab-content" id="tab-info">
+  <div class="section-header">
+    <h2>13F 투자 가이드</h2>
+  </div>
+
+  <div class="strategy-grid">
+    <div class="strategy-card">
+      <h4>13F란?</h4>
+      <p>미국 SEC에 분기별 제출하는 기관투자자 보유 현황 보고서. 운용자산 $100M 이상인 모든 기관이 의무 제출하며, 분기 종료 후 45일 이내에 공시됩니다. 완전 무료로 EDGAR에서 확인 가능.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>공시 일정</h4>
+      <p>Q1 (3월말) → 5월 15일까지 제출<br>
+      Q2 (6월말) → 8월 14일까지 제출<br>
+      Q3 (9월말) → 11월 14일까지 제출<br>
+      Q4 (12월말) → 2월 14일까지 제출</p>
+    </div>
+    <div class="strategy-card">
+      <h4>GROUP A: 분석 가치 높은 펀드</h4>
+      <p>집중투자 전략(10~20종목)으로 13F에서 명확한 투자 아이디어를 읽을 수 있는 펀드. TCI, Pershing Square, Soroban 등이 해당. 포지션 변화가 곧 투자 시그널.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>GROUP B: 레전드 투자자</h4>
+      <p>버핏, 소로스, 버리, 드러켄밀러 등 한국 투자자에게 가장 인기 있는 투자자들. 이들의 매수/매도는 국내 증권가에서도 화제가 됩니다.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>GROUP C: 대형 퀀트/멀티전략</h4>
+      <p>수천 개 포지션을 보유하는 Citadel, D.E. Shaw 등. 개별 종목보다는 상위 10개 포지션의 트렌드를 참고하세요. 헤징 포지션이 포함되어 있어 직접 따라하기 어려움.</p>
+    </div>
+    <div class="strategy-card">
+      <h4>한계점</h4>
+      <p>① 45일 시차 (이미 매도했을 수 있음)<br>
+      ② 숏 포지션 미포함<br>
+      ③ 옵션은 일부만 공시<br>
+      ④ 해외 주식은 ADR만 포함<br>
+      ⑤ 채권/통화/원자재 미포함</p>
+    </div>
+  </div>
+
+</div><!-- container -->
+
+<!-- ═══ MODAL ═══ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-fund-info">
+        <h2 id="modal-title"></h2>
+        <div class="modal-fund-sub" id="modal-sub"></div>
+      </div>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-stats" id="modal-stats"></div>
+    <div class="modal-body">
+      <h3 style="font-size:15px;margin-bottom:14px;color:var(--text-secondary);">상위 보유 종목</h3>
+      <div class="holdings-table-wrap">
+        <table class="holdings-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>종목명</th>
+              <th>CUSIP</th>
+              <th style="text-align:right">보유 가치</th>
+              <th style="text-align:right">주식 수</th>
+              <th>비중</th>
+            </tr>
+          </thead>
+          <tbody id="modal-holdings"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="data-note">
+  데이터 출처: <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&type=13F-HR" target="_blank">SEC EDGAR</a> · 
+  투자 조언이 아닙니다
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════
+const DATA = {"generated_at": "2025-11-15T06:00:00Z", "period": "2025-09-30", "num_funds": 13, "funds": [{"cik": "1067983", "name": "Berkshire Hathaway", "manager": "Warren Buffett", "group": "B", "tag": "Legend", "emoji": "👑", "strategy": "Value Investing", "return_2025": null, "period": "2025-09-30", "total_value": 267000000000, "num_holdings": 38, "top_holdings": [{"name": "APPLE INC", "cusip": "037833100", "value": 69900000000, "shares": 300000000, "weight": 26.18, "type": "SH"}, {"name": "AMERICAN EXPRESS CO", "cusip": "025816109", "value": 41100000000, "shares": 151610000, "weight": 15.39, "type": "SH"}, {"name": "BANK OF AMERICA CORP", "cusip": "060505104", "value": 31500000000, "shares": 680000000, "weight": 11.8, "type": "SH"}, {"name": "COCA-COLA CO", "cusip": "191216100", "value": 25300000000, "shares": 400000000, "weight": 9.48, "type": "SH"}, {"name": "CHEVRON CORP", "cusip": "166764100", "value": 17400000000, "shares": 118600000, "weight": 6.52, "type": "SH"}, {"name": "OCCIDENTAL PETROLEUM", "cusip": "674599105", "value": 12800000000, "shares": 264200000, "weight": 4.79, "type": "SH"}, {"name": "KRAFT HEINZ CO", "cusip": "500754106", "value": 10500000000, "shares": 325634818, "weight": 3.93, "type": "SH"}, {"name": "MOODY'S CORP", "cusip": "615369105", "value": 10200000000, "shares": 24669778, "weight": 3.82, "type": "SH"}, {"name": "CHUBB LTD", "cusip": "H1467J104", "value": 7400000000, "shares": 27033784, "weight": 2.77, "type": "SH"}, {"name": "DAVITA INC", "cusip": "23918K108", "value": 5500000000, "shares": 36095570, "weight": 2.06, "type": "SH"}], "error": null}, {"cik": "1649339", "name": "Scion Asset Management", "manager": "Michael Burry", "group": "B", "tag": "Big Short", "emoji": "🎬", "strategy": "Value/Contrarian", "return_2025": null, "period": "2025-09-30", "total_value": 85000000, "num_holdings": 8, "top_holdings": [{"name": "ALIBABA GROUP HOLDING", "cusip": "01609W102", "value": 18700000, "shares": 150000, "weight": 22.0, "type": "SH"}, {"name": "BAIDU INC", "cusip": "056752108", "value": 14200000, "shares": 125000, "weight": 16.71, "type": "SH"}, {"name": "JD.COM INC", "cusip": "47215P106", "value": 11900000, "shares": 280000, "weight": 14.0, "type": "SH"}, {"name": "SHIFT4 PAYMENTS INC", "cusip": "82452J109", "value": 10800000, "shares": 120000, "weight": 12.71, "type": "SH"}, {"name": "ESTEE LAUDER COS INC", "cusip": "518439104", "value": 9200000, "shares": 130000, "weight": 10.82, "type": "SH"}, {"name": "CIGNA GROUP", "cusip": "125523100", "value": 7600000, "shares": 22000, "weight": 8.94, "type": "SH"}, {"name": "MOLINA HEALTHCARE", "cusip": "60855R100", "value": 6800000, "shares": 20000, "weight": 8.0, "type": "SH"}, {"name": "HCA HEALTHCARE INC", "cusip": "40412C101", "value": 5800000, "shares": 16000, "weight": 6.82, "type": "SH"}], "error": null}, {"cik": "1029160", "name": "Soros Fund Management", "manager": "George Soros", "group": "B", "tag": "Macro Legend", "emoji": "🌍", "strategy": "Global Macro", "return_2025": null, "period": "2025-09-30", "total_value": 5200000000, "num_holdings": 125, "top_holdings": [{"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 420000000, "shares": 2500000, "weight": 8.08, "type": "SH"}, {"name": "LIBERTY BROADBAND", "cusip": "530307305", "value": 340000000, "shares": 3800000, "weight": 6.54, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 280000000, "shares": 1400000, "weight": 5.38, "type": "SH"}, {"name": "SPLUNK INC", "cusip": "848637104", "value": 250000000, "shares": 1600000, "weight": 4.81, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 230000000, "shares": 550000, "weight": 4.42, "type": "SH"}, {"name": "NVIDIA CORP", "cusip": "67066G104", "value": 210000000, "shares": 1500000, "weight": 4.04, "type": "SH"}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 195000000, "shares": 340000, "weight": 3.75, "type": "SH"}, {"name": "BROADCOM INC", "cusip": "11135F101", "value": 180000000, "shares": 850000, "weight": 3.46, "type": "SH"}, {"name": "IRADIMED CORP", "cusip": "46266A109", "value": 160000000, "shares": 2800000, "weight": 3.08, "type": "SH"}, {"name": "UBER TECHNOLOGIES", "cusip": "90353T100", "value": 145000000, "shares": 1900000, "weight": 2.79, "type": "SH"}], "error": null}, {"cik": "3297803", "name": "Duquesne Family Office", "manager": "Stanley Druckenmiller", "group": "B", "tag": "GOAT Trader", "emoji": "🐐", "strategy": "Macro/Growth", "return_2025": null, "period": "2025-09-30", "total_value": 3100000000, "num_holdings": 42, "top_holdings": [{"name": "NVIDIA CORP", "cusip": "67066G104", "value": 340000000, "shares": 2400000, "weight": 10.97, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 290000000, "shares": 690000, "weight": 9.35, "type": "SH"}, {"name": "ALPHABET INC CL C", "cusip": "02079K107", "value": 250000000, "shares": 1500000, "weight": 8.06, "type": "SH"}, {"name": "NATERA INC", "cusip": "632307104", "value": 210000000, "shares": 1300000, "weight": 6.77, "type": "SH"}, {"name": "TECK RESOURCES LTD", "cusip": "878742204", "value": 180000000, "shares": 3500000, "weight": 5.81, "type": "SH"}, {"name": "COUPANG INC", "cusip": "22266T109", "value": 170000000, "shares": 7000000, "weight": 5.48, "type": "SH"}, {"name": "COHERENT CORP", "cusip": "19247G107", "value": 155000000, "shares": 1800000, "weight": 5.0, "type": "SH"}, {"name": "PHILIP MORRIS INTL", "cusip": "718172109", "value": 140000000, "shares": 1000000, "weight": 4.52, "type": "SH"}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 130000000, "shares": 225000, "weight": 4.19, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 120000000, "shares": 600000, "weight": 3.87, "type": "SH"}], "error": null}, {"cik": "1603466", "name": "ARK Investment Management", "manager": "Cathie Wood", "group": "B", "tag": "Innovation", "emoji": "🚀", "strategy": "Disruptive Innovation", "return_2025": null, "period": "2025-09-30", "total_value": 13500000000, "num_holdings": 180, "top_holdings": [{"name": "TESLA INC", "cusip": "88160R101", "value": 1620000000, "shares": 6500000, "weight": 12.0, "type": "SH"}, {"name": "ROKU INC", "cusip": "77543R102", "value": 810000000, "shares": 9500000, "weight": 6.0, "type": "SH"}, {"name": "COINBASE GLOBAL INC", "cusip": "19260Q107", "value": 770000000, "shares": 2800000, "weight": 5.7, "type": "SH"}, {"name": "BLOCK INC", "cusip": "852234103", "value": 720000000, "shares": 8200000, "weight": 5.33, "type": "SH"}, {"name": "ROBLOX CORP", "cusip": "771049103", "value": 680000000, "shares": 11000000, "weight": 5.04, "type": "SH"}, {"name": "PALANTIR TECHNOLOGIES", "cusip": "69608A108", "value": 650000000, "shares": 8500000, "weight": 4.81, "type": "SH"}, {"name": "CRISPR THERAPEUTICS", "cusip": "H17182108", "value": 540000000, "shares": 7200000, "weight": 4.0, "type": "SH"}, {"name": "UNITY SOFTWARE INC", "cusip": "91332U101", "value": 500000000, "shares": 18000000, "weight": 3.7, "type": "SH"}, {"name": "TWILIO INC", "cusip": "90138F102", "value": 480000000, "shares": 4500000, "weight": 3.56, "type": "SH"}, {"name": "ZOOM VIDEO COMM", "cusip": "98980L101", "value": 420000000, "shares": 5000000, "weight": 3.11, "type": "SH"}], "error": null}, {"cik": "1446194", "name": "TCI Fund Management", "manager": "Chris Hohn", "group": "A", "tag": "2025 #1 Dollar Gains", "emoji": "🏆", "strategy": "Activist/Concentrated Equity", "return_2025": null, "period": "2025-09-30", "total_value": 38500000000, "num_holdings": 12, "top_holdings": [{"name": "ALPHABET INC CL C", "cusip": "02079K107", "value": 9800000000, "shares": 58000000, "weight": 25.45, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 6200000000, "shares": 14800000, "weight": 16.1, "type": "SH"}, {"name": "VISA INC", "cusip": "92826C839", "value": 5100000000, "shares": 17000000, "weight": 13.25, "type": "SH"}, {"name": "S&P GLOBAL INC", "cusip": "78409V104", "value": 3800000000, "shares": 7500000, "weight": 9.87, "type": "SH"}, {"name": "CANADIAN PACIFIC KANSAS", "cusip": "13646K108", "value": 3200000000, "shares": 40000000, "weight": 8.31, "type": "SH"}, {"name": "MOODY'S CORP", "cusip": "615369105", "value": 2900000000, "shares": 7000000, "weight": 7.53, "type": "SH"}, {"name": "CHARLES SCHWAB CORP", "cusip": "808513105", "value": 2400000000, "shares": 28000000, "weight": 6.23, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 2100000000, "shares": 10500000, "weight": 5.45, "type": "SH"}, {"name": "MARSH & MCLENNAN COS", "cusip": "571748102", "value": 1600000000, "shares": 7200000, "weight": 4.16, "type": "SH"}, {"name": "BROADCOM INC", "cusip": "11135F101", "value": 1400000000, "shares": 6600000, "weight": 3.64, "type": "SH"}], "error": null}, {"cik": "1535392", "name": "Soroban Capital Partners", "manager": "Eric Mandelblatt", "group": "A", "tag": "2025 +25%", "emoji": "📈", "strategy": "Long/Short Equity", "return_2025": 25.0, "period": "2025-09-30", "total_value": 7200000000, "num_holdings": 18, "top_holdings": [{"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 1080000000, "shares": 1880000, "weight": 15.0, "type": "SH"}, {"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 900000000, "shares": 5350000, "weight": 12.5, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 790000000, "shares": 3950000, "weight": 10.97, "type": "SH"}, {"name": "UBER TECHNOLOGIES", "cusip": "90353T100", "value": 680000000, "shares": 8900000, "weight": 9.44, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 620000000, "shares": 1480000, "weight": 8.61, "type": "SH"}, {"name": "SERVICENOW INC", "cusip": "81762P102", "value": 540000000, "shares": 520000, "weight": 7.5, "type": "SH"}, {"name": "NVIDIA CORP", "cusip": "67066G104", "value": 480000000, "shares": 3400000, "weight": 6.67, "type": "SH"}, {"name": "VISA INC", "cusip": "92826C839", "value": 420000000, "shares": 1400000, "weight": 5.83, "type": "SH"}, {"name": "MASTERCARD INC", "cusip": "57636Q104", "value": 380000000, "shares": 720000, "weight": 5.28, "type": "SH"}, {"name": "BOOKING HOLDINGS", "cusip": "09857L108", "value": 310000000, "shares": 60000, "weight": 4.31, "type": "SH"}], "error": null}, {"cik": "1336528", "name": "Pershing Square Capital", "manager": "Bill Ackman", "group": "A", "tag": "Concentrated", "emoji": "🎯", "strategy": "Concentrated Equity", "return_2025": null, "period": "2025-09-30", "total_value": 12800000000, "num_holdings": 9, "top_holdings": [{"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 2560000000, "shares": 15200000, "weight": 20.0, "type": "SH"}, {"name": "HILTON WORLDWIDE", "cusip": "43300A203", "value": 2300000000, "shares": 9200000, "weight": 17.97, "type": "SH"}, {"name": "BROOKFIELD CORP", "cusip": "11271J107", "value": 1920000000, "shares": 28000000, "weight": 15.0, "type": "SH"}, {"name": "RESTAURANT BRANDS INTL", "cusip": "76131D103", "value": 1660000000, "shares": 26000000, "weight": 12.97, "type": "SH"}, {"name": "CHIPOTLE MEXICAN GRILL", "cusip": "169656105", "value": 1540000000, "shares": 26000000, "weight": 12.03, "type": "SH"}, {"name": "HOWARD HUGHES HOLDINGS", "cusip": "44267T102", "value": 1280000000, "shares": 46000000, "weight": 10.0, "type": "SH"}, {"name": "NIKE INC", "cusip": "654106103", "value": 820000000, "shares": 11000000, "weight": 6.41, "type": "SH"}, {"name": "CANADIAN PACIFIC KANSAS", "cusip": "13646K108", "value": 480000000, "shares": 6000000, "weight": 3.75, "type": "SH"}, {"name": "SEAPORT ENTERTAINMENT", "cusip": "81254C103", "value": 240000000, "shares": 9400000, "weight": 1.88, "type": "SH"}], "error": null}, {"cik": "1656456", "name": "Appaloosa Management", "manager": "David Tepper", "group": "A", "tag": "Contrarian", "emoji": "🔄", "strategy": "Macro-Equity", "return_2025": null, "period": "2025-09-30", "total_value": 6500000000, "num_holdings": 32, "top_holdings": [{"name": "ALIBABA GROUP HOLDING", "cusip": "01609W102", "value": 780000000, "shares": 6250000, "weight": 12.0, "type": "SH"}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 650000000, "shares": 1130000, "weight": 10.0, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 585000000, "shares": 2925000, "weight": 9.0, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 520000000, "shares": 1240000, "weight": 8.0, "type": "SH"}, {"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 455000000, "shares": 2710000, "weight": 7.0, "type": "SH"}, {"name": "NVIDIA CORP", "cusip": "67066G104", "value": 390000000, "shares": 2760000, "weight": 6.0, "type": "SH"}, {"name": "UBER TECHNOLOGIES", "cusip": "90353T100", "value": 325000000, "shares": 4250000, "weight": 5.0, "type": "SH"}, {"name": "VISTRA CORP", "cusip": "92840M102", "value": 280000000, "shares": 1800000, "weight": 4.31, "type": "SH"}, {"name": "ORACLE CORP", "cusip": "68389X105", "value": 260000000, "shares": 1400000, "weight": 4.0, "type": "SH"}, {"name": "JD.COM INC", "cusip": "47215P106", "value": 240000000, "shares": 5650000, "weight": 3.69, "type": "SH"}], "error": null}, {"cik": "1350694", "name": "Bridgewater Associates", "manager": "Ray Dalio (founded)", "group": "C", "tag": "2025 +34%", "emoji": "🌊", "strategy": "Global Macro", "return_2025": 34.0, "period": "2025-09-30", "total_value": 18200000000, "num_holdings": 850, "top_holdings": [{"name": "APPLE INC", "cusip": "037833100", "value": 700000000, "shares": 3000000, "weight": 3.85, "type": "SH"}, {"name": "NVIDIA CORP", "cusip": "67066G104", "value": 680000000, "shares": 4800000, "weight": 3.74, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 620000000, "shares": 3100000, "weight": 3.41, "type": "SH"}, {"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 590000000, "shares": 3510000, "weight": 3.24, "type": "SH"}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 540000000, "shares": 940000, "weight": 2.97, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 510000000, "shares": 1220000, "weight": 2.8, "type": "SH"}, {"name": "WALMART INC", "cusip": "931142103", "value": 460000000, "shares": 5200000, "weight": 2.53, "type": "SH"}, {"name": "PROCTER & GAMBLE CO", "cusip": "742718109", "value": 440000000, "shares": 2600000, "weight": 2.42, "type": "SH"}, {"name": "COSTCO WHOLESALE", "cusip": "22160K105", "value": 410000000, "shares": 430000, "weight": 2.25, "type": "SH"}, {"name": "JOHNSON & JOHNSON", "cusip": "478160104", "value": 390000000, "shares": 2500000, "weight": 2.14, "type": "SH"}], "error": null}, {"cik": "1009207", "name": "D.E. Shaw & Co.", "manager": "David Shaw", "group": "C", "tag": "2025 +28%", "emoji": "🤖", "strategy": "Quant Multi-Strategy", "return_2025": 28.2, "period": "2025-09-30", "total_value": 85000000000, "num_holdings": 3500, "top_holdings": [{"name": "NVIDIA CORP", "cusip": "67066G104", "value": 2550000000, "shares": 18000000, "weight": 3.0, "type": "SH"}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 2200000000, "shares": 3830000, "weight": 2.59, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 2040000000, "shares": 10200000, "weight": 2.4, "type": "SH"}, {"name": "APPLE INC", "cusip": "037833100", "value": 1870000000, "shares": 8020000, "weight": 2.2, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 1700000000, "shares": 4050000, "weight": 2.0, "type": "SH"}, {"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 1530000000, "shares": 9100000, "weight": 1.8, "type": "SH"}, {"name": "TESLA INC", "cusip": "88160R101", "value": 1280000000, "shares": 5130000, "weight": 1.51, "type": "SH"}, {"name": "BROADCOM INC", "cusip": "11135F101", "value": 1190000000, "shares": 5620000, "weight": 1.4, "type": "SH"}, {"name": "JPMORGAN CHASE & CO", "cusip": "46625H100", "value": 1100000000, "shares": 4200000, "weight": 1.29, "type": "SH"}, {"name": "UNITEDHEALTH GROUP", "cusip": "91324P102", "value": 1020000000, "shares": 1800000, "weight": 1.2, "type": "SH"}], "error": null}, {"cik": "1037389", "name": "Renaissance Technologies", "manager": "Jim Simons (founded)", "group": "C", "tag": "Quant King", "emoji": "🧮", "strategy": "Quantitative", "return_2025": null, "period": "2025-09-30", "total_value": 72000000000, "num_holdings": 4200, "top_holdings": [{"name": "NVIDIA CORP", "cusip": "67066G104", "value": 2160000000, "shares": 15270000, "weight": 3.0, "type": "SH"}, {"name": "NOVO NORDISK A/S", "cusip": "670100205", "value": 1800000000, "shares": 16000000, "weight": 2.5, "type": "SH"}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 1580000000, "shares": 2750000, "weight": 2.19, "type": "SH"}, {"name": "APPLE INC", "cusip": "037833100", "value": 1440000000, "shares": 6180000, "weight": 2.0, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 1300000000, "shares": 6500000, "weight": 1.81, "type": "SH"}, {"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 1220000000, "shares": 7260000, "weight": 1.69, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 1150000000, "shares": 2740000, "weight": 1.6, "type": "SH"}, {"name": "BROADCOM INC", "cusip": "11135F101", "value": 1010000000, "shares": 4770000, "weight": 1.4, "type": "SH"}, {"name": "TESLA INC", "cusip": "88160R101", "value": 940000000, "shares": 3770000, "weight": 1.31, "type": "SH"}, {"name": "ELI LILLY & CO", "cusip": "532457108", "value": 870000000, "shares": 1050000, "weight": 1.21, "type": "SH"}], "error": null}, {"cik": "1423053", "name": "Citadel Advisors", "manager": "Ken Griffin", "group": "C", "tag": "2025 +10.2%", "emoji": "🏰", "strategy": "Multi-Strategy", "return_2025": 10.2, "period": "2025-09-30", "total_value": 120000000000, "num_holdings": 5800, "top_holdings": [{"name": "NVIDIA CORP", "cusip": "67066G104", "value": 3600000000, "shares": 25450000, "weight": 3.0, "type": "SH"}, {"name": "APPLE INC", "cusip": "037833100", "value": 2880000000, "shares": 12360000, "weight": 2.4, "type": "SH"}, {"name": "AMAZON.COM INC", "cusip": "023135106", "value": 2640000000, "shares": 13200000, "weight": 2.2, "type": "SH"}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "value": 2400000000, "shares": 4180000, "weight": 2.0, "type": "SH"}, {"name": "MICROSOFT CORP", "cusip": "594918104", "value": 2280000000, "shares": 5430000, "weight": 1.9, "type": "SH"}, {"name": "ALPHABET INC CL A", "cusip": "02079K305", "value": 2040000000, "shares": 12140000, "weight": 1.7, "type": "SH"}, {"name": "TESLA INC", "cusip": "88160R101", "value": 1800000000, "shares": 7220000, "weight": 1.5, "type": "SH"}, {"name": "BROADCOM INC", "cusip": "11135F101", "value": 1560000000, "shares": 7370000, "weight": 1.3, "type": "SH"}, {"name": "JPMORGAN CHASE & CO", "cusip": "46625H100", "value": 1440000000, "shares": 5490000, "weight": 1.2, "type": "SH"}, {"name": "VISA INC", "cusip": "92826C839", "value": 1320000000, "shares": 4400000, "weight": 1.1, "type": "SH"}], "error": null}], "cross_fund_overlap": [{"name": "NVIDIA CORP", "cusip": "67066G104", "fund_count": 9, "funds": ["D.E. Shaw", "Citadel", "Renaissance", "Bridgewater", "Soroban", "Appaloosa", "Druckenmiller", "Soros", "ARK"]}, {"name": "META PLATFORMS INC", "cusip": "30303M102", "fund_count": 8, "funds": ["Citadel", "D.E. Shaw", "Renaissance", "Soroban", "Appaloosa", "Soros", "Bridgewater", "Druckenmiller"]}, {"name": "AMAZON.COM INC", "cusip": "023135106", "fund_count": 8, "funds": ["Citadel", "D.E. Shaw", "Renaissance", "TCI", "Soroban", "Appaloosa", "Bridgewater", "Soros"]}, {"name": "MICROSOFT CORP", "cusip": "594918104", "fund_count": 8, "funds": ["Citadel", "D.E. Shaw", "Renaissance", "TCI", "Soroban", "Appaloosa", "Bridgewater", "Druckenmiller"]}, {"name": "ALPHABET INC", "cusip": "02079K305", "fund_count": 8, "funds": ["TCI", "Citadel", "D.E. Shaw", "Renaissance", "Pershing Square", "Soroban", "Appaloosa", "Bridgewater"]}, {"name": "APPLE INC", "cusip": "037833100", "fund_count": 5, "funds": ["Berkshire Hathaway", "Citadel", "D.E. Shaw", "Renaissance", "Bridgewater"]}, {"name": "BROADCOM INC", "cusip": "11135F101", "fund_count": 5, "funds": ["TCI", "Citadel", "D.E. Shaw", "Renaissance", "Soros"]}, {"name": "UBER TECHNOLOGIES", "cusip": "90353T100", "fund_count": 3, "funds": ["Soroban", "Appaloosa", "Soros"]}, {"name": "VISA INC", "cusip": "92826C839", "fund_count": 3, "funds": ["TCI", "Soroban", "Citadel"]}, {"name": "TESLA INC", "cusip": "88160R101", "fund_count": 4, "funds": ["ARK", "Citadel", "D.E. Shaw", "Renaissance"]}, {"name": "ALIBABA GROUP HOLDING", "cusip": "01609W102", "fund_count": 2, "funds": ["Appaloosa", "Scion (Burry)"]}, {"name": "MOODY'S CORP", "cusip": "615369105", "fund_count": 2, "funds": ["Berkshire Hathaway", "TCI"]}, {"name": "CANADIAN PACIFIC KANSAS", "cusip": "13646K108", "fund_count": 2, "funds": ["TCI", "Pershing Square"]}]};
+
+// 2025 Performance rankings (from Bloomberg/Reuters reports)
+const PERF_2025 = [
+  { name: "Melqart Opportunities", manager: "Michel Massoud", strategy: "이벤트 드리븐", ret: 45.0, aum: "$1.4B" },
+  { name: "Bridgewater Asia", manager: "Bridgewater", strategy: "글로벌 매크로", ret: 37.0, aum: "$92B" },
+  { name: "Bridgewater Pure Alpha II", manager: "Bridgewater", strategy: "글로벌 매크로", ret: 34.0, aum: "$92B" },
+  { name: "D.E. Shaw Oculus", manager: "David Shaw", strategy: "멀티 전략", ret: 28.2, aum: "$85B" },
+  { name: "Soroban Capital", manager: "Eric Mandelblatt", strategy: "롱/숏 에쿼티", ret: 25.0, aum: "$7.2B" },
+  { name: "Bridgewater All Weather", manager: "Bridgewater", strategy: "리스크 패리티", ret: 20.0, aum: "$92B" },
+  { name: "AQR Apex", manager: "Cliff Asness", strategy: "멀티전략 퀀트", ret: 19.6, aum: "$6.8B" },
+  { name: "AQR Helix", manager: "Cliff Asness", strategy: "트렌드 팔로잉", ret: 18.6, aum: "$6.8B" },
+  { name: "D.E. Shaw Composite", manager: "David Shaw", strategy: "멀티 전략", ret: 18.5, aum: "$85B" },
+  { name: "Dymon Asia", manager: "Danny Yong", strategy: "멀티 전략", ret: 18.1, aum: "$8B" },
+  { name: "ExodusPoint", manager: "Michael Gelband", strategy: "멀티 전략", ret: 18.0, aum: "$12B" },
+  { name: "Balyasny", manager: "Dmitry Balyasny", strategy: "멀티 전략", ret: 16.7, aum: "$31B" },
+  { name: "Walleye Capital", manager: "Will England", strategy: "멀티 전략", ret: 15.5, aum: "$7B" },
+  { name: "Bridgewater AIA Macro (AI)", manager: "Bridgewater", strategy: "AI 매크로", ret: 11.9, aum: "$5B" },
+  { name: "Pinpoint Multi-Strategy", manager: "Pinpoint", strategy: "멀티 전략", ret: 11.6, aum: "$4B" },
+  { name: "Millennium", manager: "Izzy Englander", strategy: "멀티 전략", ret: 10.5, aum: "$83.5B" },
+  { name: "Citadel Wellington", manager: "Ken Griffin", strategy: "멀티 전략", ret: 10.2, aum: "$72B" },
+  { name: "New Holland Tactical", manager: "New Holland", strategy: "전술적 알파", ret: 9.8, aum: "$2.5B" },
+];
+
+// ═══════════════════════════════════════
+// FORMAT HELPERS
+// ═══════════════════════════════════════
+function formatValue(v) {
+  if (v >= 1e12) return '$' + (v / 1e12).toFixed(1) + 'T';
+  if (v >= 1e9) return '$' + (v / 1e9).toFixed(1) + 'B';
+  if (v >= 1e6) return '$' + (v / 1e6).toFixed(1) + 'M';
+  if (v >= 1e3) return '$' + (v / 1e3).toFixed(0) + 'K';
+  return '$' + v;
+}
+function formatShares(s) {
+  if (s >= 1e9) return (s / 1e9).toFixed(2) + 'B';
+  if (s >= 1e6) return (s / 1e6).toFixed(1) + 'M';
+  if (s >= 1e3) return (s / 1e3).toFixed(0) + 'K';
+  return s.toLocaleString();
+}
+
+// ═══════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ═══════════════════════════════════════
+// RENDER 2025 PERFORMANCE TABLE
+// ═══════════════════════════════════════
+function renderPerfTable() {
+  const tbody = document.getElementById('perf-tbody');
+  const maxRet = Math.max(...PERF_2025.map(p => p.ret));
+
+  tbody.innerHTML = PERF_2025.map((p, i) => {
+    const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
+    const barWidth = (p.ret / maxRet * 100).toFixed(0);
+    return `<tr>
+      <td><span class="perf-rank ${rankClass}">${i + 1}</span></td>
+      <td style="font-weight:600;color:var(--text-primary)">${p.name}</td>
+      <td style="color:var(--text-secondary);font-size:12px">${p.manager}</td>
+      <td><span class="fund-tag group-c" style="font-size:10px">${p.strategy}</span></td>
+      <td style="text-align:right"><span class="perf-return positive">+${p.ret}%</span></td>
+      <td><div class="perf-bar"><div class="perf-bar-fill" style="width:${barWidth}%"></div></div></td>
+      <td style="text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-secondary)">${p.aum}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════
+// RENDER FUND CARDS
+// ═══════════════════════════════════════
+function renderFundCards() {
+  const groups = { A: [], B: [], C: [] };
+
+  DATA.funds.forEach(fund => {
+    groups[fund.group] = groups[fund.group] || [];
+    groups[fund.group].push(fund);
+  });
+
+  ['A', 'B', 'C'].forEach(g => {
+    const container = document.getElementById('funds-group-' + g.toLowerCase());
+    if (!container) return;
+
+    container.innerHTML = groups[g].map(fund => {
+      const retHtml = fund.return_2025
+        ? `<div class="fund-return positive">+${fund.return_2025}%</div>`
+        : `<div class="fund-return neutral">—</div>`;
+
+      return `<div class="fund-card" data-cik="${fund.cik}">
+        <div class="fund-info">
+          <div class="fund-name">${fund.name}</div>
+          <div class="fund-manager">
+            ${fund.manager}
+            <span class="fund-tag group-${fund.group.toLowerCase()}">${fund.tag}</span>
+          </div>
+        </div>
+        <div class="fund-meta">
+          <div class="fund-aum">${formatValue(fund.total_value)}</div>
+          ${retHtml}
+          <div class="fund-holdings-count">${fund.num_holdings}종목</div>
+        </div>
+      </div>`;
+    }).join('');
+
+    // Click handlers
+    container.querySelectorAll('.fund-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const cik = card.dataset.cik;
+        const fund = DATA.funds.find(f => f.cik === cik);
+        if (fund) openModal(fund);
+      });
+    });
+  });
+}
+
+// ═══════════════════════════════════════
+// MODAL
+// ═══════════════════════════════════════
+function openModal(fund) {
+  const overlay = document.getElementById('modal-overlay');
+  document.getElementById('modal-title').textContent = `${fund.name}`;
+  document.getElementById('modal-sub').textContent = `${fund.manager} · ${fund.strategy} · 기준: ${fund.period}`;
+
+  // Stats
+  document.getElementById('modal-stats').innerHTML = `
+    <div class="modal-stat">
+      <div class="modal-stat-value">${formatValue(fund.total_value)}</div>
+      <div class="modal-stat-label">운용자산 (AUM)</div>
+    </div>
+    <div class="modal-stat">
+      <div class="modal-stat-value">${fund.num_holdings}</div>
+      <div class="modal-stat-label">보유 종목 수</div>
+    </div>
+    <div class="modal-stat">
+      <div class="modal-stat-value">${fund.return_2025 ? '+' + fund.return_2025 + '%' : '—'}</div>
+      <div class="modal-stat-label">2025 수익률</div>
+    </div>
+    <div class="modal-stat">
+      <div class="modal-stat-value">${fund.top_holdings.length > 0 ? fund.top_holdings[0].weight + '%' : '—'}</div>
+      <div class="modal-stat-label">#1 비중</div>
+    </div>
+  `;
+
+  // Holdings
+  const maxWeight = Math.max(...fund.top_holdings.map(h => h.weight));
+  document.getElementById('modal-holdings').innerHTML = fund.top_holdings.map((h, i) => {
+    const barPct = (h.weight / maxWeight * 100).toFixed(0);
+    return `<tr>
+      <td class="rank">${i + 1}</td>
+      <td class="stock-name">${h.name}</td>
+      <td class="mono" style="color:var(--text-muted)">${h.cusip}</td>
+      <td class="mono" style="text-align:right">${formatValue(h.value)}</td>
+      <td class="mono" style="text-align:right">${formatShares(h.shares)}</td>
+      <td class="weight-bar-cell">
+        <div class="weight-bar">
+          <div class="weight-bar-track"><div class="weight-bar-fill" style="width:${barPct}%"></div></div>
+          <span class="weight-bar-value">${h.weight}%</span>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('modal-overlay').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) closeModal();
+});
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// ═══════════════════════════════════════
+// RENDER OVERLAP
+// ═══════════════════════════════════════
+function renderOverlap() {
+  const container = document.getElementById('overlap-list');
+  container.innerHTML = DATA.cross_fund_overlap.map(item => {
+    return `<div class="overlap-card">
+      <div class="overlap-top">
+        <span class="overlap-stock-name">${item.name}</span>
+        <span class="overlap-count">${item.fund_count}개 펀드 보유</span>
+      </div>
+      <div class="overlap-funds">
+        ${item.funds.map(f => `<span class="overlap-fund-pill">${f}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+renderPerfTable();
+renderFundCards();
+renderOverlap();
+</script>
+</body>
+</html>
