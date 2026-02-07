@@ -8,6 +8,8 @@ Output: data/holdings.json
 
 import json
 import time
+import gzip
+import io
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -153,7 +155,11 @@ def fetch_url(url: str, max_retries: int = 3) -> bytes:
         try:
             req = Request(url, headers=HEADERS)
             with urlopen(req, timeout=30) as resp:
-                return resp.read()
+                data = resp.read()
+                # Decompress gzip if needed (0x1f 0x8b is gzip magic bytes)
+                if data[:2] == b'\x1f\x8b':
+                    data = gzip.decompress(data)
+                return data
         except HTTPError as e:
             if e.code == 429:
                 wait = 12 * (attempt + 1)
