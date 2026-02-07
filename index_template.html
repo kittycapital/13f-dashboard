@@ -971,13 +971,15 @@ function closeModal() {
 function renderOverlap() {
   const container = document.getElementById('overlap-list');
   container.innerHTML = DATA.cross_fund_overlap.map(item => {
+    const fundNames = item.fund_names || item.funds.map(f => typeof f === 'string' ? f : f.fund);
+    const fundCount = item.fund_count || fundNames.length;
     return `<div class="overlap-card">
       <div class="overlap-top">
         <span class="overlap-stock-name">${item.name}</span>
-        <span class="overlap-count">${item.fund_count}개 펀드 보유</span>
+        <span class="overlap-count">${fundCount}개 펀드 보유</span>
       </div>
       <div class="overlap-funds">
-        ${item.funds.map(f => `<span class="overlap-fund-pill">${f}</span>`).join('')}
+        ${fundNames.map(f => `<span class="overlap-fund-pill">${f}</span>`).join('')}
       </div>
     </div>`;
   }).join('');

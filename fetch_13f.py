@@ -27,7 +27,7 @@ HEADERS = {
 # ──────────────────────────────────────────────
 FUNDS = {
     # Group A: 2025 Winners + Clean 13F
-    "1446194": {
+    "1647251": {
         "name": "TCI Fund Management",
         "manager": "Chris Hohn",
         "group": "A",
@@ -91,7 +91,7 @@ FUNDS = {
         "strategy": "Global Macro",
         "return_2025": None,
     },
-    "3297803": {
+    "1536411": {
         "name": "Duquesne Family Office",
         "manager": "Stanley Druckenmiller",
         "group": "B",
@@ -177,8 +177,10 @@ def fetch_url(url: str, max_retries: int = 3) -> bytes:
     return b""
 
 
-def get_latest_13f_url(cik: str) -> tuple[str, str]:
-    """Get the latest 13F filing URL and period for a given CIK."""
+def get_latest_13f_url(cik: str) -> tuple[str, str, str]:
+    """Get the latest 13F filing accession number and period for a given CIK.
+    Returns (accession_no_raw, period, accession_no_formatted)
+    """
     cik_padded = cik.zfill(10)
     submissions_url = f"https://data.sec.gov/submissions/CIK{cik_padded}.json"
 
@@ -189,60 +191,90 @@ def get_latest_13f_url(cik: str) -> tuple[str, str]:
     forms = recent.get("form", [])
     accessions = recent.get("accessionNumber", [])
     dates = recent.get("filingDate", [])
-    primary_docs = recent.get("primaryDocument", [])
     report_dates = recent.get("reportDate", [])
 
     for i, form in enumerate(forms):
         if form in ("13F-HR", "13F-HR/A"):
-            accession = accessions[i].replace("-", "")
+            accession_formatted = accessions[i]  # e.g. "0000950123-25-008343"
+            accession_raw = accession_formatted.replace("-", "")
             period = report_dates[i] if i < len(report_dates) else dates[i]
-            # Build the filing index URL to find the XML table
-            index_url = (
-                f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession}/"
-            )
-            return index_url, period
+            return accession_raw, period, accession_formatted
 
-    return "", ""
+    return "", "", ""
 
 
-def find_info_table_url(index_url: str, cik: str) -> str:
-    """Find the informationTable XML file URL from the filing index."""
-    # Try common naming patterns
-    accession_part = index_url.rstrip("/").split("/")[-1]
-    accession_formatted = (
-        f"{accession_part[:10]}-{accession_part[10:12]}-{accession_part[12:]}"
-    )
+def find_info_table_url(cik: str, accession_raw: str, accession_formatted: str) -> str:
+    """Find the informationTable XML file URL by parsing the filing index."""
 
-    # Fetch the index page to find the XML file
-    index_json_url = index_url.replace(
-        "www.sec.gov/Archives",
-        "www.sec.gov/Archives"
-    )
-
-    # Try the filing index JSON
-    filing_index_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_part}/{accession_formatted}-index.json"
+    # Method 1: Use the index.json to find the XML file
+    index_json_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_raw}/{accession_formatted}-index.json"
+    print(f"  Trying index JSON: {index_json_url}")
 
     try:
-        data = json.loads(fetch_url(filing_index_url))
+        data = json.loads(fetch_url(index_json_url))
+        base_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_raw}/"
         for item in data.get("directory", {}).get("item", []):
-            name = item.get("name", "").lower()
-            if "infotable" in name and name.endswith(".xml"):
-                return f"{index_url}{item['name']}"
-    except Exception:
-        pass
+            name = item.get("name", "")
+            name_lower = name.lower()
+            # Look for XML files that contain holdings data
+            if name_lower.endswith(".xml") and "infotable" in name_lower:
+                url = base_url + name
+                print(f"  Found via JSON index: {name}")
+                return url
+        # If no infotable found, look for any XML that's not the primary doc
+        for item in data.get("directory", {}).get("item", []):
+            name = item.get("name", "")
+            name_lower = name.lower()
+            if name_lower.endswith(".xml") and "primary" not in name_lower:
+                url = base_url + name
+                print(f"  Found XML candidate: {name}")
+                return url
+    except Exception as e:
+        print(f"  JSON index failed: {e}")
 
-    # Fallback: try common filenames
+    # Method 2: Fetch the HTML index page and parse it
+    index_html_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_raw}/{accession_formatted}-index.htm"
+    print(f"  Trying HTML index: {index_html_url}")
+
+    try:
+        html = fetch_url(index_html_url).decode("utf-8", errors="ignore")
+        base_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_raw}/"
+
+        # Find XML files linked in the page
+        import re
+        links = re.findall(r'href="([^"]*\.xml)"', html, re.IGNORECASE)
+        for link in links:
+            if "infotable" in link.lower() or "information" in link.lower():
+                if link.startswith("http"):
+                    return link
+                return base_url + link.split("/")[-1]
+
+        # Also check for table descriptions mentioning "INFORMATION TABLE"
+        if "INFORMATION TABLE" in html.upper():
+            for link in links:
+                name_lower = link.lower()
+                if name_lower.endswith(".xml") and "primary" not in name_lower:
+                    if link.startswith("http"):
+                        return link
+                    return base_url + link.split("/")[-1]
+    except Exception as e:
+        print(f"  HTML index failed: {e}")
+
+    # Method 3: Try common filenames directly
+    base_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_raw}/"
     common_names = [
         "form13fInfoTable.xml",
         "infotable.xml",
         "InfoTable.xml",
         "INFOTABLE.XML",
         "information_table.xml",
+        "xslForm13F_X02.xml",
     ]
     for name in common_names:
         try:
-            test_url = f"{index_url}{name}"
+            test_url = base_url + name
             fetch_url(test_url)
+            print(f"  Found via filename probe: {name}")
             return test_url
         except Exception:
             continue
@@ -265,11 +297,20 @@ def parse_13f_xml(xml_data: bytes) -> list[dict]:
         root = ET.fromstring(text)
 
     # Find all infoTable entries (handle namespace variations)
+    # Auto-detect namespace from root tag
     ns_patterns = [
         "{http://www.sec.gov/edgar/document/thirteenf/informationtable}",
         "{http://www.sec.gov/edgar/thirteenf}",
+        "{http://www.sec.gov/edgar/common/informationtable}",
         "",
     ]
+    
+    # Try to extract namespace from root element
+    root_tag = root.tag
+    if "{" in root_tag:
+        auto_ns = root_tag[:root_tag.index("}") + 1]
+        if auto_ns not in ns_patterns:
+            ns_patterns.insert(0, auto_ns)
 
     info_tables = []
     for ns in ns_patterns:
@@ -340,19 +381,19 @@ def process_fund(cik: str, fund_info: dict) -> dict:
 
     try:
         # Step 1: Get latest 13F filing URL
-        index_url, period = get_latest_13f_url(cik)
-        if not index_url:
+        accession_raw, period, accession_formatted = get_latest_13f_url(cik)
+        if not accession_raw:
             result["error"] = "No 13F filing found"
             return result
 
         result["period"] = period
         print(f"  Period: {period}")
-        print(f"  Index: {index_url}")
+        print(f"  Accession: {accession_formatted}")
 
         time.sleep(0.15)  # SEC rate limit: 10 req/sec
 
         # Step 2: Find the information table XML
-        xml_url = find_info_table_url(index_url, cik)
+        xml_url = find_info_table_url(cik, accession_raw, accession_formatted)
         if not xml_url:
             result["error"] = "Could not find information table XML"
             return result
@@ -427,12 +468,14 @@ def find_cross_fund_overlap(all_funds: list[dict]) -> list[dict]:
             })
             stock_funds[cusip]["total_value"] += h["value"]
 
-    # Filter to stocks held by 3+ funds, sort by fund count
-    overlaps = [
-        v for v in stock_funds.values()
-        if len(v["funds"]) >= 2
-    ]
-    overlaps.sort(key=lambda x: (-len(x["funds"]), -x["total_value"]))
+    # Filter to stocks held by 2+ funds, sort by fund count
+    overlaps = []
+    for v in stock_funds.values():
+        if len(v["funds"]) >= 2:
+            v["fund_count"] = len(v["funds"])
+            v["fund_names"] = [f["fund"] for f in v["funds"]]
+            overlaps.append(v)
+    overlaps.sort(key=lambda x: (-x["fund_count"], -x["total_value"]))
 
     return overlaps[:30]
 
