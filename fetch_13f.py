@@ -29,7 +29,7 @@ FUNDS = {
     # Group A: 2025 Winners + Clean 13F
     "1647251": {
         "name": "TCI Fund Management",
-        "manager": "Chris Hohn",
+        "manager": "크리스 혼 (Chris Hohn)",
         "group": "A",
         "tag": "2025 #1 Dollar Gains",
         "emoji": "🏆",
@@ -38,7 +38,7 @@ FUNDS = {
     },
     "1535392": {
         "name": "Soroban Capital Partners",
-        "manager": "Eric Mandelblatt",
+        "manager": "에릭 만델블랫 (Eric Mandelblatt)",
         "group": "A",
         "tag": "2025 +25%",
         "emoji": "📈",
@@ -47,7 +47,7 @@ FUNDS = {
     },
     "1336528": {
         "name": "Pershing Square Capital",
-        "manager": "Bill Ackman",
+        "manager": "빌 애크먼 (Bill Ackman)",
         "group": "A",
         "tag": "Concentrated",
         "emoji": "🎯",
@@ -56,7 +56,7 @@ FUNDS = {
     },
     "1656456": {
         "name": "Appaloosa Management",
-        "manager": "David Tepper",
+        "manager": "데이비드 테퍼 (David Tepper)",
         "group": "A",
         "tag": "Contrarian",
         "emoji": "🔄",
@@ -66,7 +66,7 @@ FUNDS = {
     # Group B: Legendary Names
     "1067983": {
         "name": "Berkshire Hathaway",
-        "manager": "Warren Buffett",
+        "manager": "워런 버핏 (Warren Buffett)",
         "group": "B",
         "tag": "Legend",
         "emoji": "👑",
@@ -75,7 +75,7 @@ FUNDS = {
     },
     "1649339": {
         "name": "Scion Asset Management",
-        "manager": "Michael Burry",
+        "manager": "마이클 버리 (Michael Burry)",
         "group": "B",
         "tag": "Big Short",
         "emoji": "🎬",
@@ -84,7 +84,7 @@ FUNDS = {
     },
     "1029160": {
         "name": "Soros Fund Management",
-        "manager": "George Soros",
+        "manager": "조지 소로스 (George Soros)",
         "group": "B",
         "tag": "Macro Legend",
         "emoji": "🌍",
@@ -93,7 +93,7 @@ FUNDS = {
     },
     "1536411": {
         "name": "Duquesne Family Office",
-        "manager": "Stanley Druckenmiller",
+        "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
         "group": "B",
         "tag": "GOAT Trader",
         "emoji": "🐐",
@@ -102,7 +102,7 @@ FUNDS = {
     },
     "1603466": {
         "name": "ARK Investment Management",
-        "manager": "Cathie Wood",
+        "manager": "캐시 우드 (Cathie Wood)",
         "group": "B",
         "tag": "Innovation",
         "emoji": "🚀",
@@ -112,7 +112,7 @@ FUNDS = {
     # Group C: 2025 Top Performers (Top holdings only)
     "1350694": {
         "name": "Bridgewater Associates",
-        "manager": "Ray Dalio (founded)",
+        "manager": "레이 달리오 (Ray Dalio, 설립)",
         "group": "C",
         "tag": "2025 +34%",
         "emoji": "🌊",
@@ -121,7 +121,7 @@ FUNDS = {
     },
     "1009207": {
         "name": "D.E. Shaw & Co.",
-        "manager": "David Shaw",
+        "manager": "데이비드 쇼 (David Shaw)",
         "group": "C",
         "tag": "2025 +28%",
         "emoji": "🤖",
@@ -130,7 +130,7 @@ FUNDS = {
     },
     "1037389": {
         "name": "Renaissance Technologies",
-        "manager": "Jim Simons (founded)",
+        "manager": "짐 사이먼스 (Jim Simons, 설립)",
         "group": "C",
         "tag": "Quant King",
         "emoji": "🧮",
@@ -139,7 +139,7 @@ FUNDS = {
     },
     "1423053": {
         "name": "Citadel Advisors",
-        "manager": "Ken Griffin",
+        "manager": "켄 그리핀 (Ken Griffin)",
         "group": "C",
         "tag": "2025 +10.2%",
         "emoji": "🏰",
