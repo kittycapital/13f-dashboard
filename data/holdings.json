@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T22:32:58.214245+00:00",
+  "generated_at": "2026-08-13T22:33:25.657445+00:00",
   "num_funds": 13,
   "funds": [
     {
@@ -218,7 +218,7 @@
           "weight": 1.56
         }
       ],
-      "fetched_at": "2026-08-12T22:32:39.099012+00:00",
+      "fetched_at": "2026-08-13T22:33:08.031085+00:00",
       "error": null
     },
     {
@@ -937,7 +937,7 @@
           "weight": 0.36
         }
       ],
-      "fetched_at": "2026-08-12T22:32:40.455217+00:00",
+      "fetched_at": "2026-08-13T22:33:09.405820+00:00",
       "error": null
     },
     {
@@ -1176,7 +1176,7 @@
           "weight": 0.07
         }
       ],
-      "fetched_at": "2026-08-12T22:32:42.164576+00:00",
+      "fetched_at": "2026-08-13T22:33:10.788710+00:00",
       "error": null
     },
     {
@@ -1705,7 +1705,7 @@
           "weight": 0.13
         }
       ],
-      "fetched_at": "2026-08-12T22:32:43.364666+00:00",
+      "fetched_at": "2026-08-13T22:33:11.961849+00:00",
       "error": null
     },
     {
@@ -2424,7 +2424,7 @@
           "weight": 0.15
         }
       ],
-      "fetched_at": "2026-08-12T22:32:44.801768+00:00",
+      "fetched_at": "2026-08-13T22:33:13.334338+00:00",
       "error": null
     },
     {
@@ -2603,7 +2603,7 @@
           "weight": 0.95
         }
       ],
-      "fetched_at": "2026-08-12T22:32:46.096100+00:00",
+      "fetched_at": "2026-08-13T22:33:14.511778+00:00",
       "error": null
     },
     {
@@ -3322,7 +3322,7 @@
           "weight": 0.53
         }
       ],
-      "fetched_at": "2026-08-12T22:32:47.459396+00:00",
+      "fetched_at": "2026-08-13T22:33:15.745641+00:00",
       "error": null
     },
     {
@@ -4041,7 +4041,7 @@
           "weight": 0.41
         }
       ],
-      "fetched_at": "2026-08-12T22:32:48.856081+00:00",
+      "fetched_at": "2026-08-13T22:33:17.335670+00:00",
       "error": null
     },
     {
@@ -4760,7 +4760,7 @@
           "weight": 0.27
         }
       ],
-      "fetched_at": "2026-08-12T22:32:50.227514+00:00",
+      "fetched_at": "2026-08-13T22:33:18.616793+00:00",
       "error": null
     },
     {
@@ -5379,7 +5379,7 @@
           "weight": 0.37
         }
       ],
-      "fetched_at": "2026-08-12T22:32:51.868840+00:00",
+      "fetched_at": "2026-08-13T22:33:19.955150+00:00",
       "error": null
     },
     {
@@ -5998,7 +5998,7 @@
           "weight": 0.3
         }
       ],
-      "fetched_at": "2026-08-12T22:32:53.172021+00:00",
+      "fetched_at": "2026-08-13T22:33:21.165256+00:00",
       "error": null
     },
     {
@@ -6010,614 +6010,614 @@
       "emoji": "🧮",
       "strategy": "Quantitative",
       "return_2025": null,
-      "period": "2026-03-31",
-      "total_value": 63929893013000,
-      "num_holdings": 3213,
+      "period": "2026-06-30",
+      "total_value": 72617871974000,
+      "num_holdings": 3140,
       "top_holdings": [
         {
-          "name": "UNITED THERAPEUTICS CORP DEL",
-          "title": "COM",
-          "cusip": "91307C102",
-          "value": 1059666527000,
-          "shares": 1787019,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.66
-        },
-        {
-          "name": "PALANTIR TECHNOLOGIES INC",
-          "title": "CL A",
-          "cusip": "69608A108",
-          "value": 1021901255000,
-          "shares": 6985926,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.6
-        },
-        {
-          "name": "APPLE INC",
-          "title": "COM",
-          "cusip": "037833100",
-          "value": 780569445000,
-          "shares": 3075638,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.22
-        },
-        {
-          "name": "KINROSS GOLD CORP",
-          "title": "COM",
-          "cusip": "496902404",
-          "value": 779676525000,
-          "shares": 25546413,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.22
-        },
-        {
-          "name": "MICRON TECHNOLOGY INC",
-          "title": "COM",
-          "cusip": "595112103",
-          "value": 730739401000,
-          "shares": 2162986,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.14
-        },
-        {
-          "name": "VERISIGN INC",
-          "title": "COM",
-          "cusip": "92343E102",
-          "value": 699915982000,
-          "shares": 2818151,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.09
-        },
-        {
-          "name": "EXELIXIS INC",
-          "title": "COM",
-          "cusip": "30161Q104",
-          "value": 588750730000,
-          "shares": 13726993,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.92
-        },
-        {
-          "name": "FRANCO NEV CORP",
-          "title": "COM",
-          "cusip": "351858105",
-          "value": 548183692000,
-          "shares": 2218918,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.86
-        },
-        {
-          "name": "SANDISK CORP",
-          "title": "COM",
-          "cusip": "80004C200",
-          "value": 507997533000,
-          "shares": 799568,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.79
-        },
-        {
           "name": "NVIDIA CORPORATION",
           "title": "COM",
           "cusip": "67066G104",
-          "value": 440696066000,
-          "shares": 2526948,
+          "value": 1418869170000,
+          "shares": 7091256,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.69
-        }
-      ],
-      "all_holdings": [
-        {
-          "name": "UNITED THERAPEUTICS CORP DEL",
-          "title": "COM",
-          "cusip": "91307C102",
-          "value": 1059666527000,
-          "shares": 1787019,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.66
+          "weight": 1.95
         },
         {
-          "name": "PALANTIR TECHNOLOGIES INC",
+          "name": "META PLATFORMS INC",
           "title": "CL A",
-          "cusip": "69608A108",
-          "value": 1021901255000,
-          "shares": 6985926,
+          "cusip": "30303M102",
+          "value": 1139611745000,
+          "shares": 2023153,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 1.6
-        },
-        {
-          "name": "APPLE INC",
-          "title": "COM",
-          "cusip": "037833100",
-          "value": 780569445000,
-          "shares": 3075638,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.22
-        },
-        {
-          "name": "KINROSS GOLD CORP",
-          "title": "COM",
-          "cusip": "496902404",
-          "value": 779676525000,
-          "shares": 25546413,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.22
-        },
-        {
-          "name": "MICRON TECHNOLOGY INC",
-          "title": "COM",
-          "cusip": "595112103",
-          "value": 730739401000,
-          "shares": 2162986,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.14
-        },
-        {
-          "name": "VERISIGN INC",
-          "title": "COM",
-          "cusip": "92343E102",
-          "value": 699915982000,
-          "shares": 2818151,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.09
-        },
-        {
-          "name": "EXELIXIS INC",
-          "title": "COM",
-          "cusip": "30161Q104",
-          "value": 588750730000,
-          "shares": 13726993,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.92
-        },
-        {
-          "name": "FRANCO NEV CORP",
-          "title": "COM",
-          "cusip": "351858105",
-          "value": 548183692000,
-          "shares": 2218918,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.86
-        },
-        {
-          "name": "SANDISK CORP",
-          "title": "COM",
-          "cusip": "80004C200",
-          "value": 507997533000,
-          "shares": 799568,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.79
-        },
-        {
-          "name": "NVIDIA CORPORATION",
-          "title": "COM",
-          "cusip": "67066G104",
-          "value": 440696066000,
-          "shares": 2526948,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.69
-        },
-        {
-          "name": "CHEVRON CORPORATION",
-          "title": "COM",
-          "cusip": "166764100",
-          "value": 416984243000,
-          "shares": 2015396,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.65
-        },
-        {
-          "name": "ROBLOX CORP",
-          "title": "CL A",
-          "cusip": "771049103",
-          "value": 403054183000,
-          "shares": 7126134,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.63
-        },
-        {
-          "name": "CARVANA CO",
-          "title": "CL A",
-          "cusip": "146869102",
-          "value": 377638915000,
-          "shares": 1201218,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.59
-        },
-        {
-          "name": "WAYFAIR INC",
-          "title": "CL A",
-          "cusip": "94419L101",
-          "value": 373976084000,
-          "shares": 4972425,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.58
-        },
-        {
-          "name": "ROBINHOOD MKTS INC",
-          "title": "COM CL A",
-          "cusip": "770700102",
-          "value": 353716694000,
-          "shares": 5104137,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.55
-        },
-        {
-          "name": "INCYTE CORP",
-          "title": "COM",
-          "cusip": "45337C102",
-          "value": 343682192000,
-          "shares": 3651532,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.54
-        },
-        {
-          "name": "ARGAN INC",
-          "title": "COM",
-          "cusip": "04010E109",
-          "value": 332726140000,
-          "shares": 610899,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.52
+          "weight": 1.57
         },
         {
           "name": "INTEL CORP",
           "title": "COM",
           "cusip": "458140100",
-          "value": 326535257000,
-          "shares": 7399394,
+          "value": 1022356867000,
+          "shares": 7321928,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.51
+          "weight": 1.41
         },
         {
-          "name": "NEUROCRINE BIOSCIENCES INC",
+          "name": "UNITED THERAPEUTICS CORP DEL",
           "title": "COM",
-          "cusip": "64125C109",
-          "value": 318665491000,
-          "shares": 2418897,
+          "cusip": "91307C102",
+          "value": 925846052000,
+          "shares": 1708739,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.5
+          "weight": 1.27
         },
         {
-          "name": "UNITEDHEALTH GROUP INC",
-          "title": "COM",
-          "cusip": "91324P102",
-          "value": 313459071000,
-          "shares": 1158428,
+          "name": "PALANTIR TECHNOLOGIES INC",
+          "title": "CL A",
+          "cusip": "69608A108",
+          "value": 883001728000,
+          "shares": 7568370,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.49
+          "weight": 1.22
+        },
+        {
+          "name": "ALPHABET INC",
+          "title": "CAP STK CL A",
+          "cusip": "02079K305",
+          "value": 828174623000,
+          "shares": 2317438,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.14
+        },
+        {
+          "name": "EXELIXIS INC",
+          "title": "COM",
+          "cusip": "30161Q104",
+          "value": 730617099000,
+          "shares": 13427993,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.01
+        },
+        {
+          "name": "VERISIGN INC",
+          "title": "COM",
+          "cusip": "92343E102",
+          "value": 616264393000,
+          "shares": 2449771,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.85
+        },
+        {
+          "name": "KINROSS GOLD CORP",
+          "title": "COM",
+          "cusip": "496902404",
+          "value": 584529171000,
+          "shares": 24747213,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.8
+        },
+        {
+          "name": "CROWDSTRIKE HLDGS INC",
+          "title": "CL A",
+          "cusip": "22788C105",
+          "value": 571561334000,
+          "shares": 748960,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.79
+        }
+      ],
+      "all_holdings": [
+        {
+          "name": "NVIDIA CORPORATION",
+          "title": "COM",
+          "cusip": "67066G104",
+          "value": 1418869170000,
+          "shares": 7091256,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.95
+        },
+        {
+          "name": "META PLATFORMS INC",
+          "title": "CL A",
+          "cusip": "30303M102",
+          "value": 1139611745000,
+          "shares": 2023153,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.57
+        },
+        {
+          "name": "INTEL CORP",
+          "title": "COM",
+          "cusip": "458140100",
+          "value": 1022356867000,
+          "shares": 7321928,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.41
+        },
+        {
+          "name": "UNITED THERAPEUTICS CORP DEL",
+          "title": "COM",
+          "cusip": "91307C102",
+          "value": 925846052000,
+          "shares": 1708739,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.27
+        },
+        {
+          "name": "PALANTIR TECHNOLOGIES INC",
+          "title": "CL A",
+          "cusip": "69608A108",
+          "value": 883001728000,
+          "shares": 7568370,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.22
+        },
+        {
+          "name": "ALPHABET INC",
+          "title": "CAP STK CL A",
+          "cusip": "02079K305",
+          "value": 828174623000,
+          "shares": 2317438,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.14
+        },
+        {
+          "name": "EXELIXIS INC",
+          "title": "COM",
+          "cusip": "30161Q104",
+          "value": 730617099000,
+          "shares": 13427993,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.01
+        },
+        {
+          "name": "VERISIGN INC",
+          "title": "COM",
+          "cusip": "92343E102",
+          "value": 616264393000,
+          "shares": 2449771,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.85
+        },
+        {
+          "name": "KINROSS GOLD CORP",
+          "title": "COM",
+          "cusip": "496902404",
+          "value": 584529171000,
+          "shares": 24747213,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.8
+        },
+        {
+          "name": "CROWDSTRIKE HLDGS INC",
+          "title": "CL A",
+          "cusip": "22788C105",
+          "value": 571561334000,
+          "shares": 748960,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.79
         },
         {
           "name": "STERLING INFRASTRUCTURE INC",
           "title": "COM",
           "cusip": "859241101",
-          "value": 312341065000,
-          "shares": 766914,
+          "value": 564212756000,
+          "shares": 672194,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.49
+          "weight": 0.78
         },
         {
-          "name": "LINDE PLC",
-          "title": "SHS",
-          "cusip": "G54950103",
-          "value": 312239563000,
-          "shares": 629820,
+          "name": "ALPHABET INC",
+          "title": "CAP STK CL C",
+          "cusip": "02079K107",
+          "value": 556782741000,
+          "shares": 1575815,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.49
+          "weight": 0.77
         },
         {
-          "name": "WESTERN DIGITAL CORP",
+          "name": "AMAZON COM INC",
           "title": "COM",
-          "cusip": "958102105",
-          "value": 310017515000,
-          "shares": 1146133,
+          "cusip": "023135106",
+          "value": 545974975000,
+          "shares": 2290710,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.48
+          "weight": 0.75
         },
         {
-          "name": "CBOE GLOBAL MKTS INC",
+          "name": "ARGAN INC",
           "title": "COM",
-          "cusip": "12503M108",
-          "value": 309319221000,
-          "shares": 1100506,
+          "cusip": "04010E109",
+          "value": 517763050000,
+          "shares": 648379,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.48
+          "weight": 0.71
         },
         {
-          "name": "GILEAD SCIENCES INC",
+          "name": "NETFLIX INC.",
           "title": "COM",
-          "cusip": "375558103",
-          "value": 299997827000,
-          "shares": 2152528,
+          "cusip": "64110L106",
+          "value": 484655614000,
+          "shares": 6787884,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.47
+          "weight": 0.67
         },
         {
-          "name": "ETSY INC",
+          "name": "CHEVRON CORPORATION",
           "title": "COM",
-          "cusip": "29786A106",
-          "value": 297991256000,
-          "shares": 5962210,
+          "cusip": "166764100",
+          "value": 475816787000,
+          "shares": 2870517,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.47
+          "weight": 0.66
         },
         {
-          "name": "ALLISON TRANSMISSION HLDGS I",
+          "name": "TESLA INC",
           "title": "COM",
-          "cusip": "01973R101",
-          "value": 264602073000,
-          "shares": 2260397,
+          "cusip": "88160R101",
+          "value": 467270040000,
+          "shares": 1110960,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.41
+          "weight": 0.64
         },
         {
-          "name": "BROADCOM INC",
+          "name": "ADVANCED MICRO DEVICES INC",
           "title": "COM",
-          "cusip": "11135F101",
-          "value": 245685342000,
-          "shares": 793797,
+          "cusip": "007903107",
+          "value": 463818193000,
+          "shares": 829697,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.38
+          "weight": 0.64
         },
         {
-          "name": "VERTIV HOLDINGS CO",
-          "title": "COM CL A",
-          "cusip": "92537N108",
-          "value": 242558934000,
-          "shares": 967990,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.38
-        },
-        {
-          "name": "MEDPACE HLDGS INC",
+          "name": "APPLE INC",
           "title": "COM",
-          "cusip": "58506Q109",
-          "value": 242336527000,
-          "shares": 504668,
+          "cusip": "037833100",
+          "value": 459058610000,
+          "shares": 1586526,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.38
-        },
-        {
-          "name": "NU HLDGS LTD",
-          "title": "ORD SHS CL A",
-          "cusip": "G6683N103",
-          "value": 233798178000,
-          "shares": 16269800,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.37
-        },
-        {
-          "name": "AIRBNB INC",
-          "title": "COM CL A",
-          "cusip": "009066101",
-          "value": 231198601000,
-          "shares": 1830841,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.36
-        },
-        {
-          "name": "NEW YORK TIMES CO MTN BE",
-          "title": "CL A",
-          "cusip": "650111107",
-          "value": 230774951000,
-          "shares": 2756180,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.36
-        },
-        {
-          "name": "STRATEGY INC",
-          "title": "CL A NEW",
-          "cusip": "594972408",
-          "value": 230765823000,
-          "shares": 2130881,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.36
+          "weight": 0.63
         },
         {
           "name": "CORCEPT THERAPEUTICS INC",
           "title": "COM",
           "cusip": "218352102",
-          "value": 229072983000,
-          "shares": 5682783,
+          "value": 457498555000,
+          "shares": 5261628,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.36
+          "weight": 0.63
         },
         {
-          "name": "ALAMOS GOLD INC",
-          "title": "COM CL A",
-          "cusip": "011532108",
-          "value": 227400338000,
-          "shares": 5118171,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.36
-        },
-        {
-          "name": "ADOBE INC",
+          "name": "ETSY INC",
           "title": "COM",
-          "cusip": "00724F101",
-          "value": 224914836000,
-          "shares": 925270,
+          "cusip": "29786A106",
+          "value": 451259996000,
+          "shares": 5990442,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.35
+          "weight": 0.62
         },
         {
-          "name": "VALE S A",
-          "title": "SPONSORED ADS",
-          "cusip": "91912E105",
-          "value": 223588592000,
-          "shares": 14053337,
+          "name": "SEAGATE TECHNOLOGY HLDNGS PL",
+          "title": "ORD SHS",
+          "cusip": "G7997R103",
+          "value": 441345645000,
+          "shares": 457353,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.35
+          "weight": 0.61
         },
         {
-          "name": "BARRICK MNG CORP",
-          "title": "COM SHS",
-          "cusip": "06849F108",
-          "value": 223385538000,
-          "shares": 5476478,
+          "name": "FRANCO NEV CORP",
+          "title": "COM",
+          "cusip": "351858105",
+          "value": 424575188000,
+          "shares": 2036918,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.35
+          "weight": 0.58
         },
         {
-          "name": "EVERPURE INC",
+          "name": "TEXAS INSTRS INC",
+          "title": "COM",
+          "cusip": "882508104",
+          "value": 417923947000,
+          "shares": 1402100,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.58
+        },
+        {
+          "name": "WAYFAIR INC",
           "title": "CL A",
-          "cusip": "74624M102",
-          "value": 221980599000,
-          "shares": 3759834,
+          "cusip": "94419L101",
+          "value": 417223251000,
+          "shares": 4514426,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.35
+          "weight": 0.57
         },
         {
-          "name": "NOVA LTD",
-          "title": "COM",
-          "cusip": "M7516K103",
-          "value": 221858886000,
-          "shares": 510866,
+          "name": "TAIWAN SEMICONDUCTOR MANUFAC",
+          "title": "SPONSORED ADS",
+          "cusip": "874039100",
+          "value": 405495136000,
+          "shares": 849080,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.35
+          "weight": 0.56
+        },
+        {
+          "name": "INCYTE CORP",
+          "title": "COM",
+          "cusip": "45337C102",
+          "value": 398135284000,
+          "shares": 3512132,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.55
+        },
+        {
+          "name": "NEUROCRINE BIOSCIENCES INC",
+          "title": "COM",
+          "cusip": "64125C109",
+          "value": 393680402000,
+          "shares": 2335897,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.54
+        },
+        {
+          "name": "ROBLOX CORP",
+          "title": "CL A",
+          "cusip": "771049103",
+          "value": 370548714000,
+          "shares": 6814063,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.51
+        },
+        {
+          "name": "WESTERN DIGITAL CORP",
+          "title": "COM",
+          "cusip": "958102105",
+          "value": 343294755000,
+          "shares": 537473,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.47
         },
         {
           "name": "ALKERMES PLC",
           "title": "SHS",
           "cusip": "G01767105",
-          "value": 217832734000,
-          "shares": 6160428,
+          "value": 338520325000,
+          "shares": 6460928,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.34
+          "weight": 0.47
         },
         {
-          "name": "DOORDASH INC",
+          "name": "CARVANA CO",
           "title": "CL A",
-          "cusip": "25809K105",
-          "value": 214167203000,
-          "shares": 1426355,
+          "cusip": "146869102",
+          "value": 337159659000,
+          "shares": 5122450,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.34
+          "weight": 0.46
+        },
+        {
+          "name": "BROADCOM INC",
+          "title": "COM",
+          "cusip": "11135F101",
+          "value": 321024286000,
+          "shares": 849835,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.44
+        },
+        {
+          "name": "EVERPURE INC",
+          "title": "CL A",
+          "cusip": "74624M102",
+          "value": 287988008000,
+          "shares": 3655134,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.4
+        },
+        {
+          "name": "GILEAD SCIENCES INC",
+          "title": "COM",
+          "cusip": "375558103",
+          "value": 280143284000,
+          "shares": 2217376,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.39
+        },
+        {
+          "name": "DELL TECHNOLOGIES INC",
+          "title": "CL C",
+          "cusip": "24703L202",
+          "value": 279015258000,
+          "shares": 646677,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.38
+        },
+        {
+          "name": "MCKESSON CORP",
+          "title": "COM",
+          "cusip": "58155Q103",
+          "value": 272836582000,
+          "shares": 361086,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.38
+        },
+        {
+          "name": "AUTOZONE INC",
+          "title": "COM",
+          "cusip": "053332102",
+          "value": 269289904000,
+          "shares": 84260,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.37
+        },
+        {
+          "name": "TJX COS INC NEW",
+          "title": "COM",
+          "cusip": "872540109",
+          "value": 262004100000,
+          "shares": 1729400,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.36
         },
         {
           "name": "REDDIT INC",
           "title": "CL A",
           "cusip": "75734B100",
-          "value": 210832008000,
-          "shares": 1565778,
+          "value": 251704539000,
+          "shares": 1450078,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.33
+          "weight": 0.35
         },
         {
-          "name": "MERCADOLIBRE",
-          "title": "INC               COM",
-          "cusip": "58733R102",
-          "value": 208035686000,
-          "shares": 120320,
+          "name": "CBOE GLOBAL MKTS INC",
+          "title": "COM",
+          "cusip": "12503M108",
+          "value": 249077944000,
+          "shares": 1026406,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.33
+          "weight": 0.34
         },
         {
-          "name": "VISA INC",
+          "name": "MEDTRONIC PLC",
+          "title": "SHS",
+          "cusip": "G5960L103",
+          "value": 247812378000,
+          "shares": 3167741,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.34
+        },
+        {
+          "name": "MICRON TECHNOLOGY INC",
+          "title": "COM",
+          "cusip": "595112103",
+          "value": 244224678000,
+          "shares": 211580,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.34
+        },
+        {
+          "name": "NOVA LTD",
+          "title": "COM",
+          "cusip": "M7516K103",
+          "value": 243555283000,
+          "shares": 448586,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.34
+        },
+        {
+          "name": "CREDO TECHNOLOGY GROUP HOLDI",
+          "title": "ORDINARY SHARES",
+          "cusip": "G25457105",
+          "value": 229590524000,
+          "shares": 844238,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.32
+        },
+        {
+          "name": "STRATEGY INC",
+          "title": "CL A NEW",
+          "cusip": "594972408",
+          "value": 221992446000,
+          "shares": 2553692,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.31
+        },
+        {
+          "name": "AIRBNB INC",
           "title": "COM CL A",
-          "cusip": "92826C839",
-          "value": 204545022000,
-          "shares": 676767,
+          "cusip": "009066101",
+          "value": 220751927000,
+          "shares": 1542641,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.32
+          "weight": 0.3
         },
         {
-          "name": "JPMORGAN CHASE & CO",
+          "name": "ROBINHOOD MKTS INC",
+          "title": "COM CL A",
+          "cusip": "770700102",
+          "value": 220248975000,
+          "shares": 2196340,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.3
+        },
+        {
+          "name": "MEDPACE HLDGS INC",
           "title": "COM",
-          "cusip": "46625H100",
-          "value": 202481264000,
-          "shares": 688350,
+          "cusip": "58506Q109",
+          "value": 220091249000,
+          "shares": 415588,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.32
+          "weight": 0.3
         },
         {
-          "name": "BOSTON SCIENTIFIC CORP",
+          "name": "ALLISON TRANSMISSION HLDGS I",
           "title": "COM",
-          "cusip": "101137107",
-          "value": 197788314000,
-          "shares": 3152005,
+          "cusip": "01973R101",
+          "value": 218602522000,
+          "shares": 1938997,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.31
-        },
-        {
-          "name": "ZOOM COMMUNICATIONS INC",
-          "title": "CL A",
-          "cusip": "98980L101",
-          "value": 197663254000,
-          "shares": 2458804,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.31
-        },
-        {
-          "name": "PEABODY ENGR CORP",
-          "title": "COM",
-          "cusip": "704551100",
-          "value": 195480060000,
-          "shares": 5932627,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.31
+          "weight": 0.3
         }
       ],
-      "fetched_at": "2026-08-12T22:32:54.736760+00:00",
+      "fetched_at": "2026-08-13T22:33:22.520965+00:00",
       "error": null
     },
     {
@@ -7236,7 +7236,7 @@
           "weight": 0.27
         }
       ],
-      "fetched_at": "2026-08-12T22:32:56.225076+00:00",
+      "fetched_at": "2026-08-13T22:33:23.838112+00:00",
       "error": null
     }
   ],
@@ -7346,9 +7346,9 @@
         {
           "fund": "Renaissance Technologies",
           "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 780569445000,
-          "shares": 3075638,
-          "weight": 1.22
+          "value": 459058610000,
+          "shares": 1586526,
+          "weight": 0.63
         },
         {
           "fund": "Citadel Advisors",
@@ -7365,7 +7365,7 @@
           "weight": 0.75
         }
       ],
-      "total_value": 73187984797000,
+      "total_value": 72866473962000,
       "fund_count": 17,
       "fund_names": [
         "Berkshire Hathaway",
@@ -7457,9 +7457,9 @@
         {
           "fund": "Renaissance Technologies",
           "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 440696066000,
-          "shares": 2526948,
-          "weight": 0.69
+          "value": 1418869170000,
+          "shares": 7091256,
+          "weight": 1.95
         },
         {
           "fund": "Citadel Advisors",
@@ -7483,7 +7483,7 @@
           "weight": 0.27
         }
       ],
-      "total_value": 28995013514000,
+      "total_value": 29973186618000,
       "fund_count": 13,
       "fund_names": [
         "Appaloosa Management",
@@ -7576,6 +7576,13 @@
           "weight": 0.34
         },
         {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 828174623000,
+          "shares": 2317438,
+          "weight": 1.14
+        },
+        {
           "fund": "Citadel Advisors",
           "manager": "켄 그리핀 (Ken Griffin)",
           "value": 5010963048000,
@@ -7590,8 +7597,8 @@
           "weight": 0.7
         }
       ],
-      "total_value": 28792089930000,
-      "fund_count": 12,
+      "total_value": 29620264553000,
+      "fund_count": 13,
       "fund_names": [
         "TCI Fund Management",
         "Pershing Square Capital",
@@ -7603,6 +7610,269 @@
         "D.E. Shaw & Co.",
         "D.E. Shaw & Co.",
         "D.E. Shaw & Co.",
+        "Renaissance Technologies",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
+      "name": "AMAZON COM INC",
+      "cusip": "023135106",
+      "funds": [
+        {
+          "fund": "Pershing Square Capital",
+          "manager": "빌 애크먼 (Bill Ackman)",
+          "value": 2385104083000,
+          "shares": 11451981,
+          "weight": 17.39
+        },
+        {
+          "fund": "Appaloosa Management",
+          "manager": "데이비드 테퍼 (David Tepper)",
+          "value": 899726400000,
+          "shares": 4320000,
+          "weight": 15.16
+        },
+        {
+          "fund": "Soros Fund Management",
+          "manager": "조지 소로스 (George Soros)",
+          "value": 405249475000,
+          "shares": 1945789,
+          "weight": 4.44
+        },
+        {
+          "fund": "Duquesne Family Office",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
+          "value": 41654000,
+          "shares": 200000,
+          "weight": 1.23
+        },
+        {
+          "fund": "ARK Investment Management",
+          "manager": "캐시 우드 (Cathie Wood)",
+          "value": 1032807598000,
+          "shares": 4958984,
+          "weight": 1.32
+        },
+        {
+          "fund": "Bridgewater Associates",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
+          "value": 914036840000,
+          "shares": 4388711,
+          "weight": 4.08
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 684494975000,
+          "shares": 3286575,
+          "weight": 0.41
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 545974975000,
+          "shares": 2290710,
+          "weight": 0.75
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 5271834375000,
+          "shares": 25312500,
+          "weight": 0.85
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 3759231846000,
+          "shares": 18049800,
+          "weight": 0.61
+        }
+      ],
+      "total_value": 15898502221000,
+      "fund_count": 10,
+      "fund_names": [
+        "Pershing Square Capital",
+        "Appaloosa Management",
+        "Soros Fund Management",
+        "Duquesne Family Office",
+        "ARK Investment Management",
+        "Bridgewater Associates",
+        "D.E. Shaw & Co.",
+        "Renaissance Technologies",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
+      "name": "ALPHABET INC",
+      "cusip": "02079K107",
+      "funds": [
+        {
+          "fund": "TCI Fund Management",
+          "manager": "크리스 혼 (Chris Hohn)",
+          "value": 2539863890000,
+          "shares": 8854019,
+          "weight": 5.62
+        },
+        {
+          "fund": "Pershing Square Capital",
+          "manager": "빌 애크먼 (Bill Ackman)",
+          "value": 89421720000,
+          "shares": 311726,
+          "weight": 0.65
+        },
+        {
+          "fund": "Appaloosa Management",
+          "manager": "데이비드 테퍼 (David Tepper)",
+          "value": 497042322000,
+          "shares": 1732700,
+          "weight": 8.38
+        },
+        {
+          "fund": "Berkshire Hathaway",
+          "manager": "워런 버핏 (Warren Buffett)",
+          "value": 1028454775000,
+          "shares": 3585215,
+          "weight": 0.39
+        },
+        {
+          "fund": "Bridgewater Associates",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
+          "value": 111015394000,
+          "shares": 387002,
+          "weight": 0.5
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 886323677000,
+          "shares": 3089743,
+          "weight": 0.53
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 506508702000,
+          "shares": 1765700,
+          "weight": 0.3
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 556782741000,
+          "shares": 1575815,
+          "weight": 0.77
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 2957698716000,
+          "shares": 10310600,
+          "weight": 0.48
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 2004462936000,
+          "shares": 6987600,
+          "weight": 0.32
+        }
+      ],
+      "total_value": 11177574873000,
+      "fund_count": 10,
+      "fund_names": [
+        "TCI Fund Management",
+        "Pershing Square Capital",
+        "Appaloosa Management",
+        "Berkshire Hathaway",
+        "Bridgewater Associates",
+        "D.E. Shaw & Co.",
+        "D.E. Shaw & Co.",
+        "Renaissance Technologies",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
+      "name": "META PLATFORMS INC",
+      "cusip": "30303M102",
+      "funds": [
+        {
+          "fund": "Pershing Square Capital",
+          "manager": "빌 애크먼 (Bill Ackman)",
+          "value": 1522358404000,
+          "shares": 2660861,
+          "weight": 11.1
+        },
+        {
+          "fund": "Appaloosa Management",
+          "manager": "데이비드 테퍼 (David Tepper)",
+          "value": 249734745000,
+          "shares": 436500,
+          "weight": 4.21
+        },
+        {
+          "fund": "ARK Investment Management",
+          "manager": "캐시 우드 (Cathie Wood)",
+          "value": 519639361000,
+          "shares": 908254,
+          "weight": 0.67
+        },
+        {
+          "fund": "Bridgewater Associates",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
+          "value": 166870296000,
+          "shares": 291665,
+          "weight": 0.74
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 646996643000,
+          "shares": 1130856,
+          "weight": 0.39
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 512628480000,
+          "shares": 896000,
+          "weight": 0.31
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 1139611745000,
+          "shares": 2023153,
+          "weight": 1.57
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 7591993461000,
+          "shares": 13269700,
+          "weight": 1.23
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 5043268737000,
+          "shares": 8814900,
+          "weight": 0.82
+        }
+      ],
+      "total_value": 17393101872000,
+      "fund_count": 9,
+      "fund_names": [
+        "Pershing Square Capital",
+        "Appaloosa Management",
+        "ARK Investment Management",
+        "Bridgewater Associates",
+        "D.E. Shaw & Co.",
+        "D.E. Shaw & Co.",
+        "Renaissance Technologies",
         "Citadel Advisors",
         "Citadel Advisors"
       ]
@@ -7690,166 +7960,84 @@
       ]
     },
     {
-      "name": "AMAZON COM INC",
-      "cusip": "023135106",
+      "name": "TAIWAN SEMICONDUCTOR MANUFAC",
+      "cusip": "874039100",
       "funds": [
-        {
-          "fund": "Pershing Square Capital",
-          "manager": "빌 애크먼 (Bill Ackman)",
-          "value": 2385104083000,
-          "shares": 11451981,
-          "weight": 17.39
-        },
         {
           "fund": "Appaloosa Management",
           "manager": "데이비드 테퍼 (David Tepper)",
-          "value": 899726400000,
-          "shares": 4320000,
-          "weight": 15.16
+          "value": 448628625000,
+          "shares": 1327500,
+          "weight": 7.56
         },
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 405249475000,
-          "shares": 1945789,
-          "weight": 4.44
+          "value": 176517368000,
+          "shares": 522318,
+          "weight": 1.94
+        },
+        {
+          "fund": "Soros Fund Management",
+          "manager": "조지 소로스 (George Soros)",
+          "value": 126731250000,
+          "shares": 375000,
+          "weight": 1.39
         },
         {
           "fund": "Duquesne Family Office",
           "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
-          "value": 41654000,
-          "shares": 200000,
-          "weight": 1.23
+          "value": 167380000,
+          "shares": 495280,
+          "weight": 4.96
         },
         {
           "fund": "ARK Investment Management",
           "manager": "캐시 우드 (Cathie Wood)",
-          "value": 1032807598000,
-          "shares": 4958984,
-          "weight": 1.32
+          "value": 627845876000,
+          "shares": 1857807,
+          "weight": 0.8
         },
         {
           "fund": "Bridgewater Associates",
           "manager": "레이 달리오 (Ray Dalio, 설립)",
-          "value": 914036840000,
-          "shares": 4388711,
-          "weight": 4.08
+          "value": 363998848000,
+          "shares": 1077079,
+          "weight": 1.62
         },
         {
           "fund": "D.E. Shaw & Co.",
           "manager": "데이비드 쇼 (David Shaw)",
-          "value": 684494975000,
-          "shares": 3286575,
-          "weight": 0.41
+          "value": 1027322039000,
+          "shares": 3039864,
+          "weight": 0.62
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 405495136000,
+          "shares": 849080,
+          "weight": 0.56
         },
         {
           "fund": "Citadel Advisors",
           "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 5271834375000,
-          "shares": 25312500,
-          "weight": 0.85
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 3759231846000,
-          "shares": 18049800,
-          "weight": 0.61
+          "value": 2945437020000,
+          "shares": 8715600,
+          "weight": 0.48
         }
       ],
-      "total_value": 15352527246000,
+      "total_value": 6122143542000,
       "fund_count": 9,
       "fund_names": [
-        "Pershing Square Capital",
         "Appaloosa Management",
+        "Soros Fund Management",
         "Soros Fund Management",
         "Duquesne Family Office",
         "ARK Investment Management",
         "Bridgewater Associates",
         "D.E. Shaw & Co.",
-        "Citadel Advisors",
-        "Citadel Advisors"
-      ]
-    },
-    {
-      "name": "ALPHABET INC",
-      "cusip": "02079K107",
-      "funds": [
-        {
-          "fund": "TCI Fund Management",
-          "manager": "크리스 혼 (Chris Hohn)",
-          "value": 2539863890000,
-          "shares": 8854019,
-          "weight": 5.62
-        },
-        {
-          "fund": "Pershing Square Capital",
-          "manager": "빌 애크먼 (Bill Ackman)",
-          "value": 89421720000,
-          "shares": 311726,
-          "weight": 0.65
-        },
-        {
-          "fund": "Appaloosa Management",
-          "manager": "데이비드 테퍼 (David Tepper)",
-          "value": 497042322000,
-          "shares": 1732700,
-          "weight": 8.38
-        },
-        {
-          "fund": "Berkshire Hathaway",
-          "manager": "워런 버핏 (Warren Buffett)",
-          "value": 1028454775000,
-          "shares": 3585215,
-          "weight": 0.39
-        },
-        {
-          "fund": "Bridgewater Associates",
-          "manager": "레이 달리오 (Ray Dalio, 설립)",
-          "value": 111015394000,
-          "shares": 387002,
-          "weight": 0.5
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 886323677000,
-          "shares": 3089743,
-          "weight": 0.53
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 506508702000,
-          "shares": 1765700,
-          "weight": 0.3
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 2957698716000,
-          "shares": 10310600,
-          "weight": 0.48
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 2004462936000,
-          "shares": 6987600,
-          "weight": 0.32
-        }
-      ],
-      "total_value": 10620792132000,
-      "fund_count": 9,
-      "fund_names": [
-        "TCI Fund Management",
-        "Pershing Square Capital",
-        "Appaloosa Management",
-        "Berkshire Hathaway",
-        "Bridgewater Associates",
-        "D.E. Shaw & Co.",
-        "D.E. Shaw & Co.",
-        "Citadel Advisors",
+        "Renaissance Technologies",
         "Citadel Advisors"
       ]
     },
@@ -7928,80 +8116,6 @@
       ]
     },
     {
-      "name": "META PLATFORMS INC",
-      "cusip": "30303M102",
-      "funds": [
-        {
-          "fund": "Pershing Square Capital",
-          "manager": "빌 애크먼 (Bill Ackman)",
-          "value": 1522358404000,
-          "shares": 2660861,
-          "weight": 11.1
-        },
-        {
-          "fund": "Appaloosa Management",
-          "manager": "데이비드 테퍼 (David Tepper)",
-          "value": 249734745000,
-          "shares": 436500,
-          "weight": 4.21
-        },
-        {
-          "fund": "ARK Investment Management",
-          "manager": "캐시 우드 (Cathie Wood)",
-          "value": 519639361000,
-          "shares": 908254,
-          "weight": 0.67
-        },
-        {
-          "fund": "Bridgewater Associates",
-          "manager": "레이 달리오 (Ray Dalio, 설립)",
-          "value": 166870296000,
-          "shares": 291665,
-          "weight": 0.74
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 646996643000,
-          "shares": 1130856,
-          "weight": 0.39
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 512628480000,
-          "shares": 896000,
-          "weight": 0.31
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 7591993461000,
-          "shares": 13269700,
-          "weight": 1.23
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 5043268737000,
-          "shares": 8814900,
-          "weight": 0.82
-        }
-      ],
-      "total_value": 16253490127000,
-      "fund_count": 8,
-      "fund_names": [
-        "Pershing Square Capital",
-        "Appaloosa Management",
-        "ARK Investment Management",
-        "Bridgewater Associates",
-        "D.E. Shaw & Co.",
-        "D.E. Shaw & Co.",
-        "Citadel Advisors",
-        "Citadel Advisors"
-      ]
-    },
-    {
       "name": "Broadcom Inc",
       "cusip": "11135F101",
       "funds": [
@@ -8043,9 +8157,9 @@
         {
           "fund": "Renaissance Technologies",
           "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 245685342000,
-          "shares": 793797,
-          "weight": 0.38
+          "value": 321024286000,
+          "shares": 849835,
+          "weight": 0.44
         },
         {
           "fund": "Citadel Advisors",
@@ -8062,7 +8176,7 @@
           "weight": 0.42
         }
       ],
-      "total_value": 8812126997000,
+      "total_value": 8887465941000,
       "fund_count": 8,
       "fund_names": [
         "Duquesne Family Office",
@@ -8076,76 +8190,126 @@
       ]
     },
     {
-      "name": "TAIWAN SEMICONDUCTOR MANUFAC",
-      "cusip": "874039100",
+      "name": "ADVANCED MICRO DEVICES INC",
+      "cusip": "007903107",
       "funds": [
         {
           "fund": "Appaloosa Management",
           "manager": "데이비드 테퍼 (David Tepper)",
-          "value": 448628625000,
-          "shares": 1327500,
-          "weight": 7.56
-        },
-        {
-          "fund": "Soros Fund Management",
-          "manager": "조지 소로스 (George Soros)",
-          "value": 176517368000,
-          "shares": 522318,
-          "weight": 1.94
-        },
-        {
-          "fund": "Soros Fund Management",
-          "manager": "조지 소로스 (George Soros)",
-          "value": 126731250000,
-          "shares": 375000,
-          "weight": 1.39
-        },
-        {
-          "fund": "Duquesne Family Office",
-          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
-          "value": 167380000,
-          "shares": 495280,
-          "weight": 4.96
+          "value": 45039402000,
+          "shares": 221400,
+          "weight": 0.76
         },
         {
           "fund": "ARK Investment Management",
           "manager": "캐시 우드 (Cathie Wood)",
-          "value": 627845876000,
-          "shares": 1857807,
-          "weight": 0.8
+          "value": 287783470000,
+          "shares": 1414656,
+          "weight": 0.37
         },
         {
           "fund": "Bridgewater Associates",
           "manager": "레이 달리오 (Ray Dalio, 설립)",
-          "value": 363998848000,
-          "shares": 1077079,
-          "weight": 1.62
+          "value": 262987591000,
+          "shares": 1292767,
+          "weight": 1.17
         },
         {
           "fund": "D.E. Shaw & Co.",
           "manager": "데이비드 쇼 (David Shaw)",
-          "value": 1027322039000,
-          "shares": 3039864,
-          "weight": 0.62
+          "value": 525539028000,
+          "shares": 2583390,
+          "weight": 0.32
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 463818193000,
+          "shares": 829697,
+          "weight": 0.64
         },
         {
           "fund": "Citadel Advisors",
           "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 2945437020000,
-          "shares": 8715600,
-          "weight": 0.48
+          "value": 2834349504000,
+          "shares": 13932800,
+          "weight": 0.46
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 2579960289000,
+          "shares": 12682300,
+          "weight": 0.42
         }
       ],
-      "total_value": 5716648406000,
-      "fund_count": 8,
+      "total_value": 6999477477000,
+      "fund_count": 7,
       "fund_names": [
         "Appaloosa Management",
-        "Soros Fund Management",
-        "Soros Fund Management",
-        "Duquesne Family Office",
         "ARK Investment Management",
         "Bridgewater Associates",
         "D.E. Shaw & Co.",
+        "Renaissance Technologies",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
+      "name": "TESLA INC",
+      "cusip": "88160R101",
+      "funds": [
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 1185221529000,
+          "shares": 3188222,
+          "weight": 0.71
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 580301750000,
+          "shares": 1561000,
+          "weight": 0.35
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 516658150000,
+          "shares": 1389800,
+          "weight": 0.31
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 467270040000,
+          "shares": 1110960,
+          "weight": 0.64
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 13516867175000,
+          "shares": 36360100,
+          "weight": 2.19
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 9440851475000,
+          "shares": 25395700,
+          "weight": 1.53
+        }
+      ],
+      "total_value": 25707170119000,
+      "fund_count": 6,
+      "fund_names": [
+        "D.E. Shaw & Co.",
+        "D.E. Shaw & Co.",
+        "D.E. Shaw & Co.",
+        "Renaissance Technologies",
+        "Citadel Advisors",
         "Citadel Advisors"
       ]
     },
@@ -8249,12 +8413,12 @@
         {
           "fund": "Renaissance Technologies",
           "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 416984243000,
-          "shares": 2015396,
-          "weight": 0.65
+          "value": 475816787000,
+          "shares": 2870517,
+          "weight": 0.66
         }
       ],
-      "total_value": 18091026115000,
+      "total_value": 18149858659000,
       "fund_count": 6,
       "fund_names": [
         "Berkshire Hathaway",
@@ -8293,9 +8457,9 @@
         {
           "fund": "Renaissance Technologies",
           "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 730739401000,
-          "shares": 2162986,
-          "weight": 1.14
+          "value": 244224678000,
+          "shares": 211580,
+          "weight": 0.34
         },
         {
           "fund": "Citadel Advisors",
@@ -8312,71 +8476,13 @@
           "weight": 0.56
         }
       ],
-      "total_value": 11844005795000,
+      "total_value": 11357491072000,
       "fund_count": 6,
       "fund_names": [
         "Appaloosa Management",
         "Bridgewater Associates",
         "D.E. Shaw & Co.",
         "Renaissance Technologies",
-        "Citadel Advisors",
-        "Citadel Advisors"
-      ]
-    },
-    {
-      "name": "ADVANCED MICRO DEVICES INC",
-      "cusip": "007903107",
-      "funds": [
-        {
-          "fund": "Appaloosa Management",
-          "manager": "데이비드 테퍼 (David Tepper)",
-          "value": 45039402000,
-          "shares": 221400,
-          "weight": 0.76
-        },
-        {
-          "fund": "ARK Investment Management",
-          "manager": "캐시 우드 (Cathie Wood)",
-          "value": 287783470000,
-          "shares": 1414656,
-          "weight": 0.37
-        },
-        {
-          "fund": "Bridgewater Associates",
-          "manager": "레이 달리오 (Ray Dalio, 설립)",
-          "value": 262987591000,
-          "shares": 1292767,
-          "weight": 1.17
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 525539028000,
-          "shares": 2583390,
-          "weight": 0.32
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 2834349504000,
-          "shares": 13932800,
-          "weight": 0.46
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 2579960289000,
-          "shares": 12682300,
-          "weight": 0.42
-        }
-      ],
-      "total_value": 6535659284000,
-      "fund_count": 6,
-      "fund_names": [
-        "Appaloosa Management",
-        "ARK Investment Management",
-        "Bridgewater Associates",
-        "D.E. Shaw & Co.",
         "Citadel Advisors",
         "Citadel Advisors"
       ]
@@ -8414,13 +8520,6 @@
           "weight": 0.38
         },
         {
-          "fund": "Renaissance Technologies",
-          "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 507997533000,
-          "shares": 799568,
-          "weight": 0.79
-        },
-        {
           "fund": "Citadel Advisors",
           "manager": "켄 그리핀 (Ken Griffin)",
           "value": 2243702575000,
@@ -8428,64 +8527,13 @@
           "weight": 0.36
         }
       ],
-      "total_value": 3798945106000,
-      "fund_count": 6,
+      "total_value": 3290947573000,
+      "fund_count": 5,
       "fund_names": [
         "Appaloosa Management",
         "Duquesne Family Office",
         "ARK Investment Management",
         "D.E. Shaw & Co.",
-        "Renaissance Technologies",
-        "Citadel Advisors"
-      ]
-    },
-    {
-      "name": "TESLA INC",
-      "cusip": "88160R101",
-      "funds": [
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 1185221529000,
-          "shares": 3188222,
-          "weight": 0.71
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 580301750000,
-          "shares": 1561000,
-          "weight": 0.35
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 516658150000,
-          "shares": 1389800,
-          "weight": 0.31
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 13516867175000,
-          "shares": 36360100,
-          "weight": 2.19
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 9440851475000,
-          "shares": 25395700,
-          "weight": 1.53
-        }
-      ],
-      "total_value": 25239900079000,
-      "fund_count": 5,
-      "fund_names": [
-        "D.E. Shaw & Co.",
-        "D.E. Shaw & Co.",
-        "D.E. Shaw & Co.",
-        "Citadel Advisors",
         "Citadel Advisors"
       ]
     },
@@ -8532,48 +8580,6 @@
       ]
     },
     {
-      "name": "VISA INC",
-      "cusip": "92826C839",
-      "funds": [
-        {
-          "fund": "TCI Fund Management",
-          "manager": "크리스 혼 (Chris Hohn)",
-          "value": 9208688518000,
-          "shares": 30468133,
-          "weight": 20.39
-        },
-        {
-          "fund": "ARK Investment Management",
-          "manager": "캐시 우드 (Cathie Wood)",
-          "value": 229440358000,
-          "shares": 759133,
-          "weight": 0.29
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 514864933000,
-          "shares": 1703497,
-          "weight": 0.31
-        },
-        {
-          "fund": "Renaissance Technologies",
-          "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 204545022000,
-          "shares": 676767,
-          "weight": 0.32
-        }
-      ],
-      "total_value": 10157538831000,
-      "fund_count": 4,
-      "fund_names": [
-        "TCI Fund Management",
-        "ARK Investment Management",
-        "D.E. Shaw & Co.",
-        "Renaissance Technologies"
-      ]
-    },
-    {
       "name": "PALANTIR TECHNOLOGIES INC",
       "cusip": "69608A108",
       "funds": [
@@ -8587,9 +8593,9 @@
         {
           "fund": "Renaissance Technologies",
           "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 1021901255000,
-          "shares": 6985926,
-          "weight": 1.6
+          "value": 883001728000,
+          "shares": 7568370,
+          "weight": 1.22
         },
         {
           "fund": "Citadel Advisors",
@@ -8606,52 +8612,10 @@
           "weight": 0.33
         }
       ],
-      "total_value": 6828398403000,
+      "total_value": 6689498876000,
       "fund_count": 4,
       "fund_names": [
         "Scion Asset Management",
-        "Renaissance Technologies",
-        "Citadel Advisors",
-        "Citadel Advisors"
-      ]
-    },
-    {
-      "name": "UNITEDHEALTH GROUP INC",
-      "cusip": "91324P102",
-      "funds": [
-        {
-          "fund": "Appaloosa Management",
-          "manager": "데이비드 테퍼 (David Tepper)",
-          "value": 24353100000,
-          "shares": 90000,
-          "weight": 0.41
-        },
-        {
-          "fund": "Renaissance Technologies",
-          "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 313459071000,
-          "shares": 1158428,
-          "weight": 0.49
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 2227821588000,
-          "shares": 8233200,
-          "weight": 0.36
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 1983857644000,
-          "shares": 7331600,
-          "weight": 0.32
-        }
-      ],
-      "total_value": 4549491403000,
-      "fund_count": 4,
-      "fund_names": [
-        "Appaloosa Management",
         "Renaissance Technologies",
         "Citadel Advisors",
         "Citadel Advisors"
@@ -8697,6 +8661,48 @@
         "ARK Investment Management",
         "Bridgewater Associates",
         "D.E. Shaw & Co."
+      ]
+    },
+    {
+      "name": "Seagate Technology Hldngs Pl",
+      "cusip": "G7997R103",
+      "funds": [
+        {
+          "fund": "Duquesne Family Office",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
+          "value": 19862000,
+          "shares": 50700,
+          "weight": 0.59
+        },
+        {
+          "fund": "ARK Investment Management",
+          "manager": "캐시 우드 (Cathie Wood)",
+          "value": 214049045000,
+          "shares": 546378,
+          "weight": 0.27
+        },
+        {
+          "fund": "Bridgewater Associates",
+          "manager": "레이 달리오 (Ray Dalio, 설립)",
+          "value": 128934876000,
+          "shares": 329117,
+          "weight": 0.58
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 441345645000,
+          "shares": 457353,
+          "weight": 0.61
+        }
+      ],
+      "total_value": 784349428000,
+      "fund_count": 4,
+      "fund_names": [
+        "Duquesne Family Office",
+        "ARK Investment Management",
+        "Bridgewater Associates",
+        "Renaissance Technologies"
       ]
     },
     {
@@ -8802,6 +8808,40 @@
       ]
     },
     {
+      "name": "VISA INC",
+      "cusip": "92826C839",
+      "funds": [
+        {
+          "fund": "TCI Fund Management",
+          "manager": "크리스 혼 (Chris Hohn)",
+          "value": 9208688518000,
+          "shares": 30468133,
+          "weight": 20.39
+        },
+        {
+          "fund": "ARK Investment Management",
+          "manager": "캐시 우드 (Cathie Wood)",
+          "value": 229440358000,
+          "shares": 759133,
+          "weight": 0.29
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 514864933000,
+          "shares": 1703497,
+          "weight": 0.31
+        }
+      ],
+      "total_value": 9952993809000,
+      "fund_count": 3,
+      "fund_names": [
+        "TCI Fund Management",
+        "ARK Investment Management",
+        "D.E. Shaw & Co."
+      ]
+    },
+    {
       "name": "Ishares Tr",
       "cusip": "464287655",
       "funds": [
@@ -8831,6 +8871,74 @@
       "fund_count": 3,
       "fund_names": [
         "Duquesne Family Office",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
+      "name": "NETFLIX INC.",
+      "cusip": "64110L106",
+      "funds": [
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 484655614000,
+          "shares": 6787884,
+          "weight": 0.67
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 3961264620000,
+          "shares": 41198800,
+          "weight": 0.64
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 2548782660000,
+          "shares": 26508400,
+          "weight": 0.41
+        }
+      ],
+      "total_value": 6994702894000,
+      "fund_count": 3,
+      "fund_names": [
+        "Renaissance Technologies",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
+      "name": "UNITEDHEALTH GROUP INC",
+      "cusip": "91324P102",
+      "funds": [
+        {
+          "fund": "Appaloosa Management",
+          "manager": "데이비드 테퍼 (David Tepper)",
+          "value": 24353100000,
+          "shares": 90000,
+          "weight": 0.41
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 2227821588000,
+          "shares": 8233200,
+          "weight": 0.36
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 1983857644000,
+          "shares": 7331600,
+          "weight": 0.32
+        }
+      ],
+      "total_value": 4236032332000,
+      "fund_count": 3,
+      "fund_names": [
+        "Appaloosa Management",
         "Citadel Advisors",
         "Citadel Advisors"
       ]
@@ -8870,40 +8978,6 @@
       ]
     },
     {
-      "name": "JPMORGAN CHASE & CO",
-      "cusip": "46625H100",
-      "funds": [
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 878231153000,
-          "shares": 2985556,
-          "weight": 0.53
-        },
-        {
-          "fund": "Renaissance Technologies",
-          "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 202481264000,
-          "shares": 688350,
-          "weight": 0.32
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 1675241200000,
-          "shares": 5695000,
-          "weight": 0.27
-        }
-      ],
-      "total_value": 2755953617000,
-      "fund_count": 3,
-      "fund_names": [
-        "D.E. Shaw & Co.",
-        "Renaissance Technologies",
-        "Citadel Advisors"
-      ]
-    },
-    {
       "name": "Ishares Inc",
       "cusip": "464286400",
       "funds": [
@@ -8938,71 +9012,37 @@
       ]
     },
     {
-      "name": "BOSTON SCIENTIFIC CORP",
-      "cusip": "101137107",
+      "name": "Intel Corp",
+      "cusip": "458140100",
       "funds": [
         {
-          "fund": "ARK Investment Management",
-          "manager": "캐시 우드 (Cathie Wood)",
-          "value": 231379016000,
-          "shares": 3687315,
-          "weight": 0.3
+          "fund": "Duquesne Family Office",
+          "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
+          "value": 18155000,
+          "shares": 411400,
+          "weight": 0.54
         },
         {
           "fund": "D.E. Shaw & Co.",
           "manager": "데이비드 쇼 (David Shaw)",
-          "value": 1278212606000,
-          "shares": 20369922,
-          "weight": 0.77
+          "value": 657308539000,
+          "shares": 14894823,
+          "weight": 0.4
         },
         {
           "fund": "Renaissance Technologies",
           "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 197788314000,
-          "shares": 3152005,
-          "weight": 0.31
+          "value": 1022356867000,
+          "shares": 7321928,
+          "weight": 1.41
         }
       ],
-      "total_value": 1707379936000,
+      "total_value": 1679683561000,
       "fund_count": 3,
       "fund_names": [
-        "ARK Investment Management",
+        "Duquesne Family Office",
         "D.E. Shaw & Co.",
         "Renaissance Technologies"
-      ]
-    },
-    {
-      "name": "CAPITAL ONE FINL CORP",
-      "cusip": "14040H105",
-      "funds": [
-        {
-          "fund": "Berkshire Hathaway",
-          "manager": "워런 버핏 (Warren Buffett)",
-          "value": 560750962000,
-          "shares": 3073787,
-          "weight": 0.21
-        },
-        {
-          "fund": "Berkshire Hathaway",
-          "manager": "워런 버핏 (Warren Buffett)",
-          "value": 389852910000,
-          "shares": 2137000,
-          "weight": 0.15
-        },
-        {
-          "fund": "ARK Investment Management",
-          "manager": "캐시 우드 (Cathie Wood)",
-          "value": 300774530000,
-          "shares": 1648712,
-          "weight": 0.39
-        }
-      ],
-      "total_value": 1251378402000,
-      "fund_count": 3,
-      "fund_names": [
-        "Berkshire Hathaway",
-        "Berkshire Hathaway",
-        "ARK Investment Management"
       ]
     }
   ]
