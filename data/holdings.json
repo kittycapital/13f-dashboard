@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T02:18:43.686779+00:00",
+  "generated_at": "2026-11-14T01:55:36.250001+00:00",
   "num_funds": 13,
   "funds": [
     {
@@ -238,7 +238,7 @@
           "weight": 1.37
         }
       ],
-      "fetched_at": "2026-11-13T02:18:23.513681+00:00",
+      "fetched_at": "2026-11-14T01:55:17.226359+00:00",
       "error": null
     },
     {
@@ -957,7 +957,7 @@
           "weight": 0.3
         }
       ],
-      "fetched_at": "2026-11-13T02:18:25.118742+00:00",
+      "fetched_at": "2026-11-14T01:55:18.880077+00:00",
       "error": null
     },
     {
@@ -1196,7 +1196,7 @@
           "weight": 0.07
         }
       ],
-      "fetched_at": "2026-11-13T02:18:26.716846+00:00",
+      "fetched_at": "2026-11-14T01:55:20.301390+00:00",
       "error": null
     },
     {
@@ -1685,7 +1685,7 @@
           "weight": 0.13
         }
       ],
-      "fetched_at": "2026-11-13T02:18:28.050856+00:00",
+      "fetched_at": "2026-11-14T01:55:21.505832+00:00",
       "error": null
     },
     {
@@ -2404,7 +2404,7 @@
           "weight": 0.11
         }
       ],
-      "fetched_at": "2026-11-13T02:18:29.373801+00:00",
+      "fetched_at": "2026-11-14T01:55:22.742973+00:00",
       "error": null
     },
     {
@@ -2583,7 +2583,7 @@
           "weight": 0.95
         }
       ],
-      "fetched_at": "2026-11-13T02:18:30.670003+00:00",
+      "fetched_at": "2026-11-14T01:55:24.170985+00:00",
       "error": null
     },
     {
@@ -2595,166 +2595,166 @@
       "emoji": "🌍",
       "strategy": "Global Macro",
       "return_2025": null,
-      "period": "2026-06-30",
-      "total_value": 8143628824000,
-      "num_holdings": 266,
+      "period": "2026-09-30",
+      "total_value": 8508315961000,
+      "num_holdings": 263,
       "top_holdings": [
         {
+          "name": "SELECT SECTOR SPDR TR",
+          "title": "ST STR ENERG ETF",
+          "cusip": "81369Y506",
+          "value": 670245450000,
+          "shares": 10898300,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 7.88
+        },
+        {
+          "name": "INTEL CORP",
+          "title": "COM",
+          "cusip": "458140100",
+          "value": 340250900000,
+          "shares": 2830000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 4.0
+        },
+        {
+          "name": "SPDR SERIES TRUST",
+          "title": "SP O&G EXPL PRO",
+          "cusip": "78468R556",
+          "value": 327546245000,
+          "shares": 1826500,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 3.85
+        },
+        {
           "name": "AMAZON COM INC",
           "title": "COM",
           "cusip": "023135106",
-          "value": 281843962000,
-          "shares": 1182529,
+          "value": 262939456000,
+          "shares": 1055346,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 3.46
+          "weight": 3.09
         },
         {
           "name": "TAIWAN SEMICONDUCTOR MANUFAC",
           "title": "SPONSORED ADS",
           "cusip": "874039100",
-          "value": 249366996000,
-          "shares": 522158,
+          "value": 250409534000,
+          "shares": 548915,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 3.06
+          "weight": 2.94
         },
         {
-          "name": "GLOBAL PMTS INC",
-          "title": "NOTE 1.500% 3/0",
-          "cusip": "37940XAU6",
-          "value": 222694485000,
-          "shares": 247500000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 2.73
-        },
-        {
-          "name": "ALPHABET INC",
-          "title": "CAP STK CL A",
-          "cusip": "02079K305",
-          "value": 213094728000,
-          "shares": 596286,
+          "name": "ISHARES TR",
+          "title": "20 YR TR BD ETF",
+          "cusip": "464287432",
+          "value": 237229000000,
+          "shares": 3050000,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 2.62
-        },
-        {
-          "name": "NVIDIA CORPORATION",
-          "title": "COM",
-          "cusip": "67066G104",
-          "value": 213022817000,
-          "shares": 1064635,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 2.62
-        },
-        {
-          "name": "ELECTRONIC ARTS INC",
-          "title": "COM",
-          "cusip": "285512109",
-          "value": 199091790000,
-          "shares": 970990,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 2.44
-        },
-        {
-          "name": "BILL HOLDINGS INC",
-          "title": "NOTE 4/0",
-          "cusip": "090043AF7",
-          "value": 181356254000,
-          "shares": 209679000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 2.23
+          "weight": 2.79
         },
         {
           "name": "PG&E CORP",
           "title": "NOTE 4.250%12/0",
           "cusip": "69331CAL2",
-          "value": 179601903000,
-          "shares": 175000000,
+          "value": 218712746000,
+          "shares": 222500000,
           "type": "PRN",
           "discretion": "SOLE",
-          "weight": 2.21
+          "weight": 2.57
+        },
+        {
+          "name": "SELECT SECTOR SPDR TR",
+          "title": "ST STR UTIL ETF",
+          "cusip": "81369Y886",
+          "value": 214790240000,
+          "shares": 5446000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.52
+        },
+        {
+          "name": "ALPHABET INC",
+          "title": "CAP STK CL A",
+          "cusip": "02079K305",
+          "value": 206778317000,
+          "shares": 600960,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.43
+        },
+        {
+          "name": "NVIDIA CORPORATION",
+          "title": "COM",
+          "cusip": "67066G104",
+          "value": 196137768000,
+          "shares": 858822,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.31
+        },
+        {
+          "name": "ZSCALER INC",
+          "title": "NOTE 7/1",
+          "cusip": "98980GAD4",
+          "value": 178164060000,
+          "shares": 188480000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 2.09
+        },
+        {
+          "name": "BILL HOLDINGS INC",
+          "title": "NOTE 4/0",
+          "cusip": "090043AF7",
+          "value": 177979507000,
+          "shares": 210000000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 2.09
         },
         {
           "name": "RIVIAN AUTOMOTIVE INC",
           "title": "NOTE 4.625% 3/1",
           "cusip": "76954AAB9",
-          "value": 155838659000,
-          "shares": 131565000,
+          "value": 132051809000,
+          "shares": 119478000,
           "type": "PRN",
           "discretion": "SOLE",
-          "weight": 1.91
+          "weight": 1.55
+        },
+        {
+          "name": "EXPEDIA GROUP INC",
+          "title": "COM NEW",
+          "cusip": "30212P303",
+          "value": 131680000000,
+          "shares": 500000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.55
         },
         {
           "name": "APPLE INC",
           "title": "COM",
           "cusip": "037833100",
-          "value": 153227116000,
-          "shares": 529538,
+          "value": 131103314000,
+          "shares": 393680,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 1.88
+          "weight": 1.54
         },
         {
-          "name": "LINDE PLC",
-          "title": "SHS",
-          "cusip": "G54950103",
-          "value": 138738090000,
-          "shares": 267349,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.7
-        },
-        {
-          "name": "LUMENTUM HLDGS INC",
-          "title": "NOTE 0.500% 6/1",
-          "cusip": "55024UAF6",
-          "value": 119272441000,
-          "shares": 18256000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.46
-        },
-        {
-          "name": "TKO GROUP HOLDINGS INC",
+          "name": "META PLATFORMS INC",
           "title": "CL A",
-          "cusip": "87256C101",
-          "value": 116388786000,
-          "shares": 578157,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.43
-        },
-        {
-          "name": "SUPER MICRO COMPUTER INC",
-          "title": "7 DEP CM SR A WI",
-          "cusip": "86800U500",
-          "value": 111471398000,
-          "shares": 2175408,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.37
-        },
-        {
-          "name": "SELECT SECTOR SPDR TR",
-          "title": "ST STR ENERG ETF",
-          "cusip": "81369Y506",
-          "value": 106220000000,
-          "shares": 2000000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.3
-        },
-        {
-          "name": "AMERICAN ELEC PWR CO INC",
-          "title": "COM",
-          "cusip": "025537101",
-          "value": 105070080000,
-          "shares": 768000,
+          "cusip": "30303M102",
+          "value": 109868396000,
+          "shares": 151505,
           "type": "SH",
           "discretion": "SOLE",
           "weight": 1.29
@@ -2763,546 +2763,546 @@
           "name": "ENTERGY CORP NEW",
           "title": "COM",
           "cusip": "29364G103",
-          "value": 104971932000,
-          "shares": 913912,
+          "value": 105786941000,
+          "shares": 1065756,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 1.29
-        },
-        {
-          "name": "DROPBOX INC",
-          "title": "NOTE 3/0",
-          "cusip": "26210CAD6",
-          "value": 104610636000,
-          "shares": 103500000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.28
-        },
-        {
-          "name": "JD.COM INC",
-          "title": "NOTE 0.250% 6/0",
-          "cusip": "47215PAJ5",
-          "value": 98546765000,
-          "shares": 100000000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.21
-        },
-        {
-          "name": "ITRON INC",
-          "title": "COM",
-          "cusip": "465741106",
-          "value": 98458420000,
-          "shares": 1137853,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.21
-        }
-      ],
-      "all_holdings": [
-        {
-          "name": "AMAZON COM INC",
-          "title": "COM",
-          "cusip": "023135106",
-          "value": 281843962000,
-          "shares": 1182529,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 3.46
-        },
-        {
-          "name": "TAIWAN SEMICONDUCTOR MANUFAC",
-          "title": "SPONSORED ADS",
-          "cusip": "874039100",
-          "value": 249366996000,
-          "shares": 522158,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 3.06
-        },
-        {
-          "name": "GLOBAL PMTS INC",
-          "title": "NOTE 1.500% 3/0",
-          "cusip": "37940XAU6",
-          "value": 222694485000,
-          "shares": 247500000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 2.73
-        },
-        {
-          "name": "ALPHABET INC",
-          "title": "CAP STK CL A",
-          "cusip": "02079K305",
-          "value": 213094728000,
-          "shares": 596286,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 2.62
-        },
-        {
-          "name": "NVIDIA CORPORATION",
-          "title": "COM",
-          "cusip": "67066G104",
-          "value": 213022817000,
-          "shares": 1064635,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 2.62
-        },
-        {
-          "name": "ELECTRONIC ARTS INC",
-          "title": "COM",
-          "cusip": "285512109",
-          "value": 199091790000,
-          "shares": 970990,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 2.44
-        },
-        {
-          "name": "BILL HOLDINGS INC",
-          "title": "NOTE 4/0",
-          "cusip": "090043AF7",
-          "value": 181356254000,
-          "shares": 209679000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 2.23
-        },
-        {
-          "name": "PG&E CORP",
-          "title": "NOTE 4.250%12/0",
-          "cusip": "69331CAL2",
-          "value": 179601903000,
-          "shares": 175000000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 2.21
-        },
-        {
-          "name": "RIVIAN AUTOMOTIVE INC",
-          "title": "NOTE 4.625% 3/1",
-          "cusip": "76954AAB9",
-          "value": 155838659000,
-          "shares": 131565000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.91
-        },
-        {
-          "name": "APPLE INC",
-          "title": "COM",
-          "cusip": "037833100",
-          "value": 153227116000,
-          "shares": 529538,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.88
-        },
-        {
-          "name": "LINDE PLC",
-          "title": "SHS",
-          "cusip": "G54950103",
-          "value": 138738090000,
-          "shares": 267349,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.7
-        },
-        {
-          "name": "LUMENTUM HLDGS INC",
-          "title": "NOTE 0.500% 6/1",
-          "cusip": "55024UAF6",
-          "value": 119272441000,
-          "shares": 18256000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.46
-        },
-        {
-          "name": "TKO GROUP HOLDINGS INC",
-          "title": "CL A",
-          "cusip": "87256C101",
-          "value": 116388786000,
-          "shares": 578157,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.43
-        },
-        {
-          "name": "SUPER MICRO COMPUTER INC",
-          "title": "7 DEP CM SR A WI",
-          "cusip": "86800U500",
-          "value": 111471398000,
-          "shares": 2175408,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.37
-        },
-        {
-          "name": "SELECT SECTOR SPDR TR",
-          "title": "ST STR ENERG ETF",
-          "cusip": "81369Y506",
-          "value": 106220000000,
-          "shares": 2000000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.3
-        },
-        {
-          "name": "AMERICAN ELEC PWR CO INC",
-          "title": "COM",
-          "cusip": "025537101",
-          "value": 105070080000,
-          "shares": 768000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.29
-        },
-        {
-          "name": "ENTERGY CORP NEW",
-          "title": "COM",
-          "cusip": "29364G103",
-          "value": 104971932000,
-          "shares": 913912,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.29
-        },
-        {
-          "name": "DROPBOX INC",
-          "title": "NOTE 3/0",
-          "cusip": "26210CAD6",
-          "value": 104610636000,
-          "shares": 103500000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.28
-        },
-        {
-          "name": "JD.COM INC",
-          "title": "NOTE 0.250% 6/0",
-          "cusip": "47215PAJ5",
-          "value": 98546765000,
-          "shares": 100000000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.21
-        },
-        {
-          "name": "ITRON INC",
-          "title": "COM",
-          "cusip": "465741106",
-          "value": 98458420000,
-          "shares": 1137853,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.21
-        },
-        {
-          "name": "DIGITAL RLTY TR INC",
-          "title": "COM",
-          "cusip": "253868103",
-          "value": 96904600000,
-          "shares": 539618,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.19
-        },
-        {
-          "name": "BLACKLINE INC",
-          "title": "NOTE 1.000% 6/0",
-          "cusip": "09239BAF6",
-          "value": 93258284000,
-          "shares": 101000000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.15
-        },
-        {
-          "name": "LUMENTUM HLDGS INC",
-          "title": "NOTE 0.500%12/1",
-          "cusip": "55024UAD1",
-          "value": 88270935000,
-          "shares": 10250000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 1.08
-        },
-        {
-          "name": "CHART INDS INC",
-          "title": "COM",
-          "cusip": "16115Q308",
-          "value": 86967723000,
-          "shares": 416233,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.07
-        },
-        {
-          "name": "NEBIUS GROUP N.V.",
-          "title": "SHS CLASS A",
-          "cusip": "N97284108",
-          "value": 85612700000,
-          "shares": 310000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.05
-        },
-        {
-          "name": "WEBSTER FINL CORP",
-          "title": "COM",
-          "cusip": "947890109",
-          "value": 85092677000,
-          "shares": 1113487,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.04
-        },
-        {
-          "name": "IDACORP INC",
-          "title": "COM",
-          "cusip": "451107106",
-          "value": 82622661000,
-          "shares": 546085,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.01
-        },
-        {
-          "name": "TAIWAN SEMICONDUCTOR MANUFAC",
-          "title": "SPONSORED ADS",
-          "cusip": "874039100",
-          "value": 81186900000,
-          "shares": 170000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 1.0
-        },
-        {
-          "name": "NVIDIA CORPORATION",
-          "title": "COM",
-          "cusip": "67066G104",
-          "value": 80036000000,
-          "shares": 400000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.98
-        },
-        {
-          "name": "NEXTERA ENERGY INC",
-          "title": "UNIT 02/15/2029",
-          "cusip": "65339F655",
-          "value": 77944001000,
-          "shares": 1627578,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.96
-        },
-        {
-          "name": "H2O AMERICA",
-          "title": "COM",
-          "cusip": "784305104",
-          "value": 76227943000,
-          "shares": 1254368,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.94
-        },
-        {
-          "name": "APOGEE THERAPEUTICS INC",
-          "title": "COM",
-          "cusip": "03770N101",
-          "value": 74926085000,
-          "shares": 564500,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.92
-        },
-        {
-          "name": "CMS ENERGY CORP",
-          "title": "COM",
-          "cusip": "125896100",
-          "value": 74232693000,
-          "shares": 970362,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.91
-        },
-        {
-          "name": "SNAP INC",
-          "title": "NOTE 0.500% 5/0",
-          "cusip": "83304AAK2",
-          "value": 71946418000,
-          "shares": 88000000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 0.88
-        },
-        {
-          "name": "MICROSOFT CORP",
-          "title": "COM",
-          "cusip": "594918104",
-          "value": 70862982000,
-          "shares": 189971,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.87
-        },
-        {
-          "name": "BRIGHTHOUSE FINL INC",
-          "title": "COM",
-          "cusip": "10922N103",
-          "value": 70658625000,
-          "shares": 1116250,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.87
-        },
-        {
-          "name": "SMURFIT WESTROCK PLC",
-          "title": "SHS",
-          "cusip": "G8267P108",
-          "value": 69982035000,
-          "shares": 1512798,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.86
-        },
-        {
-          "name": "BERKSHIRE HATHAWAY INC DEL",
-          "title": "CL B NEW",
-          "cusip": "084670702",
-          "value": 66690478000,
-          "shares": 133277,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.82
-        },
-        {
-          "name": "SOUTHERN CO",
-          "title": "NOTE 3.250% 6/1",
-          "cusip": "842587ED5",
-          "value": 65774926000,
-          "shares": 65000000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 0.81
-        },
-        {
-          "name": "DIGITALBRIDGE GROUP INC",
-          "title": "CL A NEW",
-          "cusip": "25401T603",
-          "value": 64994554000,
-          "shares": 4118793,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.8
-        },
-        {
-          "name": "COREWEAVE INC",
-          "title": "COM CL A",
-          "cusip": "21873S108",
-          "value": 64701000000,
-          "shares": 650000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.79
-        },
-        {
-          "name": "MEDLINE INC",
-          "title": "COM CL A",
-          "cusip": "58507V107",
-          "value": 64612343000,
-          "shares": 1638244,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.79
-        },
-        {
-          "name": "DEXCOM INC",
-          "title": "NOTE 0.375% 5/1",
-          "cusip": "252131AM9",
-          "value": 63521812000,
-          "shares": 67977000,
-          "type": "PRN",
-          "discretion": "SOLE",
-          "weight": 0.78
-        },
-        {
-          "name": "BROADCOM INC",
-          "title": "COM",
-          "cusip": "11135F101",
-          "value": 62421677000,
-          "shares": 165246,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.77
-        },
-        {
-          "name": "WEC ENERGY GROUP INC",
-          "title": "COM",
-          "cusip": "92939U106",
-          "value": 61697648000,
-          "shares": 528369,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.76
-        },
-        {
-          "name": "ALPHABET INC",
-          "title": "DEP SHS RP1/20 B",
-          "cusip": "02079K602",
-          "value": 60171083000,
-          "shares": 1200000,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.74
-        },
-        {
-          "name": "ELASTIC N V",
-          "title": "ORD SHS",
-          "cusip": "N14506104",
-          "value": 56888854000,
-          "shares": 997700,
-          "type": "SH",
-          "discretion": "SOLE",
-          "weight": 0.7
+          "weight": 1.24
         },
         {
           "name": "STATE STR SPDR S&P 500 ETF T",
           "title": "TR UNIT",
           "cusip": "78462F103",
-          "value": 56007750000,
-          "shares": 75000,
+          "value": 103761150000,
+          "shares": 136057,
           "type": "SH",
           "discretion": "SOLE",
-          "weight": 0.69
+          "weight": 1.22
         },
         {
-          "name": "SPIRIT AEROSYSTEMS INC",
-          "title": "NOTE 3.250%11/0",
-          "cusip": "85205TAQ3",
-          "value": 53916813000,
-          "shares": 34500000,
+          "name": "WORKDAY INC",
+          "title": "CL A",
+          "cusip": "98138H101",
+          "value": 95230000000,
+          "shares": 500000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.12
+        },
+        {
+          "name": "ELASTIC N V",
+          "title": "ORD SHS",
+          "cusip": "N14506104",
+          "value": 91489090000,
+          "shares": 997700,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.08
+        }
+      ],
+      "all_holdings": [
+        {
+          "name": "SELECT SECTOR SPDR TR",
+          "title": "ST STR ENERG ETF",
+          "cusip": "81369Y506",
+          "value": 670245450000,
+          "shares": 10898300,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 7.88
+        },
+        {
+          "name": "INTEL CORP",
+          "title": "COM",
+          "cusip": "458140100",
+          "value": 340250900000,
+          "shares": 2830000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 4.0
+        },
+        {
+          "name": "SPDR SERIES TRUST",
+          "title": "SP O&G EXPL PRO",
+          "cusip": "78468R556",
+          "value": 327546245000,
+          "shares": 1826500,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 3.85
+        },
+        {
+          "name": "AMAZON COM INC",
+          "title": "COM",
+          "cusip": "023135106",
+          "value": 262939456000,
+          "shares": 1055346,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 3.09
+        },
+        {
+          "name": "TAIWAN SEMICONDUCTOR MANUFAC",
+          "title": "SPONSORED ADS",
+          "cusip": "874039100",
+          "value": 250409534000,
+          "shares": 548915,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.94
+        },
+        {
+          "name": "ISHARES TR",
+          "title": "20 YR TR BD ETF",
+          "cusip": "464287432",
+          "value": 237229000000,
+          "shares": 3050000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.79
+        },
+        {
+          "name": "PG&E CORP",
+          "title": "NOTE 4.250%12/0",
+          "cusip": "69331CAL2",
+          "value": 218712746000,
+          "shares": 222500000,
           "type": "PRN",
           "discretion": "SOLE",
-          "weight": 0.66
+          "weight": 2.57
+        },
+        {
+          "name": "SELECT SECTOR SPDR TR",
+          "title": "ST STR UTIL ETF",
+          "cusip": "81369Y886",
+          "value": 214790240000,
+          "shares": 5446000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.52
+        },
+        {
+          "name": "ALPHABET INC",
+          "title": "CAP STK CL A",
+          "cusip": "02079K305",
+          "value": 206778317000,
+          "shares": 600960,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.43
+        },
+        {
+          "name": "NVIDIA CORPORATION",
+          "title": "COM",
+          "cusip": "67066G104",
+          "value": 196137768000,
+          "shares": 858822,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 2.31
+        },
+        {
+          "name": "ZSCALER INC",
+          "title": "NOTE 7/1",
+          "cusip": "98980GAD4",
+          "value": 178164060000,
+          "shares": 188480000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 2.09
+        },
+        {
+          "name": "BILL HOLDINGS INC",
+          "title": "NOTE 4/0",
+          "cusip": "090043AF7",
+          "value": 177979507000,
+          "shares": 210000000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 2.09
+        },
+        {
+          "name": "RIVIAN AUTOMOTIVE INC",
+          "title": "NOTE 4.625% 3/1",
+          "cusip": "76954AAB9",
+          "value": 132051809000,
+          "shares": 119478000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 1.55
+        },
+        {
+          "name": "EXPEDIA GROUP INC",
+          "title": "COM NEW",
+          "cusip": "30212P303",
+          "value": 131680000000,
+          "shares": 500000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.55
+        },
+        {
+          "name": "APPLE INC",
+          "title": "COM",
+          "cusip": "037833100",
+          "value": 131103314000,
+          "shares": 393680,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.54
+        },
+        {
+          "name": "META PLATFORMS INC",
+          "title": "CL A",
+          "cusip": "30303M102",
+          "value": 109868396000,
+          "shares": 151505,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.29
+        },
+        {
+          "name": "ENTERGY CORP NEW",
+          "title": "COM",
+          "cusip": "29364G103",
+          "value": 105786941000,
+          "shares": 1065756,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.24
+        },
+        {
+          "name": "STATE STR SPDR S&P 500 ETF T",
+          "title": "TR UNIT",
+          "cusip": "78462F103",
+          "value": 103761150000,
+          "shares": 136057,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.22
+        },
+        {
+          "name": "WORKDAY INC",
+          "title": "CL A",
+          "cusip": "98138H101",
+          "value": 95230000000,
+          "shares": 500000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.12
+        },
+        {
+          "name": "ELASTIC N V",
+          "title": "ORD SHS",
+          "cusip": "N14506104",
+          "value": 91489090000,
+          "shares": 997700,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.08
+        },
+        {
+          "name": "AMERICAN ELEC PWR CO INC",
+          "title": "COM",
+          "cusip": "025537101",
+          "value": 91442017000,
+          "shares": 770752,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.07
+        },
+        {
+          "name": "ALNYLAM PHARMACEUTICALS INC",
+          "title": "NOTE 9/1",
+          "cusip": "02043QAD9",
+          "value": 90690917000,
+          "shares": 99000000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 1.07
+        },
+        {
+          "name": "TKO GROUP HOLDINGS INC",
+          "title": "CL A",
+          "cusip": "87256C101",
+          "value": 87970604000,
+          "shares": 489487,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 1.03
+        },
+        {
+          "name": "BLACKLINE INC",
+          "title": "NOTE 1.000% 6/0",
+          "cusip": "09239BAF6",
+          "value": 82884728000,
+          "shares": 92500000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 0.97
+        },
+        {
+          "name": "MARKETAXESS HLDGS INC",
+          "title": "COM",
+          "cusip": "57060D108",
+          "value": 80124752000,
+          "shares": 488804,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.94
+        },
+        {
+          "name": "NVIDIA CORPORATION",
+          "title": "COM",
+          "cusip": "67066G104",
+          "value": 79933000000,
+          "shares": 350000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.94
+        },
+        {
+          "name": "ARCOSA INC",
+          "title": "COM",
+          "cusip": "039653100",
+          "value": 79788839000,
+          "shares": 545938,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.94
+        },
+        {
+          "name": "JD.COM INC",
+          "title": "NOTE 0.250% 6/0",
+          "cusip": "47215PAJ5",
+          "value": 72569151000,
+          "shares": 74000000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 0.85
+        },
+        {
+          "name": "DATADOG INC",
+          "title": "CL A COM",
+          "cusip": "23804L103",
+          "value": 70857866000,
+          "shares": 258747,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.83
+        },
+        {
+          "name": "NCR ATLEOS CORPORATION",
+          "title": "COM SHS",
+          "cusip": "63001N106",
+          "value": 70308935000,
+          "shares": 1556196,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.83
+        },
+        {
+          "name": "SUNBELT RENTALS HOLDINGS INC",
+          "title": "SHS",
+          "cusip": "866966104",
+          "value": 70189136000,
+          "shares": 958737,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.82
+        },
+        {
+          "name": "SNAP INC",
+          "title": "NOTE 0.500% 5/0",
+          "cusip": "83304AAK2",
+          "value": 70119174000,
+          "shares": 84061000,
+          "type": "PRN",
+          "discretion": "SOLE",
+          "weight": 0.82
         },
         {
           "name": "KENVUE INC",
           "title": "COM",
           "cusip": "49177J102",
-          "value": 52488214000,
-          "shares": 2746636,
+          "value": 66987665000,
+          "shares": 3793186,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.79
+        },
+        {
+          "name": "IDACORP INC",
+          "title": "COM",
+          "cusip": "451107106",
+          "value": 66704852000,
+          "shares": 510249,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.78
+        },
+        {
+          "name": "NEXTERA ENERGY INC",
+          "title": "UNIT 02/15/2029",
+          "cusip": "65339F655",
+          "value": 66691752000,
+          "shares": 1554928,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.78
+        },
+        {
+          "name": "WARNER BROS DISCOVERY INC",
+          "title": "COM SER A",
+          "cusip": "934423104",
+          "value": 65100230000,
+          "shares": 2103400,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.77
+        },
+        {
+          "name": "MICROSOFT CORP",
+          "title": "COM",
+          "cusip": "594918104",
+          "value": 62658941000,
+          "shares": 122166,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.74
+        },
+        {
+          "name": "SK HYNIX INC",
+          "title": "AMERICAN DEPOSIT",
+          "cusip": "78392B206",
+          "value": 59848750000,
+          "shares": 325000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.7
+        },
+        {
+          "name": "EXPEDIA GROUP INC",
+          "title": "COM NEW",
+          "cusip": "30212P303",
+          "value": 59478012000,
+          "shares": 225843,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.7
+        },
+        {
+          "name": "BROADCOM INC",
+          "title": "COM",
+          "cusip": "11135F101",
+          "value": 57364428000,
+          "shares": 163343,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.67
+        },
+        {
+          "name": "AES CORP",
+          "title": "COM",
+          "cusip": "00130H105",
+          "value": 54056991000,
+          "shares": 3627986,
           "type": "SH",
           "discretion": "SOLE",
           "weight": 0.64
+        },
+        {
+          "name": "ACADIAN ASSET MANAGEMENT INC",
+          "title": "COM",
+          "cusip": "10948W103",
+          "value": 53552037000,
+          "shares": 583928,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.63
+        },
+        {
+          "name": "COREWEAVE INC",
+          "title": "COM CL A",
+          "cusip": "21873S108",
+          "value": 53291304000,
+          "shares": 611700,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.63
+        },
+        {
+          "name": "BERKSHIRE HATHAWAY INC DEL",
+          "title": "CL B NEW",
+          "cusip": "084670702",
+          "value": 49453406000,
+          "shares": 99314,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.58
+        },
+        {
+          "name": "ISHARES TR",
+          "title": "CORE MSCI EAFE",
+          "cusip": "46432F842",
+          "value": 48478171000,
+          "shares": 500394,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.57
+        },
+        {
+          "name": "COREWEAVE INC",
+          "title": "COM CL A",
+          "cusip": "21873S108",
+          "value": 47916000000,
+          "shares": 550000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.56
+        },
+        {
+          "name": "TAIWAN SEMICONDUCTOR MANUFAC",
+          "title": "SPONSORED ADS",
+          "cusip": "874039100",
+          "value": 45619000000,
+          "shares": 100000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.54
+        },
+        {
+          "name": "OGE ENERGY CORP",
+          "title": "COM",
+          "cusip": "670837103",
+          "value": 45445844000,
+          "shares": 1000569,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.53
+        },
+        {
+          "name": "DOORDASH INC",
+          "title": "CL A",
+          "cusip": "25809K105",
+          "value": 45336116000,
+          "shares": 246996,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.53
+        },
+        {
+          "name": "CELESTICA INC",
+          "title": "COM",
+          "cusip": "15101Q207",
+          "value": 45178750000,
+          "shares": 125000,
+          "type": "SH",
+          "discretion": "SOLE",
+          "weight": 0.53
         }
       ],
-      "fetched_at": "2026-11-13T02:18:32.037884+00:00",
+      "fetched_at": "2026-11-14T01:55:25.681827+00:00",
       "error": null
     },
     {
@@ -4021,7 +4021,7 @@
           "weight": 0.42
         }
       ],
-      "fetched_at": "2026-11-13T02:18:33.722280+00:00",
+      "fetched_at": "2026-11-14T01:55:27.152682+00:00",
       "error": null
     },
     {
@@ -4740,7 +4740,7 @@
           "weight": 0.27
         }
       ],
-      "fetched_at": "2026-11-13T02:18:35.204355+00:00",
+      "fetched_at": "2026-11-14T01:55:28.419178+00:00",
       "error": null
     },
     {
@@ -5359,7 +5359,7 @@
           "weight": 0.33
         }
       ],
-      "fetched_at": "2026-11-13T02:18:36.967135+00:00",
+      "fetched_at": "2026-11-14T01:55:29.766378+00:00",
       "error": null
     },
     {
@@ -5978,7 +5978,7 @@
           "weight": 0.3
         }
       ],
-      "fetched_at": "2026-11-13T02:18:38.522107+00:00",
+      "fetched_at": "2026-11-14T01:55:31.072981+00:00",
       "error": null
     },
     {
@@ -6597,7 +6597,7 @@
           "weight": 0.32
         }
       ],
-      "fetched_at": "2026-11-13T02:18:39.980254+00:00",
+      "fetched_at": "2026-11-14T01:55:32.654521+00:00",
       "error": null
     },
     {
@@ -7216,7 +7216,7 @@
           "weight": 0.3
         }
       ],
-      "fetched_at": "2026-11-13T02:18:41.718371+00:00",
+      "fetched_at": "2026-11-14T01:55:34.023283+00:00",
       "error": null
     }
   ],
@@ -7305,9 +7305,9 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 153227116000,
-          "shares": 529538,
-          "weight": 1.88
+          "value": 131103314000,
+          "shares": 393680,
+          "weight": 1.54
         },
         {
           "fund": "Bridgewater Associates",
@@ -7338,7 +7338,7 @@
           "weight": 0.71
         }
       ],
-      "total_value": 82979241723000,
+      "total_value": 82957117921000,
       "fund_count": 16,
       "fund_names": [
         "Appaloosa Management",
@@ -7401,9 +7401,9 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 213094728000,
-          "shares": 596286,
-          "weight": 2.62
+          "value": 206778317000,
+          "shares": 600960,
+          "weight": 2.43
         },
         {
           "fund": "Duquesne Family Office",
@@ -7462,7 +7462,7 @@
           "weight": 0.51
         }
       ],
-      "total_value": 45678015829000,
+      "total_value": 45671699418000,
       "fund_count": 14,
       "fund_names": [
         "TCI Fund Management",
@@ -7600,9 +7600,9 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 281843962000,
-          "shares": 1182529,
-          "weight": 3.46
+          "value": 262939456000,
+          "shares": 1055346,
+          "weight": 3.09
         },
         {
           "fund": "Duquesne Family Office",
@@ -7661,7 +7661,7 @@
           "weight": 0.43
         }
       ],
-      "total_value": 17658482063000,
+      "total_value": 17639577557000,
       "fund_count": 11,
       "fund_names": [
         "Pershing Square Capital",
@@ -7684,9 +7684,9 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 56007750000,
-          "shares": 75000,
-          "weight": 0.69
+          "value": 103761150000,
+          "shares": 136057,
+          "weight": 1.22
         },
         {
           "fund": "Duquesne Family Office",
@@ -7752,7 +7752,7 @@
           "weight": 2.66
         }
       ],
-      "total_value": 74787628748000,
+      "total_value": 74835382148000,
       "fund_count": 10,
       "fund_names": [
         "Soros Fund Management",
@@ -7788,16 +7788,16 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 213022817000,
-          "shares": 1064635,
-          "weight": 2.62
+          "value": 196137768000,
+          "shares": 858822,
+          "weight": 2.31
         },
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 80036000000,
-          "shares": 400000,
-          "weight": 0.98
+          "value": 79933000000,
+          "shares": 350000,
+          "weight": 0.94
         },
         {
           "fund": "Bridgewater Associates",
@@ -7842,7 +7842,7 @@
           "weight": 1.05
         }
       ],
-      "total_value": 27404604402000,
+      "total_value": 27387616353000,
       "fund_count": 10,
       "fund_names": [
         "Appaloosa Management",
@@ -8048,6 +8048,13 @@
           "weight": 4.92
         },
         {
+          "fund": "Soros Fund Management",
+          "manager": "조지 소로스 (George Soros)",
+          "value": 109868396000,
+          "shares": 151505,
+          "weight": 1.29
+        },
+        {
           "fund": "Duquesne Family Office",
           "manager": "스탠리 드러켄밀러 (Stanley Druckenmiller)",
           "value": 28165000,
@@ -8090,11 +8097,12 @@
           "weight": 0.58
         }
       ],
-      "total_value": 17885953747000,
-      "fund_count": 8,
+      "total_value": 17995822143000,
+      "fund_count": 9,
       "fund_names": [
         "Pershing Square Capital",
         "Appaloosa Management",
+        "Soros Fund Management",
         "Duquesne Family Office",
         "ARK Investment Management",
         "D.E. Shaw & Co.",
@@ -8117,16 +8125,16 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 249366996000,
-          "shares": 522158,
-          "weight": 3.06
+          "value": 250409534000,
+          "shares": 548915,
+          "weight": 2.94
         },
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 81186900000,
-          "shares": 170000,
-          "weight": 1.0
+          "value": 45619000000,
+          "shares": 100000,
+          "weight": 0.54
         },
         {
           "fund": "Duquesne Family Office",
@@ -8157,7 +8165,7 @@
           "weight": 0.43
         }
       ],
-      "total_value": 10267585309000,
+      "total_value": 10233059947000,
       "fund_count": 7,
       "fund_names": [
         "Appaloosa Management",
@@ -8183,9 +8191,9 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 62421677000,
-          "shares": 165246,
-          "weight": 0.77
+          "value": 57364428000,
+          "shares": 163343,
+          "weight": 0.67
         },
         {
           "fund": "ARK Investment Management",
@@ -8223,7 +8231,7 @@
           "weight": 0.34
         }
       ],
-      "total_value": 8603234341000,
+      "total_value": 8598177092000,
       "fund_count": 7,
       "fund_names": [
         "Appaloosa Management",
@@ -8307,9 +8315,9 @@
         {
           "fund": "Soros Fund Management",
           "manager": "조지 소로스 (George Soros)",
-          "value": 70862982000,
-          "shares": 189971,
-          "weight": 0.87
+          "value": 62658941000,
+          "shares": 122166,
+          "weight": 0.74
         },
         {
           "fund": "Bridgewater Associates",
@@ -8340,13 +8348,71 @@
           "weight": 0.72
         }
       ],
-      "total_value": 19647779163000,
+      "total_value": 19639575122000,
       "fund_count": 6,
       "fund_names": [
         "Pershing Square Capital",
         "Soros Fund Management",
         "Bridgewater Associates",
         "D.E. Shaw & Co.",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
+      "name": "INTEL CORP",
+      "cusip": "458140100",
+      "funds": [
+        {
+          "fund": "Soros Fund Management",
+          "manager": "조지 소로스 (George Soros)",
+          "value": 340250900000,
+          "shares": 2830000,
+          "weight": 4.0
+        },
+        {
+          "fund": "ARK Investment Management",
+          "manager": "캐시 우드 (Cathie Wood)",
+          "value": 282694200000,
+          "shares": 2024595,
+          "weight": 0.31
+        },
+        {
+          "fund": "D.E. Shaw & Co.",
+          "manager": "데이비드 쇼 (David Shaw)",
+          "value": 907522532000,
+          "shares": 6499481,
+          "weight": 0.43
+        },
+        {
+          "fund": "Renaissance Technologies",
+          "manager": "짐 사이먼스 (Jim Simons, 설립)",
+          "value": 834545560000,
+          "shares": 6941236,
+          "weight": 1.14
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 4351624802000,
+          "shares": 31165400,
+          "weight": 0.5
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 3386655835000,
+          "shares": 24254500,
+          "weight": 0.39
+        }
+      ],
+      "total_value": 10103293829000,
+      "fund_count": 6,
+      "fund_names": [
+        "Soros Fund Management",
+        "ARK Investment Management",
+        "D.E. Shaw & Co.",
+        "Renaissance Technologies",
         "Citadel Advisors",
         "Citadel Advisors"
       ]
@@ -8605,56 +8671,6 @@
         "Soroban Capital Partners",
         "Duquesne Family Office",
         "ARK Investment Management",
-        "Citadel Advisors",
-        "Citadel Advisors"
-      ]
-    },
-    {
-      "name": "INTEL CORP",
-      "cusip": "458140100",
-      "funds": [
-        {
-          "fund": "ARK Investment Management",
-          "manager": "캐시 우드 (Cathie Wood)",
-          "value": 282694200000,
-          "shares": 2024595,
-          "weight": 0.31
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 907522532000,
-          "shares": 6499481,
-          "weight": 0.43
-        },
-        {
-          "fund": "Renaissance Technologies",
-          "manager": "짐 사이먼스 (Jim Simons, 설립)",
-          "value": 834545560000,
-          "shares": 6941236,
-          "weight": 1.14
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 4351624802000,
-          "shares": 31165400,
-          "weight": 0.5
-        },
-        {
-          "fund": "Citadel Advisors",
-          "manager": "켄 그리핀 (Ken Griffin)",
-          "value": 3386655835000,
-          "shares": 24254500,
-          "weight": 0.39
-        }
-      ],
-      "total_value": 9763042929000,
-      "fund_count": 5,
-      "fund_names": [
-        "ARK Investment Management",
-        "D.E. Shaw & Co.",
-        "Renaissance Technologies",
         "Citadel Advisors",
         "Citadel Advisors"
       ]
@@ -8922,6 +8938,40 @@
       ]
     },
     {
+      "name": "ISHARES TR",
+      "cusip": "464287432",
+      "funds": [
+        {
+          "fund": "Soros Fund Management",
+          "manager": "조지 소로스 (George Soros)",
+          "value": 237229000000,
+          "shares": 3050000,
+          "weight": 2.79
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 2862982254000,
+          "shares": 33128700,
+          "weight": 0.33
+        },
+        {
+          "fund": "Citadel Advisors",
+          "manager": "켄 그리핀 (Ken Griffin)",
+          "value": 2714262076000,
+          "shares": 31407800,
+          "weight": 0.31
+        }
+      ],
+      "total_value": 5814473330000,
+      "fund_count": 3,
+      "fund_names": [
+        "Soros Fund Management",
+        "Citadel Advisors",
+        "Citadel Advisors"
+      ]
+    },
+    {
       "name": "UNITEDHEALTH GROUP INC",
       "cusip": "91324P102",
       "funds": [
@@ -9021,40 +9071,6 @@
         "Appaloosa Management",
         "D.E. Shaw & Co.",
         "Renaissance Technologies"
-      ]
-    },
-    {
-      "name": "BERKSHIRE HATHAWAY INC DEL",
-      "cusip": "084670702",
-      "funds": [
-        {
-          "fund": "Appaloosa Management",
-          "manager": "데이비드 테퍼 (David Tepper)",
-          "value": 12509750000,
-          "shares": 25000,
-          "weight": 0.16
-        },
-        {
-          "fund": "Soros Fund Management",
-          "manager": "조지 소로스 (George Soros)",
-          "value": 66690478000,
-          "shares": 133277,
-          "weight": 0.82
-        },
-        {
-          "fund": "D.E. Shaw & Co.",
-          "manager": "데이비드 쇼 (David Shaw)",
-          "value": 706342017000,
-          "shares": 1411583,
-          "weight": 0.34
-        }
-      ],
-      "total_value": 785542245000,
-      "fund_count": 3,
-      "fund_names": [
-        "Appaloosa Management",
-        "Soros Fund Management",
-        "D.E. Shaw & Co."
       ]
     }
   ]
